@@ -1,0 +1,19 @@
+netflix id,count,line,column,imdb id,title,type,year,imdbratingvotes,imdbrating,
+70281562,20,0,0,tt2467372,Brooklyn Nine-Nine,serie,2013–,189020,8.4,https://m.media-amazon.com/images/M/MV5BNzVkYWY4NzYtMWFlZi00YzkwLThhZDItZjcxYTU4ZTMzMDZmXkEyXkFqcGdeQXVyODUxOTU0OTg@._V1_SX300.jpg
+70028883,16,0,0,tt0347149,Howl's Moving Castle,movie,2004,307252,8.2,https://m.media-amazon.com/images/M/MV5BNmM4YTFmMmItMGE3Yy00MmRkLTlmZGEtMzZlOTQzYjk3MzA2XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg
+80177458,16,1,1,tt6156584,Snowpiercer,serie,2020–,N/A,N/A,https://m.media-amazon.com/images/M/MV5BODAwYWEwMzctYzI3MS00ZTU5LThhYWMtMjQ2ZmY5NmU2NGE5XkEyXkFqcGdeQXVyMDA4NzMyOA@@._V1_SX300.jpg
+60027393,15,1,1,tt0092067,Castle in the Sky,movie,1986,141617,8.0,https://m.media-amazon.com/images/M/MV5BZTAwYzA2ZTgtZGE1Zi00MThkLTljNjMtNGE2ZTUzMTU4MzNjXkEyXkFqcGdeQXVyMzg2MzE2OTE@._V1_SX300.jpg
+80000603,15,1,2,tt0988824,Naruto: Shippûden,serie,2007–2017,73055,8.6,https://m.media-amazon.com/images/M/MV5BMTE5NzIwMGUtYTE1MS00MDUxLTgyZjctOWVkZDAxM2M4ZWQ4XkEyXkFqcGdeQXVyNjc2NjA5MTU@._V1_SX300.jpg
+60027106,14,1,2,tt0097814,Kiki's Delivery Service,movie,1989,112431,7.8,https://m.media-amazon.com/images/M/MV5BOTc0ODM1Njk1NF5BMl5BanBnXkFtZTcwMDI5OTEyNw@@._V1_SX300.jpg
+70180387,14,1,2,tt1796960,Homeland,serie,2011–2020,299926,8.3,https://m.media-amazon.com/images/M/MV5BYjY2ODA0NjYtMzlkMi00ZjY5LThiNjUtNzZjYzgxNjc0MzQzXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg
+70142821,13,1,3,tt0495596,Tales from Earthsea,movie,2006,32361,6.5,https://m.media-amazon.com/images/M/MV5BZGFlN2FhYTktZGYzNi00MzllLWFlOTAtY2ExNjRjZjhkZWM2XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg
+80007945,12,1,3,tt4295140,Chef's Table,serie,2015–,12229,8.6,https://m.media-amazon.com/images/M/MV5BMjE3MDQ2OTYyN15BMl5BanBnXkFtZTgwNjQ0Nzg0NzM@._V1_SX300.jpg
+80244630,11,1,3,tt9698442,Behind Her Eyes,serie,2021,38807,7.2,https://m.media-amazon.com/images/M/MV5BMDk2Njg0ZTUtNTFjZS00NzUwLWEwZDQtZTg5MDZiMmJhNGEzXkEyXkFqcGdeQXVyNjEwNTM2Mzc@._V1_SX300.jpg
+70106454,9,1,4,tt0876563,Ponyo,movie,2008,116249,7.7,https://m.media-amazon.com/images/M/MV5BOTc3YmM3N2QtODZkMC00ZDE5LThjMTQtYTljN2Y1YTYwYWJkXkEyXkFqcGdeQXVyODEzNjM5OTQ@._V1_SX300.jpg
+81002769,9,2,1,tt9184982,Tribes of Europa,serie,2021–,8531,6.8,https://m.media-amazon.com/images/M/MV5BMGJjOGJlMGYtZGFjZC00MDliLWFlMjgtZTYwNDI0ZWQ3MTAxXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_SX300.jpg
+81094067,8,2,1,tt12838766,Space Sweepers,movie,2021,6602,6.6,https://m.media-amazon.com/images/M/MV5BZTUxN2M3ZWYtMzc1MC00NTc4LWFhZDItMzViZDg2NmFjMzBhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg
+70293674,7,2,1,tt2013293,The Wind Rises,movie,2013,66621,7.8,https://m.media-amazon.com/images/M/MV5BMTU4NDg0MzkzNV5BMl5BanBnXkFtZTgwODA3Mzc1MDE@._V1_SX300.jpg
+80045948,7,2,3,tt3837246,Assassination Classroom,serie,2015–2016,6128,8.0,https://m.media-amazon.com/images/M/MV5BYzI0OWJlMjItYmE1NS00YzE2LWExNDAtMDM3MDA5MzM5NmExXkEyXkFqcGdeQXVyNzA5MDUyODA@._V1_SX300.jpg
+80049832,7,2,3,tt9253866,Our Planet,serie,2019,24689,9.3,https://m.media-amazon.com/images/M/MV5BN2I1ZjA5YjQtYmQ0ZS00ZmE1LTk1ZjktNTQ5ODIzY2JiZDdhXkEyXkFqcGdeQXVyNjg2NjQwMDQ@._V1_SX300.jpg
+81025696,7,2,3,tt10813940,Ginny & Georgia,serie,2021–,25723,7.4,https://m.media-amazon.com/images/M/MV5BMTQ2ZWFlNmEtNWYyYy00Yjk1LWIxMTEtMWVkM2NlMTEzOGI2XkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_SX300.jpg
+81210670,7,2,3,tt6878306,News of the World,movie,2020,57935,6.8,https://m.media-amazon.com/images/M/MV5BMDNlNmVlNDItMjE3Yi00ZTA3LWIyOTktNDhhMGFlZjk5ZDQ0XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_SX300.jpg
