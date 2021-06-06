@@ -97,7 +97,7 @@ function getMostCount(filmArray) {
 }
 
 function getProperty(event, property){
-    event.preventDefault();
+    // event.preventDefault();
 
     //replace innerText by rating
     filmOfCurrentPage.forEach(f => {
