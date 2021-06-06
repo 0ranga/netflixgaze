@@ -11,6 +11,10 @@ let filmData;
 let filmOfCurrentPage;
 
 // EVENT LISTENERS
+titreButton.addEventListener('click', (e) => getProperty(e, "title"));
+mediaButton.addEventListener('click', (e) => getProperty(e, "type"));
+productionButton.addEventListener('click', (e) => getProperty(e, "imdbrating"));
+dateButton.addEventListener('click', (e) => getProperty(e, "year"));
 ratingButton.addEventListener('click', (e) => getProperty(e, "imdbrating"));
 
 // FUNCTIONS
@@ -59,22 +63,24 @@ function addDivToFilmArray(filmArray){
 
     filmArray.forEach(a => {
         a.forEach(b => {
-            b.forEach(c =>{
-                //create film div
-                const filmDiv = document.createElement('div');
-                filmDiv.classList.add('film');
-
-                //assign netflix id as ID to div
-                filmDiv.id = c.netflixId;
-
-                //create text element inside div
-                const filmP = document.createElement('p');
-                filmP.innerHTML = c.title;
-                filmDiv.appendChild(filmP);
-
-                //add it to filmArray
-                c.filmTag = filmDiv;
-            })
+            if (b!= null){
+                b.forEach(c => {
+                    //create film div
+                    const filmDiv = document.createElement('div');
+                    filmDiv.classList.add('film');
+    
+                    //assign netflix id as ID to div
+                    filmDiv.id = c.netflixId;
+    
+                    //create text element inside div
+                    const filmP = document.createElement('p');
+                    filmP.innerHTML = c.title;
+                    filmDiv.appendChild(filmP);
+    
+                    //add it to filmArray
+                    c.filmTag = filmDiv;
+                })
+            }
         })
     })
 }
@@ -106,33 +112,78 @@ function extractArrayFromFilmData(){
     return filmData[line][column];
 }
 
+function download(content, fileName, contentType) {
+    var a = document.createElement("a");
+    var file = new Blob([content], {type: contentType});
+    a.href = URL.createObjectURL(file);
+    a.download = fileName;
+    a.click();
+}
+//download(jsonData, 'json.txt', 'text/plain');
+
+import DATA from "../json.js";
+// console.log(unTest);
+
 
 // MAIN
-let dataArray = fromCSVtoObjectArray('../data.csv');
-dataArray.then(arrayOfFilms => {
 
-    //create div and add it to the array
-    addDivToFilmArray(arrayOfFilms);
+// let dataArray = fromCSVtoObjectArray('../data.csv');
+// dataArray.then(arrayOfFilms => {
 
-    filmData = arrayOfFilms;
+//     let arrayOfFilms = unTest;
+//     console.log(arrayOfFilms);
 
-    filmOfCurrentPage = extractArrayFromFilmData();
+//     //save data to JSON file
+//     //download(JSON.stringify(arrayOfFilms), 'json.json', 'application/json');
 
-    //get the most counts
-    
-    let max = getMostCount(filmOfCurrentPage);
+//     //create div and add it to the array
+//     addDivToFilmArray(arrayOfFilms);
 
-    for (let i = 0; i < (filmOfCurrentPage.length < 5 ? filmOfCurrentPage.length : 5) ; i++) {
-        //add to viz div
-        viz.appendChild(filmOfCurrentPage[i].filmTag);
+//     //set global variable filmData so that it can be used in other functions
+//     filmData = arrayOfFilms;
 
-        filmOfCurrentPage[i].filmTag.style.width = filmOfCurrentPage[i].count/max * 100 +"%";
+//     //get only the film of the current page
+//     filmOfCurrentPage = extractArrayFromFilmData();
+
+//     //get the most counts
+//     let max = getMostCount(filmOfCurrentPage);
+
+//     // add the divs to the body with a maximum of 6
+//     for (let i = 0; i < (filmOfCurrentPage.length < 5 ? filmOfCurrentPage.length : 5) ; i++) {
+//         //add to viz div
+//         viz.appendChild(filmOfCurrentPage[i].filmTag);
+
+//         filmOfCurrentPage[i].filmTag.style.width = filmOfCurrentPage[i].count/max * 100 +"%";
         
-    }
+//     }
 
-    // arrayOfFilms.forEach((f, i) => {
-    //     viz.appendChild(f.filmTag);
-    // })
+//     // arrayOfFilms.forEach((f, i) => {
+//     //     viz.appendChild(f.filmTag);
+//     // })
 
-});
+// });
+
+
+let arrayOfFilms = DATA;
+
+//create div and add it to the array
+addDivToFilmArray(arrayOfFilms);
+
+//set global variable filmData so that it can be used in other functions
+filmData = arrayOfFilms;
+
+//get only the film of the current page
+filmOfCurrentPage = extractArrayFromFilmData();
+
+//get the most counts
+let max = getMostCount(filmOfCurrentPage);
+
+// add the divs to the body with a maximum of 6
+for (let i = 0; i < (filmOfCurrentPage.length < 5 ? filmOfCurrentPage.length : 5) ; i++) {
+    //add to viz div
+    viz.appendChild(filmOfCurrentPage[i].filmTag);
+
+    filmOfCurrentPage[i].filmTag.style.width = filmOfCurrentPage[i].count/max * 100 +"%";
+    
+}
 
