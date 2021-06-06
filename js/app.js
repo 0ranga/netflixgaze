@@ -14,7 +14,7 @@ let filmOfCurrentPage;
 // EVENT LISTENERS
 titreButton.addEventListener('click', (e) => getProperty(e, "title"));
 mediaButton.addEventListener('click', (e) => getProperty(e, "type"));
-productionButton.addEventListener('click', (e) => getProperty(e, "imdbrating"));
+productionButton.addEventListener('click', (e) => getProperty(e, "production"));
 dateButton.addEventListener('click', (e) => getProperty(e, "year"));
 ratingButton.addEventListener('click', (e) => getProperty(e, "imdbrating"));
 
@@ -36,11 +36,12 @@ function fromCSVtoObjectArray(fileLink){
             element.column = parseInt(uneligne[3]);
             element.imdbId = uneligne[4];
             element.title = uneligne[5];
-            element.type = uneligne[6];
-            element.year = uneligne[7];
-            element.imdbvotes = parseInt(uneligne[8]);
-            element.imdbrating = parseFloat(uneligne[9]);
-            element.coverlink = uneligne[10];
+            element.production = uneligne[6] == "N" ? "Netflix" : "Other";
+            element.type = uneligne[7];
+            element.year = uneligne[8];
+            element.imdbvotes = parseInt(uneligne[9]);
+            element.imdbrating = parseFloat(uneligne[10]);
+            element.coverlink = uneligne[11];
 
             if(!allData[element.line]){
                 allData[element.line] = [];
@@ -133,11 +134,11 @@ import DATA from "../json.js";
 // let dataArray = fromCSVtoObjectArray('../data.csv');
 // dataArray.then(arrayOfFilms => {
 
-//     let arrayOfFilms = unTest;
+//     // let arrayOfFilms = unTest;
 //     console.log(arrayOfFilms);
 
 //     //save data to JSON file
-//     //download(JSON.stringify(arrayOfFilms), 'json.json', 'application/json');
+//     // download(JSON.stringify(arrayOfFilms), 'json.json', 'application/json');
 
 //     //create div and add it to the array
 //     addDivToFilmArray(arrayOfFilms);
