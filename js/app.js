@@ -6,6 +6,7 @@ const productionButton = document.querySelector("#production");
 const dateButton = document.querySelector("#date");
 const ratingButton = document.querySelector("#rating");
 const films = () => document.querySelectorAll(".film");
+const soustitre = document.getElementById('soustitre');
 
 let filmData;
 let filmOfCurrentPage;
@@ -108,6 +109,8 @@ function extractArrayFromFilmData(){
     let url = new URL(window.location.href);
     let line = url.searchParams.get("line");
     let column = url.searchParams.get("column");
+
+    soustitre.innerText = `Qu'est que Netflix me propose en case ${parseInt(line)+0}:${parseInt(column)+1} ?`
 
     return filmData[line][column];
 }
