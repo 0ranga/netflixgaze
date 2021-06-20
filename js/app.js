@@ -19,47 +19,47 @@ dateButton.addEventListener('click', (e) => getProperty(e, "year"));
 ratingButton.addEventListener('click', (e) => getProperty(e, "imdbrating"));
 
 // FUNCTIONS
-function fromCSVtoObjectArray(fileLink){
-    const allData = [];
-    return fetch(fileLink)
-    .then(response => response.text())
-    .then(data => {
-        let csv2json = data;
-        let test = csv2json.split("\r\n");
+// function fromCSVtoObjectArray(fileLink){
+//     const allData = [];
+//     return fetch(fileLink)
+//     .then(response => response.text())
+//     .then(data => {
+//         let csv2json = data;
+//         let test = csv2json.split("\r\n");
 
-        for (let i = 1; i < test.length; i++) {
-            let uneligne = test[i].split(",");
-            let element = {};
-            element.netflixId = parseInt(uneligne[0]) ;
-            element.count = parseInt(uneligne[1]);
-            element.line = parseInt(uneligne[2]);
-            element.column = parseInt(uneligne[3]);
-            element.imdbId = uneligne[4];
-            element.title = uneligne[5];
-            element.production = uneligne[6] == "N" ? "Netflix" : "Other";
-            element.type = uneligne[7];
-            element.year = uneligne[8];
-            element.imdbvotes = parseInt(uneligne[9]);
-            element.imdbrating = parseFloat(uneligne[10]);
-            element.coverlink = uneligne[11];
+//         for (let i = 1; i < test.length; i++) {
+//             let uneligne = test[i].split(",");
+//             let element = {};
+//             element.netflixId = parseInt(uneligne[0]) ;
+//             element.count = parseInt(uneligne[1]);
+//             element.line = parseInt(uneligne[2]);
+//             element.column = parseInt(uneligne[3]);
+//             element.imdbId = uneligne[4];
+//             element.title = uneligne[5];
+//             element.production = uneligne[6] == "N" ? "Netflix" : "Other";
+//             element.type = uneligne[7];
+//             element.year = uneligne[8];
+//             element.imdbvotes = parseInt(uneligne[9]);
+//             element.imdbrating = parseFloat(uneligne[10]);
+//             element.coverlink = uneligne[11];
 
-            if(!allData[element.line]){
-                allData[element.line] = [];
-            }
-            if (!allData[element.line][element.column]){
-                allData[element.line][element.column]= [];
-            }
+//             if(!allData[element.line]){
+//                 allData[element.line] = [];
+//             }
+//             if (!allData[element.line][element.column]){
+//                 allData[element.line][element.column]= [];
+//             }
 
-            allData[element.line][element.column].push(element);
+//             allData[element.line][element.column].push(element);
 
             
-            // allData.push(element);
-        }
+//             // allData.push(element);
+//         }
 
-        return allData
+//         return allData
 
-    });
-}
+//     });
+// }
 
 function addDivToFilmArray(filmArray){
 
@@ -100,7 +100,7 @@ function getMostCount(filmArray) {
 function getProperty(event, property){
     // event.preventDefault();
 
-    //replace innerText by rating
+    //replace innerText by property
     filmOfCurrentPage.forEach(f => {
         f.filmTag.children[0].innerText = f[property];
     })
@@ -111,7 +111,7 @@ function extractArrayFromFilmData(){
     let line = url.searchParams.get("line");
     let column = url.searchParams.get("column");
 
-    soustitre.innerText = `Qu'est que Netflix me propose en case ${parseInt(line)+0}:${parseInt(column)+1} ?`
+    soustitre.innerText = `Qu'est-ce que Netflix me propose en case ${parseInt(line)+0}:${parseInt(column)+1} ?`
 
     return filmData[line][column];
 }
@@ -126,7 +126,6 @@ function download(content, fileName, contentType) {
 //download(jsonData, 'json.txt', 'text/plain');
 
 import DATA from "../json.js";
-// console.log(unTest);
 
 
 // MAIN

@@ -15,7 +15,6 @@
   src: url("HeymlandLLWebTrial-RegularTrial.woff") format("woff");
 }
 
-
 @font-face {
   font-family: "CircularXXWebTrial-MediumTrial";
   src: url("CircularXXWebTrial-MediumTrial.woff") format("woff");
@@ -29,23 +28,20 @@
 /* BASE */
 
 body {
-  font-family: 'CircularXXWebTrial-ThinTrial', sans-serif;
+  font-family: "CircularXXWebTrial-ThinTrial", sans-serif;
   font-size: 16px;
   line-height: 1.2;
   padding: 0;
   margin: 0;
   cursor: crosshair;
   background-color: black;
-
 }
 
 h1 {
-  font-family: 'HeymlandLLWebTrial-RegularTrial', sans-serif;
+  font-family: "HeymlandLLWebTrial-RegularTrial", sans-serif;
   font-size: 24px;
   font-weight: 1000px;
-
 }
-
 
 a {
   color: white;
@@ -54,6 +50,9 @@ iframe {
   padding: 8px;
 }
 
+main {
+  padding: 0 1rem;
+}
 
 .navbar {
   position: fixed;
@@ -64,10 +63,9 @@ iframe {
 
 .container {
   /* max-width: 1650px;
-  /* margin: auto;
-  padding: 0 1rem; */
-  margin-left: 10px;
-  display: flex;
+  /* margin: auto;*/
+  /* padding: 0 1rem; */
+  /* display: flex; */
   justify-content: space-between;
   align-items: stretch;
 }
@@ -81,7 +79,6 @@ iframe {
 }
 
 .navbar-logo img {
-
   width: auto;
   margin-top: 5px;
 }
@@ -89,7 +86,6 @@ iframe {
 .navbar-menu {
   display: flex;
   font-size: 0.75rem;
-
 }
 
 .navbar-item {
@@ -113,7 +109,6 @@ iframe {
   background-repeat: no-repeat;
   background-position: center;
 }
-
 
 .header {
   /* background-color: #2b2e41;
@@ -159,7 +154,6 @@ iframe {
 .small {
   color: darkgrey;
   font-size: 12px;
-
 }
 .button2 {
   display: flex;
@@ -222,13 +216,13 @@ a:active {
   padding: 0rem;
   box-sizing: border-box;
 }
-.column1{
+.column1 {
   max-width: 20%;
   padding: 0rem;
   box-sizing: border-box;
 }
 
-.column2{
+.column2 {
   text-align: right;
   padding: 0rem;
   box-sizing: border-box;
@@ -266,7 +260,6 @@ h3 {
   padding: 0.5rem;
   color: white;
   font-size: 14px;
-
 }
 
 .project img {
@@ -276,35 +269,34 @@ h3 {
   height: auto;
   -webkit-filter: blur(10px);
   filter: blur(10px);
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .project img:hover {
   -webkit-filter: blur(0px);
   filter: blur(0px);
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
-
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .project-caption {
   /* position absolute; */
-  opacity:30%;
+  opacity: 30%;
   font-size: 14px;
   bottom: 0px;
   left: 0;
   height: 40px;
   width: 90%;
-  color:#fff;
+  color: #fff;
   -webkit-transition: all 0.9s ease-in;
-  -moz-transition: all  0.9s ease-in;
-  -o-transition: all  0.9s ease-in;
-  transition: all  0.9s ease-in;
+  -moz-transition: all 0.9s ease-in;
+  -o-transition: all 0.9s ease-in;
+  transition: all 0.9s ease-in;
 }
-.project-caption:hover{
+.project-caption:hover {
   display: flex;
-  opacity:1;
+  opacity: 1;
   font-size: 24px;
 }
 
@@ -328,7 +320,7 @@ h3 {
   background-color: black;
   color: white;
   padding: 3rem 0;
-  list-style-type:none;
+  list-style-type: none;
 }
 
 .footer a {
@@ -336,11 +328,12 @@ h3 {
   text-decoration: none;
 }
 
-
 /* FORM */
 
-
-#input-name, #input-email, #input-subject, #input-message {
+#input-name,
+#input-email,
+#input-subject,
+#input-message {
   display: flex;
   width: 30%;
   margin: 10px;
@@ -349,20 +342,31 @@ h3 {
   box-decoration-break: none;
 }
 
-#input-message
-{
+#input-message {
   margin: 17px;
+}
+
+
+@keyframes viz {
+  0%   {left:0px; right:0px;}
+  25%  {left:0px; right:25%;}
+  50%  {left:0px; right:50%;}
+  75%  {left:0px; right:75%}
+  100% {left:0px; right:100%;}
+}
+
+.viz02 {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  animation-name: viz;
+  animation-duration: 4s;
+
 }
 
 /* -------------------------------------------------------------------------- */
 /*                                   Hesham                                   */
 /* -------------------------------------------------------------------------- */
-
-.viz02{
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-}
 
 .film {
   margin-left: 20px;
@@ -372,16 +376,17 @@ h3 {
   flex-direction: column;
   justify-content: center;
   background-color: grey;
-  transition: all .4s ease;
+  transition: all 0.4s ease;
   font-size: 30px;
 }
 
 .film:hover {
   background-color: red;
-  color:white;
+  color: white;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -394,20 +399,14 @@ body {
   box-sizing: border-box;
 }
 
-input:checked+label {
+input:checked + label {
   background-color: red;
 }
 
 /* ------------------------------ End of Hesham ----------------------------- */
 /* -------------------------------------------------------------------------- */
 
-
 /*             --------TREEMAP& DATA VIZ -------------            */
-
-
-
-
-
 
 .canvas {
   width: 1920px;
@@ -426,8 +425,6 @@ input:checked+label {
   transition: background 1s;
   transition: color 0.5s;
   background-color: darkgrey;
-
-
 }
 .viz02 {
   padding-top: 10px;
@@ -445,9 +442,7 @@ input:checked+label {
   transition: color 0.5s;
   background-color: darkgrey;
   /* border 1px solid white; */
-
 }
-
 
 .viz01 .node:hover {
   background: red !important;
