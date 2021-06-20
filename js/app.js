@@ -18,7 +18,7 @@ let filmOfCurrentPage;
 /*                               EVENT LISTENERS                              */
 /* -------------------------------------------------------------------------- */
 
-titreButton.addEventListener('click', (e) => getProperty(e, "title"));
+// titreButton.addEventListener('click', (e) => getProperty(e, "title"));
 mediaButton.addEventListener('click', (e) => getProperty(e, "type"));
 productionButton.addEventListener('click', (e) => getProperty(e, "production"));
 dateButton.addEventListener('click', (e) => getProperty(e, "year"));
@@ -168,7 +168,7 @@ function extractArrayFromFilmData(){
     let line = url.searchParams.get("line");
     let column = url.searchParams.get("column");
 
-    soustitre.innerText = `Qu'est-ce que Netflix me propose en case ${parseInt(line)+0}:${parseInt(column)+1} ?`
+    soustitre.innerText = `Que me propose Netflix en case ${parseInt(line)+0}:${parseInt(column)+1} ?`
 
     return filmData[line][column];
 }
