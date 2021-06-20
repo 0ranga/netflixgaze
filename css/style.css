@@ -360,14 +360,21 @@ h3 {
   color: black;
   height: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: grey;
-  transition: all 0.4s ease;
   font-size: 30px;
 }
 
-.film:hover {
+.bar-chart {
+  display: flex;
+  justify-content: space-between;
+  background-color: grey;
+  transition: all 0.4s ease;
+}
+
+.counts {
+  color: white;
+}
+
+.film:hover .bar-chart {
   background-color: red;
   color: white;
 }

@@ -1,4 +1,7 @@
-// SELECTORS
+/* -------------------------------------------------------------------------- */
+/*                                  SELECTORS                                 */
+/* -------------------------------------------------------------------------- */
+
 const viz = document.querySelector(".viz02");
 const titreButton = document.querySelector("#titre");
 const mediaButton = document.querySelector("#mediatype");
@@ -11,14 +14,20 @@ const soustitre = document.getElementById('soustitre');
 let filmData;
 let filmOfCurrentPage;
 
-// EVENT LISTENERS
+/* -------------------------------------------------------------------------- */
+/*                               EVENT LISTENERS                              */
+/* -------------------------------------------------------------------------- */
+
 titreButton.addEventListener('click', (e) => getProperty(e, "title"));
 mediaButton.addEventListener('click', (e) => getProperty(e, "type"));
 productionButton.addEventListener('click', (e) => getProperty(e, "production"));
 dateButton.addEventListener('click', (e) => getProperty(e, "year"));
 ratingButton.addEventListener('click', (e) => getProperty(e, "imdbrating"));
 
-// FUNCTIONS
+/* -------------------------------------------------------------------------- */
+/*                                  FUNCTIONS                                 */
+/* -------------------------------------------------------------------------- */
+
 // function fromCSVtoObjectArray(fileLink){
 //     const allData = [];
 //     return fetch(fileLink)
@@ -61,6 +70,32 @@ ratingButton.addEventListener('click', (e) => getProperty(e, "imdbrating"));
 //     });
 // }
 
+// function addDivToFilmArray(filmArray){
+
+//     filmArray.forEach(a => {
+//         a.forEach(b => {
+//             if (b!= null){
+//                 b.forEach(c => {
+//                     //create film div
+//                     const filmDiv = document.createElement('div');
+//                     filmDiv.classList.add('film');
+    
+//                     //assign netflix id as ID to div
+//                     filmDiv.id = c.netflixId;
+    
+//                     //create text element inside div
+//                     const filmP = document.createElement('p');
+//                     filmP.innerHTML = c.title;
+//                     filmDiv.appendChild(filmP);
+    
+//                     //add it to filmArray
+//                     c.filmTag = filmDiv;
+//                 })
+//             }
+//         })
+//     })
+// }
+
 function addDivToFilmArray(filmArray){
 
     filmArray.forEach(a => {
@@ -73,11 +108,32 @@ function addDivToFilmArray(filmArray){
     
                     //assign netflix id as ID to div
                     filmDiv.id = c.netflixId;
+
+                    let containerDiv = document.createElement('div');
+                    containerDiv.classList.add('bar-chart');
+                    containerDiv.style.width = "100%";
+                    
     
                     //create text element inside div
-                    const filmP = document.createElement('p');
+                    let filmP = document.createElement('p');
+                    filmP.classList.add('film-title');
                     filmP.innerHTML = c.title;
-                    filmDiv.appendChild(filmP);
+                    // filmDiv.appendChild(filmP);
+
+                    let dataElement = document.createElement('p');
+                    dataElement.classList.add('data-element');
+                    dataElement.innerText = "";
+
+                    //create p element with number of count
+                    let numberOfCounts = document.createElement('p');
+                    numberOfCounts.classList.add('counts');
+                    numberOfCounts.innerText = c.count;
+
+                    containerDiv.append(filmP);
+                    containerDiv.appendChild(dataElement);
+                    filmDiv.appendChild(containerDiv);
+                    filmDiv.appendChild(numberOfCounts);
+
     
                     //add it to filmArray
                     c.filmTag = filmDiv;
@@ -102,7 +158,8 @@ function getProperty(event, property){
 
     //replace innerText by property
     filmOfCurrentPage.forEach(f => {
-        f.filmTag.children[0].innerText = f[property];
+        // f.filmTag.children[0].innerText = f[property];
+        f.filmTag.querySelector('.data-element').innerText = f[property];
     })
 }
 
@@ -128,7 +185,9 @@ function download(content, fileName, contentType) {
 import DATA from "../json.js";
 
 
-// MAIN
+/* -------------------------------------------------------------------------- */
+/*                                    MAIN                                    */
+/* -------------------------------------------------------------------------- */
 
 // let dataArray = fromCSVtoObjectArray('../data.csv');
 // dataArray.then(arrayOfFilms => {
@@ -186,7 +245,8 @@ for (let i = 0; i < (filmOfCurrentPage.length < 5 ? filmOfCurrentPage.length : 5
     //add to viz div
     viz.appendChild(filmOfCurrentPage[i].filmTag);
 
-    filmOfCurrentPage[i].filmTag.style.width = filmOfCurrentPage[i].count/max * 100 +"%";
+    // filmOfCurrentPage[i].filmTag.style.width = filmOfCurrentPage[i].count/max * 100 +"%";
+    filmOfCurrentPage[i].filmTag.querySelector('.bar-chart').style.width = filmOfCurrentPage[i].count/max * 100 +"%";
     
 }
 
