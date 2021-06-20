@@ -365,6 +365,7 @@ h3 {
 }
 
 .film {
+  margin-left: 20px;
   color: black;
   height: 100%;
   display: flex;
