@@ -379,7 +379,7 @@ h3 {
   transition: all 0.4s ease;
   align-items: center;
   padding: 0 20px;
-  animation: progress-bar 2s ease-out backwards, text-in .5s ease-out backwards;
+  animation: progress-bar 2s ease-out backwards, text-in .5s ease backwards;
 }
 
 @keyframes progress-bar {
@@ -388,19 +388,25 @@ h3 {
 }
 
 @keyframes text-in {
-  0% { transform: translateX(-20px) ; }
+  0% { transform: translateX(-60px) ; }
 }
 
-.film:nth-child(1) .bar-chart {animation-delay: 0s;}
-.film:nth-child(2) .bar-chart {animation-delay: .08s;}
-.film:nth-child(3) .bar-chart {animation-delay: .16s;}
-.film:nth-child(4) .bar-chart {animation-delay: .24s;}
-.film:nth-child(5) .bar-chart {animation-delay: .32s;}
+.film:nth-child(1) .bar-chart, .film:nth-child(1) .counts {animation-delay: 0s;}
+.film:nth-child(2) .bar-chart, .film:nth-child(2) .counts {animation-delay: .1s;}
+.film:nth-child(3) .bar-chart, .film:nth-child(3) .counts {animation-delay: .2s;}
+.film:nth-child(4) .bar-chart, .film:nth-child(4) .counts {animation-delay: .4s;}
+.film:nth-child(5) .bar-chart, .film:nth-child(5) .counts {animation-delay: .6s;}
 
 
 .counts {
   color: white;
   padding: 0 20px;
+  animation: text-color .5s ease backwards;
+}
+
+@keyframes text-color {
+  0% { color: rgba(0,0,0,0);}
+
 }
 
 .film:hover .bar-chart {
