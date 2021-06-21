@@ -379,7 +379,7 @@ h3 {
   transition: all 0.4s ease;
   align-items: center;
   padding: 0 20px;
-  animation: progress-bar 2s ease-out backwards, text-in .5s ease backwards;
+  animation: progress-bar 2s cubic-bezier(0.22, 1, 0.36, 1) backwards, text-in .5s cubic-bezier(0.22, 1, 0.36, 1) backwards;
 }
 
 @keyframes progress-bar {
