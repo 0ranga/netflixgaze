@@ -45,9 +45,6 @@ h1 {
 a {
   color: white;
 }
-iframe {
-  padding: 8px;
-}
 
 main {
   padding: 0 1rem;
@@ -363,23 +360,47 @@ h3 {
 .film {
   display: flex;
   align-items: center;
-  margin-left: 20px;
   color: black;
   height: 100%;
   font-size: 30px;
 }
 
+.film + .film {
+  margin-top: 20px;
+}
+
 .bar-chart {
   display: flex;
   height: 100%;
+  overflow: hidden;
+  white-space: nowrap;
   justify-content: space-between;
   background-color: grey;
   transition: all 0.4s ease;
   align-items: center;
+  padding: 0 20px;
+  animation: progress-bar 2s ease-out backwards, text-in .5s ease-out backwards;
 }
+
+@keyframes progress-bar {
+  0% { width:0; padding: 0; }
+  20% { padding: 0 20px;}
+}
+
+@keyframes text-in {
+  0% { transform: translateX(-20px) ; }
+}
+
+.film:nth-child(1) .bar-chart {animation-delay: 0s;}
+.film:nth-child(2) .bar-chart {animation-delay: .08s;}
+.film:nth-child(3) .bar-chart {animation-delay: .16s;}
+.film:nth-child(4) .bar-chart {animation-delay: .24s;}
+.film:nth-child(5) .bar-chart {animation-delay: .32s;}
+
 
 .counts {
   color: white;
+  padding: 0 20px;
 }
 
 .film:hover .bar-chart {
@@ -410,50 +431,9 @@ input:checked + label {
 
 /*             --------TREEMAP& DATA VIZ -------------            */
 
-.canvas {
-  width: 1920px;
-  height: 900px;
-}
-
-.viz01 .node {
-  /*padding-top: 50px;*/
-  font-size: 230%;
-  line-height: 150%;
-  stroke: 2px;
-  fill: red;
-  overflow: hidden;
-  position: absolute;
-  text-indent: 1%;
-  transition: background 1s;
-  transition: color 0.5s;
-  background-color: darkgrey;
-}
 .viz02 {
-  padding-top: 10px;
-}
-.viz02 .node {
-  padding: 20px;
-  font-size: 235%;
-  line-height: 150%;
-  stroke: 2px;
-  fill: red;
-  overflow: hidden;
-  /*position: absolute;*/
-  text-indent: 1%;
-  transition: background 1s;
-  transition: color 0.5s;
-  background-color: darkgrey;
-  /* border 1px solid white; */
-}
-
-.viz01 .node:hover {
-  background: red !important;
-  color: white;
-}
-
-.viz02 .node:hover {
-  background: red !important;
-  color: white;
+  /* padding-top: 10px; */
+  margin: 20px 50px;
 }
 
 .pannel-options {
