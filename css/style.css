@@ -47,7 +47,7 @@ a {
 }
 
 main {
-  padding: 0 1rem;
+  /* padding: 0 1rem; */
 }
 
 .navbar {
@@ -58,12 +58,14 @@ main {
 }
 
 .container {
-  /* max-width: 1650px;
-  /* margin: auto;*/
-  /* padding: 0 1rem; */
-  /* display: flex; */
-  justify-content: space-between;
-  align-items: stretch;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content {
+  display: flex;
+
 }
 
 .navbar .container {
@@ -201,18 +203,20 @@ a:active {
   border: 1px solid red;
 }
 
-.columns {
-  margin: 1px;
-}
-
 .columns.multiline {
   flex-wrap: wrap;
 }
 
-.column {
+.columns {
+  display: flex;
   padding: 0rem;
   box-sizing: border-box;
 }
+
+.grow {
+  flex-grow: 1;
+}
+
 .column1 {
   max-width: 20%;
   padding: 0rem;
@@ -239,7 +243,7 @@ a:active {
   }
 
   .column {
-    flex: 1;
+    /* flex: 1; */
   }
 }
 
@@ -347,10 +351,10 @@ h3 {
 .viz02 {
   display: flex;
   height: 100%;
+  width:100%;
   flex-direction: column;
   animation-name: viz;
   animation-duration: 4s;
-
 }
 
 /* -------------------------------------------------------------------------- */
@@ -363,6 +367,7 @@ h3 {
   color: black;
   height: 100%;
   font-size: 30px;
+  align-self: stretch;
 }
 
 .film + .film {
@@ -436,11 +441,6 @@ input:checked + label {
 /* -------------------------------------------------------------------------- */
 
 /*             --------TREEMAP& DATA VIZ -------------            */
-
-.viz02 {
-  /* padding-top: 10px; */
-  margin: 20px 50px;
-}
 
 .pannel-options {
   padding-top: 20px;
