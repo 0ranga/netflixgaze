@@ -61,7 +61,7 @@ ratingButton.addEventListener('click', (e) => getProperty(e, "imdbrating"));
 
 //             allData[element.line][element.column].push(element);
 
-            
+
 //             // allData.push(element);
 //         }
 
@@ -79,15 +79,15 @@ ratingButton.addEventListener('click', (e) => getProperty(e, "imdbrating"));
 //                     //create film div
 //                     const filmDiv = document.createElement('div');
 //                     filmDiv.classList.add('film');
-    
+
 //                     //assign netflix id as ID to div
 //                     filmDiv.id = c.netflixId;
-    
+
 //                     //create text element inside div
 //                     const filmP = document.createElement('p');
 //                     filmP.innerHTML = c.title;
 //                     filmDiv.appendChild(filmP);
-    
+
 //                     //add it to filmArray
 //                     c.filmTag = filmDiv;
 //                 })
@@ -105,15 +105,15 @@ function addDivToFilmArray(filmArray){
                     //create film div
                     const filmDiv = document.createElement('div');
                     filmDiv.classList.add('film');
-    
+
                     //assign netflix id as ID to div
                     filmDiv.id = c.netflixId;
 
                     let containerDiv = document.createElement('div');
                     containerDiv.classList.add('bar-chart');
                     containerDiv.style.width = "100%";
-                    
-    
+
+
                     //create text element inside div
                     let filmP = document.createElement('p');
                     filmP.classList.add('film-title');
@@ -134,7 +134,7 @@ function addDivToFilmArray(filmArray){
                     filmDiv.appendChild(containerDiv);
                     filmDiv.appendChild(numberOfCounts);
 
-    
+
                     //add it to filmArray
                     c.filmTag = filmDiv;
                 })
@@ -216,7 +216,7 @@ import DATA from "../json.js";
 //         viz.appendChild(filmOfCurrentPage[i].filmTag);
 
 //         filmOfCurrentPage[i].filmTag.style.width = filmOfCurrentPage[i].count/max * 100 +"%";
-        
+
 //     }
 
 //     // arrayOfFilms.forEach((f, i) => {
@@ -247,6 +247,5 @@ for (let i = 0; i < (filmOfCurrentPage.length < 5 ? filmOfCurrentPage.length : 5
 
     // filmOfCurrentPage[i].filmTag.style.width = filmOfCurrentPage[i].count/max * 100 +"%";
     filmOfCurrentPage[i].filmTag.querySelector('.bar-chart').style.width = filmOfCurrentPage[i].count/max * 100 +"%";
-    
-}
 
+}

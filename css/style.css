@@ -210,6 +210,12 @@ a:active {
   text-decoration: none;
 }
 
+.hr-line {
+            margin-bottom: 1px;
+            border-top: 0.5px solid lightgrey;
+            height: 0.5px;
+            border-top: 1px solid lightgrey;
+        }
 /* -------------------------------------------------------------------------- */
 /*                                   Hesham                                   */
 /* -------------------------------------------------------------------------- */
@@ -222,6 +228,8 @@ a:active {
   animation-name: viz;
   animation-duration: 4s;
   flex-grow: 1;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .film {
@@ -268,9 +276,11 @@ a:active {
 
 
 .counts {
-  color: white;
+  color: lightgrey;
+  font-weight: bold;
   padding: 0 20px;
   animation: text-color .5s ease backwards;
+  font-size: 2.5rem;
 }
 
 @keyframes text-color {
@@ -304,11 +314,12 @@ input:checked + label {
 /*             --------TREEMAP& DATA VIZ -------------            */
 
 .pannel-options {
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .case-title {
   margin-top:30px;
   font-size: 36px;
   color: white;
+  margin-bottom: 10px;
 }
