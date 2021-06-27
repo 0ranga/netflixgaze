@@ -38,6 +38,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: black;
+  color: white;
 }
 
 h1 {
@@ -66,14 +67,10 @@ main {
 }
 
 .container {
-  width:100%;
+  width: 100%;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.grow {
-  flex-grow: 1;
 }
 
 .navbar-menu {
@@ -154,6 +151,14 @@ a:active {
 }
 
 .column {
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+}
+
+.grow {
   flex-grow: 1;
 }
 
@@ -192,7 +197,7 @@ a:active {
   opacity: 30%;
 }
 
-.project-caption:hover h2{
+.project-caption:hover h2 {
   /* display: flex; */
   opacity: 1;
   transform: scale(1.4);
@@ -211,11 +216,11 @@ a:active {
 }
 
 .hr-line {
-            margin-bottom: 1px;
-            border-top: 0.5px solid lightgrey;
-            height: 0.5px;
-            border-top: 1px solid lightgrey;
-        }
+  margin-bottom: 1px;
+  border-top: 0.5px solid lightgrey;
+  height: 0.5px;
+  border-top: 1px solid lightgrey;
+}
 /* -------------------------------------------------------------------------- */
 /*                                   Hesham                                   */
 /* -------------------------------------------------------------------------- */
@@ -223,7 +228,7 @@ a:active {
 .viz02 {
   display: flex;
   height: 100%;
-  width:100%;
+  width: 100%;
   flex-direction: column;
   animation-name: viz;
   animation-duration: 4s;
@@ -255,37 +260,60 @@ a:active {
   transition: all 0.4s ease;
   align-items: center;
   padding: 0 20px;
-  animation: progress-bar 2s cubic-bezier(0.22, 1, 0.36, 1) backwards, text-in .5s cubic-bezier(0.22, 1, 0.36, 1) backwards;
+  animation: progress-bar 2s cubic-bezier(0.22, 1, 0.36, 1) backwards,
+    text-in 0.5s cubic-bezier(0.22, 1, 0.36, 1) backwards;
   border-radius: 4px;
 }
 
 @keyframes progress-bar {
-  0% { width:0; padding: 0; }
-  20% { padding: 0 20px;}
+  0% {
+    width: 0;
+    padding: 0;
+  }
+  20% {
+    padding: 0 20px;
+  }
 }
 
 @keyframes text-in {
-  0% { transform: translateX(-60px) ; }
+  0% {
+    transform: translateX(-60px);
+  }
 }
 
-.film:nth-child(1) .bar-chart, .film:nth-child(1) .counts {animation-delay: 0s;}
-.film:nth-child(2) .bar-chart, .film:nth-child(2) .counts {animation-delay: .1s;}
-.film:nth-child(3) .bar-chart, .film:nth-child(3) .counts {animation-delay: .2s;}
-.film:nth-child(4) .bar-chart, .film:nth-child(4) .counts {animation-delay: .4s;}
-.film:nth-child(5) .bar-chart, .film:nth-child(5) .counts {animation-delay: .6s;}
-
+.film:nth-child(1) .bar-chart,
+.film:nth-child(1) .counts {
+  animation-delay: 0s;
+}
+.film:nth-child(2) .bar-chart,
+.film:nth-child(2) .counts {
+  animation-delay: 0.1s;
+}
+.film:nth-child(3) .bar-chart,
+.film:nth-child(3) .counts {
+  animation-delay: 0.2s;
+}
+.film:nth-child(4) .bar-chart,
+.film:nth-child(4) .counts {
+  animation-delay: 0.4s;
+}
+.film:nth-child(5) .bar-chart,
+.film:nth-child(5) .counts {
+  animation-delay: 0.6s;
+}
 
 .counts {
   color: lightgrey;
   font-weight: bold;
   padding: 0 20px;
-  animation: text-color .5s ease backwards;
+  animation: text-color 0.5s ease backwards;
   font-size: 2.5rem;
 }
 
 @keyframes text-color {
-  0% { color: rgba(0,0,0,0);}
-
+  0% {
+    color: rgba(0, 0, 0, 0);
+  }
 }
 
 .film:hover .bar-chart {
@@ -301,11 +329,41 @@ body {
 .case-page {
   display: flex;
   flex-direction: column;
-  height:100%;
+  height: 100%;
 }
 
 input:checked + label {
   background-color: red;
+}
+
+.arrow-container {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.arrow-tag {
+  text-align: center;
+}
+
+.arrow {
+  /* width:120px; */
+  /* margin:50px auto; */
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  margin-top: 0px;
+  width: 100%;
+  background: white;
+  height: 3px;
+}
+.point {
+  width: 0px;
+  height: 0px;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 15px solid white;
 }
 
 /* ------------------------------ End of Hesham ----------------------------- */
@@ -318,7 +376,7 @@ input:checked + label {
 }
 
 .case-title {
-  margin-top:30px;
+  margin-top: 30px;
   font-size: 36px;
   color: white;
   margin-bottom: 10px;
