@@ -32,6 +32,7 @@
 /* -------------------------------------------------------------------------- */
 :root {
   --netflix-red: #e50914;
+  --gray: #d0d0d0;
 }
 
 
@@ -269,7 +270,7 @@ a:active {
   overflow: hidden;
   white-space: nowrap;
   justify-content: space-between;
-  background-color: grey;
+  background-color: var(--gray);
   transition: all 0.4s ease;
   align-items: center;
   padding: 0 20px;
@@ -323,6 +324,25 @@ a:active {
   font-size: 2.5rem;
 }
 
+.film-title {
+  color: #302628;
+  transition: all 0.4s ease;
+  font-size: 1.2em;
+  flex-shrink: 2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.data-element {
+  float: right;
+  color: var(--netflix-red);
+  font-size: 4vw;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.4s ease;
+}
+
 @keyframes text-color {
   0% {
     color: rgba(0, 0, 0, 0);
@@ -331,6 +351,10 @@ a:active {
 
 .film:hover .bar-chart {
   background-color: var(--netflix-red);
+  color: white;
+}
+
+.film:hover .data-element, .film:hover .film-title {
   color: white;
 }
 
