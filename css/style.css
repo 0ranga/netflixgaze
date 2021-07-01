@@ -79,6 +79,15 @@ a {
   z-index: 1;
 }
 
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo a {
+  display: flex;
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -189,13 +198,27 @@ a {
   opacity: 100%;
   height: auto;
   filter: blur(10px);
-  transition: 0.3s ease-in-out;
+  transition: 0.8s cubic-bezier(0.22, 1, 0.36, 1);
   will-change: filter;
 }
 
-.project img:hover {
+/* .project img:hover {
   filter: blur(0px);
 }
+
+.project-caption:hover h2 {
+  opacity: 1;
+  transform: scale(1.4);
+} */
+
+.project:hover img {
+  filter: blur(0px);
+}
+.project:hover .project-caption h2 {
+  opacity: 1;
+  transform: scale(1.4);
+}
+
 
 .project-caption {
   font-size: 14px;
@@ -208,16 +231,10 @@ a {
 
 .project-caption h2 {
   transform-origin: 0% 0%;
-  transition: all 0.9s ease-in;
+  transition: all 0.9s cubic-bezier(0.22, 1, 0.36, 1);
   opacity: 30%;
 }
 
-.project-caption:hover h2 {
-  /* display: flex; */
-  opacity: 1;
-  transform: scale(1.4);
-  /* font-size: 24px; */
-}
 
 .footer {
   background-color: black;
@@ -236,6 +253,20 @@ a {
   height: 0.5px;
   border-top: 1px solid lightgrey;
 }
+
+/* -------------------------------------------------------------------------- */
+/*                                  p5 sketch                                 */
+/* -------------------------------------------------------------------------- */
+
+#myContainer {
+  height: 30vw;
+}
+
+#myContainer canvas {
+  margin: auto;
+  display: block;
+}
+
 /* -------------------------------------------------------------------------- */
 /*                                   Hesham                                   */
 /* -------------------------------------------------------------------------- */

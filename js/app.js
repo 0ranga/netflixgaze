@@ -175,7 +175,7 @@ function extractArrayFromFilmData(){
     let line = url.searchParams.get("line");
     let column = url.searchParams.get("column");
 
-    soustitre.innerHTML = `Top 5 des recommandations en février 2021<br/>Position : Ligne ${parseInt(line)+0} - Colonne ${parseInt(column)+1}`
+    soustitre.innerHTML = `Top 5 of most recommended content in February 2021<br/>Position : Line ${parseInt(line)+0} - Column ${parseInt(column)+1}`
 
     return filmData[line][column];
 }
@@ -254,6 +254,6 @@ for (let i = 0; i < (filmOfCurrentPage.length < 5 ? filmOfCurrentPage.length : 5
     viz.appendChild(filmOfCurrentPage[i].filmTag);
 
     // filmOfCurrentPage[i].filmTag.style.width = filmOfCurrentPage[i].count/max * 100 +"%";
-    filmOfCurrentPage[i].filmTag.querySelector('.bar-chart').style.width = filmOfCurrentPage[i].count/max * 100 +"%";
+    filmOfCurrentPage[i].filmTag.querySelector('.bar-chart').style.width = filmOfCurrentPage[i].count/max * 90 +"%";
 
 }

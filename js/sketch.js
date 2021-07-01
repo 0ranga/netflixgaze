@@ -10,15 +10,18 @@ function preload() {
 }
 
 function setup() {
-  img.resize(parent.offsetWidth, 0);
-  let myCanvas = createCanvas(parent.offsetWidth, img.height);
+  img.resize(0, parent.offsetHeight);
+  // let myCanvas = createCanvas(parent.offsetWidth, img.height);
+  let myCanvas = createCanvas(img.width, parent.offsetHeight);
   myCanvas.parent('myContainer');
   image(img, 0, 0);
 }
 
 function windowResized() {
-  img.resize(parent.offsetWidth, 0);
-  resizeCanvas(parent.offsetWidth, img.height);
+  // img.resize(parent.offsetWidth, 0);
+  // resizeCanvas(parent.offsetWidth, img.height);
+  resizeCanvas(img.width, parent.offsetHeight);
+  img.resize(0, parent.offsetHeight);
   image(img, 0, 0);
 }
 
