@@ -133,6 +133,7 @@ a {
 
 .button2:hover {
   border-color: white;
+  background-color: var(--netflix-red);
   color: white;
 }
 
@@ -152,11 +153,11 @@ a {
   opacity: 50%;
 }
 
-a:active {
+/* a:active {
   color: red;
   background-color: black;
   border: 1px solid red;
-}
+} */
 
 .columns {
   display: flex;
@@ -376,7 +377,12 @@ body {
 input:checked + label {
   color: white;
   border-color: white;
+  background-color: var(--netflix-red);
 }
+
+/**
+ * Arrow
+ */
 
 .arrow-container {
   margin-top: 30px;
@@ -385,6 +391,7 @@ input:checked + label {
 
 .arrow-tag {
   text-align: center;
+  animation: arrow-tag-appear 0.5s 1.5s cubic-bezier(0.22, 1, 0.36, 1) backwards;
 }
 
 .arrow {
@@ -392,6 +399,8 @@ input:checked + label {
   /* margin:50px auto; */
   display: flex;
   align-items: center;
+  overflow: hidden;
+  animation: arrow-grow 2s 1.8s cubic-bezier(0.22, 1, 0.36, 1) backwards;
 }
 
 .line {
@@ -399,6 +408,7 @@ input:checked + label {
   width: 100%;
   background: white;
   height: 3px;
+  
 }
 .point {
   width: 0px;
@@ -406,6 +416,24 @@ input:checked + label {
   border-top: 7px solid transparent;
   border-bottom: 7px solid transparent;
   border-left: 15px solid white;
+}
+
+@keyframes arrow-tag-appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes arrow-grow {
+  0% {
+    width:0%;
+  }
+  100% {
+    width:100%;
+  }
 }
 
 /* ------------------------------ End of Hesham ----------------------------- */
