@@ -175,7 +175,7 @@ function extractArrayFromFilmData(){
     let line = url.searchParams.get("line");
     let column = url.searchParams.get("column");
 
-    soustitre.innerText = `Que me propose Netflix en case ${parseInt(line)+0}:${parseInt(column)+1} ?`
+    soustitre.innerHTML = `Top 5 des recommandations en février 2021<br/>Position : Ligne ${parseInt(line)+0} - Colonne ${parseInt(column)+1}`
 
     return filmData[line][column];
 }
