@@ -18,7 +18,7 @@ netflix id,count,line,column,imdb id,title,production (N = Netflix / O = Other),
 81025696,7,0,0,tt10813940,Ginny & Georgia,N,serie,2021–,25723,7.4,https://m.media-amazon.com/images/M/MV5BMTQ2ZWFlNmEtNWYyYy00Yjk1LWIxMTEtMWVkM2NlMTEzOGI2XkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_SX300.jpg
 81210670,7,0,0,tt6878306,News of the World,N,movie,2020,57935,6.8,https://m.media-amazon.com/images/M/MV5BMDNlNmVlNDItMjE3Yi00ZTA3LWIyOTktNDhhMGFlZjk5ZDQ0XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_SX300.jpg
 70196145,6,0,0,tt1826940,New Girl,O,serie,2011–2018,168551,7.7,https://m.media-amazon.com/images/M/MV5BMjA0MDc1NTk0Ml5BMl5BanBnXkFtZTgwMTk2ODA5NDM@._V1_SX300.jpg
-81059918,6,0,0,tt11698630,Crazy About Her,--,movie,2021,3718,6.6,https://m.media-amazon.com/images/M/MV5BZGNiN2MxZTUtYmUyMi00NDBiLTgzM2YtODUzNzQyODJlOWMwXkEyXkFqcGdeQXVyNjEwNTM2Mzc@._V1_SX300.jpg
+81059918,6,0,0,,undefined,--,,,,,
 81212484,6,0,0,tt13669344,Passing Pécho: The Carrots Are Cooked,O,movie,2021,433,4.5,https://m.media-amazon.com/images/M/MV5BMzVhZTRiYjMtMmUzMi00ZmZlLWEzMDYtNTFmYTc4NjNhZWZiXkEyXkFqcGdeQXVyMTAzMDU1MTYy._V1_SX300.jpg
 81350429,6,0,0,tt9893250,I Care a Lot,N,movie,2020,81803,6.3,https://m.media-amazon.com/images/M/MV5BYWU2ZTRhNDMtMWYxMC00ZTVkLThjZmItZGY4MGU0YmZlMjJlXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg
 81351075,6,0,0,,undefined,--,,,,,
@@ -30,7 +30,7 @@ netflix id,count,line,column,imdb id,title,production (N = Netflix / O = Other),
 81351074,5,0,0,tt8179402,Fate: The Winx Saga,N,serie,2021–,20158,7.0,https://m.media-amazon.com/images/M/MV5BMzEyYzBhODYtZjZlOC00MTM4LWIxMjQtMTRhZjA5ODM4ZWI2XkEyXkFqcGdeQXVyODQwODA1MjY@._V1_SX300.jpg
 80074249,4,0,0,tt4179452,The Last Kingdom,N,serie,2015–,63612,8.4,https://m.media-amazon.com/images/M/MV5BMjE1MzYzNjk3OF5BMl5BanBnXkFtZTgwMzk0MzYwNzE@._V1_SX300.jpg
 80133335,4,0,0,tt4277922,Call My Agent,O,serie,2015–,4413,8.3,https://m.media-amazon.com/images/M/MV5BMzRmYTQ2YzctNTc3YS00ZmQ2LTk3ODEtMjg5NWE1ZDkwMTg1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg
-80237990,4,0,0,tt10551256,Age of Samurai: Battle for Japan,--,series,2021–,2458,7.4,https://m.media-amazon.com/images/M/MV5BOThiNjMyMzMtYzI5YS00ZGUzLTgwMWQtYzM3NTZlOGVmOWI0XkEyXkFqcGdeQXVyNjEwNTM2Mzc@._V1_SX300.jpg
+80237990,4,0,0,,undefined,--,,,,,
 81249660,4,0,0,tt12742136,Street Food: Latin America,N,serie,2020–,677,8.0,https://m.media-amazon.com/images/M/MV5BZDUzNGJjNzItMWIzZC00ZTZiLThhNTAtNjA5NGNkNWRlYmY4XkEyXkFqcGdeQXVyODc0OTEyNDU@._V1_SX300.jpg
 70243420,3,0,0,tt1942683,The Amazing World of Gumball,O,serie,2011–2019,18656,8.2,https://m.media-amazon.com/images/M/MV5BNjdiZjEzZmEtZDc1Yi00NGRhLThmYWItODMyNWM1NGExMzViXkEyXkFqcGdeQXVyMTEwOTMwMjk0._V1_SX300.jpg
 80021955,3,0,0,tt3032476,Better Call Saul,N,serie,2015–,285556,8.7,https://m.media-amazon.com/images/M/MV5BMGE4YzY4NGEtOWYyYS00ZDk2LWExMmMtZDIyODhiMmNlMGE0XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg
@@ -84,11 +84,11 @@ netflix id,count,line,column,imdb id,title,production (N = Netflix / O = Other),
 81011059,1,0,0,tt6581428,Booba,O,serie,2014–,153,7.0,https://m.media-amazon.com/images/M/MV5BNmYyYWQ4OWEtNTNiMC00OGQ2LTlhMzQtNzE3MjExMzg1YWU0XkEyXkFqcGdeQXVyNzMxNjA3OTQ@._V1_SX300.jpg
 81021929,1,0,0,tt9612516,Space Force,N,serie,2020–,39663,6.8,https://m.media-amazon.com/images/M/MV5BNWYwMzE2MGItOTYwYy00YmQyLWE0NGQtZWViMTU4ZTk4ZjQxXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg
 81043571,1,0,0,tt13357722,High-Rise Invasion,N,serie,2021–,445,6.9,https://m.media-amazon.com/images/M/MV5BNTU0ZGYzMjktMWQ2MC00NmRlLTk1YWItZmJkZmRiYzQ1NDE5XkEyXkFqcGdeQXVyMjIwNTI1MTM@._V1_SX300.jpg
-81152839,1,0,0,tt13932598,Canine Intervention,--,series,2021–,724,6.4,https://m.media-amazon.com/images/M/MV5BOTQ1NjJmYmQtZTAxNS00OWI0LWJmNzQtYmY0N2U2MmRiZmExXkEyXkFqcGdeQXVyNjEwNTM2Mzc@._V1_SX300.jpg
+81152839,1,0,0,,undefined,--,,,,,
 81167887,1,0,0,tt3661210,The Dig,N,movie,2021,43,6.7,https://m.media-amazon.com/images/M/MV5BY2RmZmI0NDMtMGQzOC00YWU3LTkwYWUtMDRkNDBjZDg3YTkyXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_SX300.jpg
 81205737,1,0,0,tt13853720,Animals on the Loose: A You vs. Wild Movie,N,movie,2021,650,5.8,https://m.media-amazon.com/images/M/MV5BOTE1ODBmMzMtNWU5ZS00NmIyLTkxMzItMjAyNjY4ZDY0NjEyXkEyXkFqcGdeQXVyMTE5NDQ1MzQ3._V1_SX300.jpg
-81298677,1,0,0,tt13521850,The Netflix Afterparty,--,serie,2020–,315,3.9,https://m.media-amazon.com/images/M/MV5BMzU1ZDU3YzEtMWZjZC00NTJiLThmYTMtYjUzNmE3YmY1ZmIwXkEyXkFqcGdeQXVyNjEwNTM2Mzc@._V1_SX300.jpg
-80237430,1,0,1,tt9182404,Je parle toute seule,--,movie,2016,95,7.8,https://m.media-amazon.com/images/M/MV5BYjcwZjU5ZTctNTA1NC00NjkwLTk4NmEtOTBmMjMyODNlZTI2XkEyXkFqcGdeQXVyODEwMzY4MjQ@._V1_SX300.jpg
+81298677,1,0,0,,undefined,--,,,,,
+80237430,1,0,1,,undefined,--,,,,,
 80227186,1,0,2,tt3283708,Simon,O,movie,2016,57,4.8,https://m.media-amazon.com/images/M/MV5BMmE5YmZmYjgtZjhmYy00YWQ1LWEwNDgtMjk4YWY1MDJjN2QyXkEyXkFqcGdeQXVyMzU5NzU5OQ@@._V1_SX300.jpg
 81154166,1,0,3,tt6717058,Grizzy and the Lemmings,O,serie,2017–,213,6.7,https://m.media-amazon.com/images/M/MV5BZTkxYjI2MDMtNjdhMi00NTFkLTgxNTgtOWEzNmY2ODJlZDU3XkEyXkFqcGdeQXVyMTA1NTQ5Nzcz._V1_SX300.jpg
 81280792,1,0,4,tt10650946,Ninjago,O,serie,2019–,124,7.9,https://m.media-amazon.com/images/M/MV5BMGNiYTNlY2YtMWMyMi00NmRkLTlhNGMtZDkwYTNjZThiY2RiXkEyXkFqcGdeQXVyODAzNzI4Njg@._V1_SX300.jpg
@@ -123,7 +123,7 @@ netflix id,count,line,column,imdb id,title,production (N = Netflix / O = Other),
 70097577,3,1,0,tt0448157,Hancock,O,movie,2008,430850,6.4,https://m.media-amazon.com/images/M/MV5BMTgyMzc4ODU3NV5BMl5BanBnXkFtZTcwNjk5Mzc1MQ@@._V1_SX300.jpg
 80192577,3,1,0,tt6470396,Champions,N,serie,2018,2711,6.0,https://m.media-amazon.com/images/M/MV5BNDFkNThiZDAtYzYyNC00MDllLWI0ZjAtNDQyMzY4MGNmMGM3XkEyXkFqcGdeQXVyNjMxNzcwOTI@._V1_SX300.jpg
 80216834,3,1,0,tt1880399,Kodachrome,N,movie,2017,10217,6.8,https://m.media-amazon.com/images/M/MV5BMjIxMTk3MzY2MV5BMl5BanBnXkFtZTgwNjQ5NzQxNTM@._V1_SX300.jpg
-80011358,2,1,0,tt2309302,My Little Monster,--,serie,2012,2922,7.3,https://m.media-amazon.com/images/M/MV5BYmY3NTgxYmMtZmZkZC00NzM5LTk3NWYtMGYxNGU1MmVlZjMyXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_SX300.jpg
+80011358,2,1,0,,undefined,--,,,,,
 81002769,2,1,0,tt9184982,Tribes of Europa,N,serie,2021–,8531,6.8,https://m.media-amazon.com/images/M/MV5BMGJjOGJlMGYtZGFjZC00MDliLWFlMjgtZTYwNDI0ZWQ3MTAxXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_SX300.jpg
 81005492,2,1,0,tt8629748,Spenser Confidential,N,movie,2020,48609,6.2,https://m.media-amazon.com/images/M/MV5BMTdkOTEwYjMtNDA1YS00YzVlLTg0NWUtMmQzNDZhYWUxZmIyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg
 81074673,2,1,0,tt13842562,Pelé,N,movie,2021,2514,7.0,https://m.media-amazon.com/images/M/MV5BODJmYTg4NTEtYTU0Mi00YjQ0LTkyYzEtMTU4MTM2ZWY3NjY4XkEyXkFqcGdeQXVyNjEwNTM2Mzc@._V1_SX300.jpg
@@ -155,7 +155,7 @@ netflix id,count,line,column,imdb id,title,production (N = Netflix / O = Other),
 80097141,11,1,1,tt5516154,Godless,N,serie,2017,43754,8.3,https://m.media-amazon.com/images/M/MV5BMTY0NzkxNDcxNF5BMl5BanBnXkFtZTgwOTI5ODM5MzI@._V1_SX300.jpg
 80232398,11,1,1,tt8740790,Bridgerton,N,serie,2020–,N/A,N/A,https://m.media-amazon.com/images/M/MV5BYjIxMzZhMTMtNDQ1Mi00OTMwLTk2M2ItYzA0YmNjNDFlOTdhXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg
 80219707,10,1,1,tt8064302,Dead to Me,N,serie,2019–,40497,8.1,https://m.media-amazon.com/images/M/MV5BNTcyOTA3ZWUtOWEwMy00YjI5LWIyNjctNTAyYjI5ZmE0NGI4XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg
-80011358,9,1,1,tt2309302,My Little Monster,--,serie,2012,2922,7.3,https://m.media-amazon.com/images/M/MV5BYmY3NTgxYmMtZmZkZC00NzM5LTk3NWYtMGYxNGU1MmVlZjMyXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_SX300.jpg
+80011358,9,1,1,,undefined,--,,,,,
 80133335,9,1,1,tt4277922,Call My Agent,O,serie,2015–,4413,8.3,https://m.media-amazon.com/images/M/MV5BMzRmYTQ2YzctNTc3YS00ZmQ2LTk3ODEtMjg5NWE1ZDkwMTg1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg
 70077557,8,1,1,tt0425061,Get Smart,O,movie,2008,203746,6.5,https://m.media-amazon.com/images/M/MV5BMTY0NzQ4MDU0NV5BMl5BanBnXkFtZTcwMzA2NzQ2MQ@@._V1_SX300.jpg
 81030842,8,1,1,tt9354842,To All the Boys: P.S. I Still Love You,N,movie,2020,17817,6.0,https://m.media-amazon.com/images/M/MV5BZjMwNDQ4NzMtOThmZi00NmMyLThkMWItMTA3MTg2YjdiZDRmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg
@@ -179,7 +179,7 @@ netflix id,count,line,column,imdb id,title,production (N = Netflix / O = Other),
 70205012,3,1,1,tt0409591,Naruto,O,serie,2002–2007,62401,8.3,https://m.media-amazon.com/images/M/MV5BZmQ5NGFiNWEtMmMyMC00MDdiLTg4YjktOGY5Yzc2MDUxMTE1XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg
 80026692,3,1,1,tt0283226,Totally Spies!,O,serie,2001–2014,7992,7.0,https://m.media-amazon.com/images/M/MV5BMTI3NTQxNDA1MV5BMl5BanBnXkFtZTcwMzI5ODYyMQ@@._V1_SX300.jpg
 80244296,3,1,1,tt10584608,Teenage Bounty Hunters,N,serie,2020–,5283,7.7,https://m.media-amazon.com/images/M/MV5BOTg3YjU0NGUtMTFhYi00OWMwLThmOGYtYTg5MDJhMTdmMWIwXkEyXkFqcGdeQXVyNjEwNTM2Mzc@._V1_SX300.jpg
-81131714,3,1,1,tt3339966,Unbreakable Kimmy Schmidt,--,serie,2015–2019,59643,7.6,https://m.media-amazon.com/images/M/MV5BMTgyNTQyNjUwN15BMl5BanBnXkFtZTgwNjMwNjUzNzM@._V1_SX300.jpg
+81131714,3,1,1,,undefined,--,,,,,
 81210670,3,1,1,tt6878306,News of the World,N,movie,2020,57935,6.8,https://m.media-amazon.com/images/M/MV5BMDNlNmVlNDItMjE3Yi00ZTA3LWIyOTktNDhhMGFlZjk5ZDQ0XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_SX300.jpg
 60024959,2,1,1,tt0283832,8 Women,O,movie,2002,28230,7.1,https://m.media-amazon.com/images/M/MV5BMTJkYTg4N2MtMzcwMy00ZjFiLWFlNzItMmJhMTllZjI2YjRlXkEyXkFqcGdeQXVyNzA5NjUyNjM@._V1_SX300.jpg
 70028883,2,1,1,tt0347149,Howl's Moving Castle,O,movie,2004,307252,8.2,https://m.media-amazon.com/images/M/MV5BNmM4YTFmMmItMGE3Yy00MmRkLTlmZGEtMzZlOTQzYjk3MzA2XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg
@@ -223,7 +223,7 @@ netflix id,count,line,column,imdb id,title,production (N = Netflix / O = Other),
 80091140,8,1,2,tt2361317,Live by Night,O,movie,2016,51407,6.4,https://m.media-amazon.com/images/M/MV5BMjc3MDIyMjgzNl5BMl5BanBnXkFtZTgwMzUxOTg3MDI@._V1_SX300.jpg
 81005492,8,1,2,tt8629748,Spenser Confidential,N,movie,2020,48609,6.2,https://m.media-amazon.com/images/M/MV5BMTdkOTEwYjMtNDA1YS00YzVlLTg0NWUtMmQzNDZhYWUxZmIyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg
 81280998,8,1,2,,undefined,--,,,,,
-70136102,7,1,2,tt0285331,24,--,series,2001–2010,173402,8.3,https://m.media-amazon.com/images/M/MV5BMTg5OTkyNzA0NF5BMl5BanBnXkFtZTcwMDYyMDUwMg@@._V1_SX300.jpg
+70136102,7,1,2,,undefined,--,,,,,
 80095697,7,1,2,tt5363918,Disenchantment,N,serie,2018–,39505,7.2,https://m.media-amazon.com/images/M/MV5BMzlkYzk0YzItM2I0ZC00NmE5LTljMGYtNTY2ZTVhMzA5OWJjXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg
 80133335,7,1,2,tt4277922,Call My Agent,O,serie,2015–,4413,8.3,https://m.media-amazon.com/images/M/MV5BMzRmYTQ2YzctNTc3YS00ZmQ2LTk3ODEtMjg5NWE1ZDkwMTg1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg
 81047664,7,1,2,tt10971022,The Crew,N,serie,2021–,3562,6.6,https://m.media-amazon.com/images/M/MV5BN2JjZTdmMGQtOWU5NC00MTdjLTlkMjgtMzBjNDQ3MDFmZmE0XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg
@@ -241,7 +241,7 @@ netflix id,count,line,column,imdb id,title,production (N = Netflix / O = Other),
 60027106,2,1,2,tt0097814,Kiki's Delivery Service,O,movie,1989,112431,7.8,https://m.media-amazon.com/images/M/MV5BOTc0ODM1Njk1NF5BMl5BanBnXkFtZTcwMDI5OTEyNw@@._V1_SX300.jpg
 70259338,2,1,2,tt1988386,Miss Fisher's Murder Mysteries,O,serie,2012–2015,12717,8.3,https://m.media-amazon.com/images/M/MV5BNjExODcxN2ItNmNlZS00NGM1LWJkN2UtNjIwNWI4ZWM3YmYyXkEyXkFqcGdeQXVyMjExMjk0ODk@._V1_SX300.jpg
 70300472,2,1,2,tt2098220,Hunter x Hunter,O,serie,2011–2014,44158,8.9,https://m.media-amazon.com/images/M/MV5BZjNmZDhkN2QtNDYyZC00YzJmLTg0ODUtN2FjNjhhMzE3ZmUxXkEyXkFqcGdeQXVyNjc2NjA5MTU@._V1_SX300.jpg
-80015795,2,1,2,tt2822742,3 Hearts,--,movie,2014,2297,5.9,https://m.media-amazon.com/images/M/MV5BMjAxOTY1MDg2N15BMl5BanBnXkFtZTgwNDQ3OTI0NDE@._V1_SX300.jpg
+80015795,2,1,2,,undefined,--,,,,,
 80025678,2,1,2,tt4786824,The Crown,N,serie,2016–,112769,8.7,https://m.media-amazon.com/images/M/MV5BNGI1ODkzZDQtZTYxYS00MTg1LWFlY2QtMTM5MGNhNWRhYmVmXkEyXkFqcGdeQXVyNjU2ODM5MjU@._V1_SX300.jpg
 80026692,2,1,2,tt0283226,Totally Spies!,O,serie,2001–2014,7992,7.0,https://m.media-amazon.com/images/M/MV5BMTI3NTQxNDA1MV5BMl5BanBnXkFtZTcwMzI5ODYyMQ@@._V1_SX300.jpg
 80095532,2,1,2,tt5339440,One Day at a Time,N,serie,2017–,11432,8.2,https://m.media-amazon.com/images/M/MV5BMTU2OTQ5NDY5Nl5BMl5BanBnXkFtZTgwNTE2NzU2NDM@._V1_SX300.jpg
@@ -260,12 +260,12 @@ netflix id,count,line,column,imdb id,title,production (N = Netflix / O = Other),
 80200267,1,1,2,tt6412452,The Ballad of Buster Scruggs,N,movie,2018,105643,7.3,https://m.media-amazon.com/images/M/MV5BYjRkYTI3M2EtZWQ4Ny00OTA2LWFmMTMtY2E4MTEyZmNjOTMxXkEyXkFqcGdeQXVyNDg4NjY5OTQ@._V1_SX300.jpg
 80200571,1,1,2,tt1860242,The Highwaymen,N,movie,2019,64901,6.9,https://m.media-amazon.com/images/M/MV5BZmM5Y2QzOGQtNTdjZS00NDVhLThkYjItZjZiMjk4YjM0ZTUzXkEyXkFqcGdeQXVyNDg4NjY5OTQ@._V1_SX300.jpg
 80209379,1,1,2,tt8115560,Tidying Up with Marie Kondo,N,serie,2019–,2567,6.6,https://m.media-amazon.com/images/M/MV5BYjQwODNjMGMtOWU3Yy00M2I0LThhOTMtZGQyNGMxNTM5YjExXkEyXkFqcGdeQXVyOTA1ODU0Mzc@._V1_SX300.jpg
-81131714,1,1,2,tt3339966,Unbreakable Kimmy Schmidt,--,serie,2015–2019,59643,7.6,https://m.media-amazon.com/images/M/MV5BMTgyNTQyNjUwN15BMl5BanBnXkFtZTgwNjMwNjUzNzM@._V1_SX300.jpg
+81131714,1,1,2,,undefined,--,,,,,
 81183727,1,1,2,tt13837672,Crime Scene: The Vanishing at the Cecil Hotel,N,serie,2021,12893,5.9,https://m.media-amazon.com/images/M/MV5BN2Y5MzMzYTgtZjVhNy00YTcwLWJhY2MtNzZhNTcyZTIxZTdjXkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_SX300.jpg
 81210670,1,1,2,tt6878306,News of the World,N,movie,2020,57935,6.8,https://m.media-amazon.com/images/M/MV5BMDNlNmVlNDItMjE3Yi00ZTA3LWIyOTktNDhhMGFlZjk5ZDQ0XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_SX300.jpg
 81212484,1,1,2,tt13669344,Passing Pécho: The Carrots Are Cooked,O,movie,2021,433,4.5,https://m.media-amazon.com/images/M/MV5BMzVhZTRiYjMtMmUzMi00ZmZlLWEzMDYtNTFmYTc4NjNhZWZiXkEyXkFqcGdeQXVyMTAzMDU1MTYy._V1_SX300.jpg
 81277950,1,1,2,tt7846844,Enola Holmes,N,movie,2020,86709,6.6,https://m.media-amazon.com/images/M/MV5BZjNkNzk0ZjEtM2M1ZC00MmMxLTlmOWEtNWRlZTc1ZTUyNzY4XkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_SX300.jpg
-81312563,1,1,2,tt4823776,The SpongeBob Movie: Sponge on the Run,--,movie,2020,12568,6.0,https://m.media-amazon.com/images/M/MV5BOGYxYzZkMWQtNjJkMy00NTlkLWExNWMtOTNhMTg4MDcxNmU3XkEyXkFqcGdeQXVyMDk5Mzc5MQ@@._V1_SX300.jpg
+81312563,1,1,2,,undefined,--,,,,,
 80057281,69,1,3,tt4574334,Stranger Things,N,serie,2016–,730656,8.8,https://m.media-amazon.com/images/M/MV5BZGExYjQzNTQtNGNhMi00YmY1LTlhY2MtMTRjODg3MjU4YTAyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg
 80113647,55,1,3,tt5296406,Designated Survivor,N,serie,2016–2019,69974,7.5,https://m.media-amazon.com/images/M/MV5BZTdkMGNhZmYtNzAxMy00NWJkLThkN2MtNjVkNzY0NzVlMWQ4XkEyXkFqcGdeQXVyMTA0MDgzNTE1._V1_SX300.jpg
 80117038,46,1,3,tt6524350,Big Mouth,N,serie,2017–,48173,8.0,https://m.media-amazon.com/images/M/MV5BYzRlYzczMTQtNjdjZi00NzU3LTliZWEtMDRlNzhiZTVmYmNjXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg
@@ -279,9 +279,9 @@ netflix id,count,line,column,imdb id,title,production (N = Netflix / O = Other),
 70281562,13,1,3,tt2467372,Brooklyn Nine-Nine,O,serie,2013–,189020,8.4,https://m.media-amazon.com/images/M/MV5BNzVkYWY4NzYtMWFlZi00YzkwLThhZDItZjcxYTU4ZTMzMDZmXkEyXkFqcGdeQXVyODUxOTU0OTg@._V1_SX300.jpg
 80106138,10,1,3,tt4969044,Riphagen,O,movie,2016,5497,7.2,https://m.media-amazon.com/images/M/MV5BNDUxMGE1OGItZTk2OS00NGE4LTllZjItNDk1NGUwYzgwNDU0XkEyXkFqcGdeQXVyMjA5MDA0Mw@@._V1_SX300.jpg
 80994082,10,1,3,tt2531336,Lupin,N,serie,2021–,57563,7.6,https://m.media-amazon.com/images/M/MV5BNzRlNGUzMmEtYTg0Ni00N2U2LTg4YWEtNDdlNmMwYjBlZDQ0XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg
-80011358,8,1,3,tt2309302,My Little Monster,--,serie,2012,2922,7.3,https://m.media-amazon.com/images/M/MV5BYmY3NTgxYmMtZmZkZC00NzM5LTk3NWYtMGYxNGU1MmVlZjMyXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_SX300.jpg
+80011358,8,1,3,,undefined,--,,,,,
 70106454,7,1,3,tt0876563,Ponyo,O,movie,2008,116249,7.7,https://m.media-amazon.com/images/M/MV5BOTc3YmM3N2QtODZkMC00ZDE5LThjMTQtYTljN2Y1YTYwYWJkXkEyXkFqcGdeQXVyODEzNjM5OTQ@._V1_SX300.jpg
-70136102,7,1,3,tt0285331,24,--,series,2001–2010,173402,8.3,https://m.media-amazon.com/images/M/MV5BMTg5OTkyNzA0NF5BMl5BanBnXkFtZTcwMDYyMDUwMg@@._V1_SX300.jpg
+70136102,7,1,3,,undefined,--,,,,,
 70143836,7,1,3,tt0903747,Breaking Bad,O,serie,2008–2013,1346693,9.5,https://m.media-amazon.com/images/M/MV5BMjhiMzgxZTctNDc1Ni00OTIxLTlhMTYtZTA3ZWFkODRkNmE2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg
 80106762,7,1,3,tt3393786,Jack Reacher: Never Go Back,O,movie,2016,141285,6.1,https://m.media-amazon.com/images/M/MV5BODQ3ODQ3NDI4NV5BMl5BanBnXkFtZTgwMDY1Mzk5OTE@._V1_SX300.jpg
 80209379,6,1,3,tt8115560,Tidying Up with Marie Kondo,N,serie,2019–,2567,6.6,https://m.media-amazon.com/images/M/MV5BYjQwODNjMGMtOWU3Yy00M2I0LThhOTMtZGQyNGMxNTM5YjExXkEyXkFqcGdeQXVyOTA1ODU0Mzc@._V1_SX300.jpg
@@ -312,7 +312,7 @@ netflix id,count,line,column,imdb id,title,production (N = Netflix / O = Other),
 80116204,2,1,3,tt4682786,Collateral Beauty,O,movie,2016,86288,6.8,https://m.media-amazon.com/images/M/MV5BMTQ5ODE4MTY2NV5BMl5BanBnXkFtZTgwMzM2NzEzMDI@._V1_SX300.jpg
 80142090,2,1,3,tt3890160,Baby Driver,O,movie,2017,425690,7.6,https://m.media-amazon.com/images/M/MV5BMjM3MjQ1MzkxNl5BMl5BanBnXkFtZTgwODk1ODgyMjI@._V1_SX300.jpg
 80240027,2,1,3,tt9077530,Virgin River,N,serie,2019–,8840,7.5,https://m.media-amazon.com/images/M/MV5BMzc3MDA0NjUtYzhhZi00YjU2LWI4ODctMzE2MmYwMzYxMjU4XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg
-81019775,2,1,3,tt9308682,The Liberator,--,serie,2020–,4251,7.6,https://m.media-amazon.com/images/M/MV5BN2MyMGQ2ZDctYTJiNi00NmZlLWE4NzAtNTA5NTE3YTIxMTlhXkEyXkFqcGdeQXVyMTAzMzc3MDIw._V1_SX300.jpg
+81019775,2,1,3,,undefined,--,,,,,
 81254224,2,1,3,tt11464826,The Social Dilemma,N,movie,2020,39192,7.8,https://m.media-amazon.com/images/M/MV5BNDVhMGNhYjEtMDkwZi00NmQ5LWFkODktYzhiYjY2NTZmYTNhXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg
 60023992,1,1,3,tt0216625,Code Unknown,O,movie,2000,11876,7.2,https://m.media-amazon.com/images/M/MV5BZWM1YzdkNjYtNTI4NS00ZTU1LTgxMzYtNDAzOGU2N2FhZDdlXkEyXkFqcGdeQXVyMjYyNzc4MQ@@._V1_SX300.jpg
 70108777,1,1,3,tt0361748,Inglourious Basterds,O,movie,2009,1210053,8.3,https://m.media-amazon.com/images/M/MV5BOTJiNDEzOWYtMTVjOC00ZjlmLWE0NGMtZmE1OWVmZDQ2OWJhXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_SX300.jpg
@@ -325,7 +325,7 @@ netflix id,count,line,column,imdb id,title,production (N = Netflix / O = Other),
 80202877,1,1,3,tt6571548,The White Tiger,N,movie,2021,141,6.6,https://m.media-amazon.com/images/M/MV5BMDVkMDRkMzItN2EyYS00ZTI5LTljYzgtNzRmZDQ0OTQ3M2VjXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_SX300.jpg
 80244996,1,1,3,tt10050778,Street Food,N,serie,2019–,1381,8.0,https://m.media-amazon.com/images/M/MV5BMjI5NmJjY2MtNDFlZi00ZjZjLTk0ZjAtMjEyYjFkMTUwMzY4XkEyXkFqcGdeQXVyNjI4ODE4Mjk@._V1_SX300.jpg
 81002769,1,1,3,tt9184982,Tribes of Europa,N,serie,2021–,8531,6.8,https://m.media-amazon.com/images/M/MV5BMGJjOGJlMGYtZGFjZC00MDliLWFlMjgtZTYwNDI0ZWQ3MTAxXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_SX300.jpg
-81025701,1,1,3,tt13651632,Night Stalker: The Hunt for a Serial Killer,--,serie,2021,13056,7.5,https://m.media-amazon.com/images/M/MV5BNWM1ODNlZDAtY2U0Yi00YTAyLTgwZWYtNTc2OTFkNDYzZjAxXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg
+81025701,1,1,3,,undefined,--,,,,,
 81281872,1,1,3,tt11958344,A Whisker Away,N,movie,2020,3882,6.7,https://m.media-amazon.com/images/M/MV5BNDI5ODBhYzMtNDc4Yi00NjEwLWJiZWUtMGE2Mzc4MGVjN2E0XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg
 80025172,66,1,4,tt2707408,Narcos,N,serie,2015–2017,332071,8.8,https://m.media-amazon.com/images/M/MV5BNmFjODU3YzgtMGUwNC00ZGI3LWFkZjQtMjkxZDc3NmQ1MzcyXkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_SX300.jpg
 70242311,56,1,4,tt2372162,Orange Is the New Black,N,serie,2013–2019,271097,8.1,https://m.media-amazon.com/images/M/MV5BYjYyM2FmMmMtZDgyZi00NGU3LWI3NzktODllZDY0YzQyNzgyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg
@@ -350,7 +350,7 @@ netflix id,count,line,column,imdb id,title,production (N = Netflix / O = Other),
 80117038,7,1,4,tt6524350,Big Mouth,N,serie,2017–,48173,8.0,https://m.media-amazon.com/images/M/MV5BYzRlYzczMTQtNjdjZi00NzU3LTliZWEtMDRlNzhiZTVmYmNjXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg
 81167887,7,1,4,tt3661210,The Dig,N,movie,2021,43,6.7,https://m.media-amazon.com/images/M/MV5BY2RmZmI0NDMtMGQzOC00YWU3LTkwYWUtMDRkNDBjZDg3YTkyXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_SX300.jpg
 81210670,7,1,4,tt6878306,News of the World,N,movie,2020,57935,6.8,https://m.media-amazon.com/images/M/MV5BMDNlNmVlNDItMjE3Yi00ZTA3LWIyOTktNDhhMGFlZjk5ZDQ0XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_SX300.jpg
-70136102,6,1,4,tt0285331,24,--,series,2001–2010,173402,8.3,https://m.media-amazon.com/images/M/MV5BMTg5OTkyNzA0NF5BMl5BanBnXkFtZTcwMDYyMDUwMg@@._V1_SX300.jpg
+70136102,6,1,4,,undefined,--,,,,,
 489248,5,1,4,tt0060390,Fahrenheit 451,O,movie,1966,39961,7.2,https://m.media-amazon.com/images/M/MV5BZDkwYWY3YWQtNWJiZC00Mzk1LTg0YTgtZWZmZDk2MzQzODRjXkEyXkFqcGdeQXVyNjMwMjk0MTQ@._V1_SX300.jpg
 70230640,5,1,4,tt1853728,Django Unchained,O,movie,2012,1295658,8.4,https://m.media-amazon.com/images/M/MV5BMjIyNTQ5NjQ1OV5BMl5BanBnXkFtZTcwODg1MDU4OA@@._V1_SX300.jpg
 80232398,5,1,4,tt8740790,Bridgerton,N,serie,2020–,N/A,N/A,https://m.media-amazon.com/images/M/MV5BYjIxMzZhMTMtNDQ1Mi00OTMwLTk2M2ItYzA0YmNjNDFlOTdhXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg
@@ -388,7 +388,7 @@ netflix id,count,line,column,imdb id,title,production (N = Netflix / O = Other),
 80095697,1,1,4,tt5363918,Disenchantment,N,serie,2018–,39505,7.2,https://m.media-amazon.com/images/M/MV5BMzlkYzk0YzItM2I0ZC00NmE5LTljMGYtNTY2ZTVhMzA5OWJjXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg
 80124522,1,1,4,tt5580146,Maniac,N,serie,2018,59250,7.8,https://m.media-amazon.com/images/M/MV5BMDMwOTgyNzYtNWI2Zi00MDcwLWEyNmUtMGQ5YzA3ZTljMTA2XkEyXkFqcGdeQXVyNjU2ODM5MjU@._V1_SX300.jpg
 80244996,1,1,4,tt10050778,Street Food,N,serie,2019–,1381,8.0,https://m.media-amazon.com/images/M/MV5BMjI5NmJjY2MtNDFlZi00ZjZjLTk0ZjAtMjEyYjFkMTUwMzY4XkEyXkFqcGdeQXVyNjI4ODE4Mjk@._V1_SX300.jpg
-81019775,1,1,4,tt9308682,The Liberator,--,serie,2020–,4251,7.6,https://m.media-amazon.com/images/M/MV5BN2MyMGQ2ZDctYTJiNi00NmZlLWE4NzAtNTA5NTE3YTIxMTlhXkEyXkFqcGdeQXVyMTAzMzc3MDIw._V1_SX300.jpg
+81019775,1,1,4,,undefined,--,,,,,
 81028990,1,1,4,tt11307814,Red Dot,N,movie,2021,10308,5.5,https://m.media-amazon.com/images/M/MV5BYzhhN2U5NWQtNDA2Yi00ZDc5LWFlMDMtYjRkZmU5NGM5MzA4XkEyXkFqcGdeQXVyODc0OTEyNDU@._V1_SX300.jpg
 81040397,1,1,4,tt10676012,To All the Boys: Always and Forever,N,movie,2021,15730,6.3,https://m.media-amazon.com/images/M/MV5BZTBkNDE1MTAtZDZjMi00ZjMzLWEwMjYtOTFlNjVmMjA1MWE0XkEyXkFqcGdeQXVyNjEwNTM2Mzc@._V1_SX300.jpg
 81212484,1,1,4,tt13669344,Passing Pécho: The Carrots Are Cooked,O,movie,2021,433,4.5,https://m.media-amazon.com/images/M/MV5BMzVhZTRiYjMtMmUzMi00ZmZlLWEzMDYtNTFmYTc4NjNhZWZiXkEyXkFqcGdeQXVyMTAzMDU1MTYy._V1_SX300.jpg
@@ -410,7 +410,7 @@ netflix id,count,line,column,imdb id,title,production (N = Netflix / O = Other),
 70100378,8,2,0,tt0824747,Changeling,N,movie,2008,233977,7.7,https://m.media-amazon.com/images/M/MV5BOTA1Mzg3NjIxNV5BMl5BanBnXkFtZTcwNzU2NTc5MQ@@._V1_SX300.jpg
 70143836,8,2,0,tt0903747,Breaking Bad,O,serie,2008–2013,1346693,9.5,https://m.media-amazon.com/images/M/MV5BMjhiMzgxZTctNDc1Ni00OTIxLTlhMTYtZTA3ZWFkODRkNmE2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg
 81167887,8,2,0,tt3661210,The Dig,N,movie,2021,43,6.7,https://m.media-amazon.com/images/M/MV5BY2RmZmI0NDMtMGQzOC00YWU3LTkwYWUtMDRkNDBjZDg3YTkyXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_SX300.jpg
-81312563,8,2,0,tt4823776,The SpongeBob Movie: Sponge on the Run,--,movie,2020,12568,6.0,https://m.media-amazon.com/images/M/MV5BOGYxYzZkMWQtNjJkMy00NTlkLWExNWMtOTNhMTg4MDcxNmU3XkEyXkFqcGdeQXVyMDk5Mzc5MQ@@._V1_SX300.jpg
+81312563,8,2,0,,undefined,--,,,,,
 70299043,6,2,0,tt2560140,Attack on Titan,O,serie,2013–,139298,8.8,https://m.media-amazon.com/images/M/MV5BMTY5ODk1NzUyMl5BMl5BanBnXkFtZTgwMjUyNzEyMTE@._V1_SX300.jpg
 80996957,6,2,0,tt8693818,Back Street Girls,N,serie,2018–,467,6.6,https://m.media-amazon.com/images/M/MV5BNTRjNzNkZmMtYzc1YS00MmY1LWJmMTUtYjM1MzU0YzI4OTM2XkEyXkFqcGdeQXVyNDQxNjcxNQ@@._V1_SX300.jpg
 80045948,5,2,0,tt3837246,Assassination Classroom,O,serie,2015–2016,6128,8.0,https://m.media-amazon.com/images/M/MV5BYzI0OWJlMjItYmE1NS00YzE2LWExNDAtMDM3MDA5MzM5NmExXkEyXkFqcGdeQXVyNzA5MDUyODA@._V1_SX300.jpg
@@ -433,7 +433,7 @@ netflix id,count,line,column,imdb id,title,production (N = Netflix / O = Other),
 80217517,3,2,0,tt8878862,Invisible City,N,movie,2021,N/A,N/A,https://m.media-amazon.com/images/M/MV5BNDk2ODNiZTUtNTEyYS00YmMzLTk1NzktNzQ4N2RhMTQyMGE4XkEyXkFqcGdeQXVyMTk2NDE3Mzc@._V1_SX300.jpg
 80240027,3,2,0,tt9077530,Virgin River,N,serie,2019–,8840,7.5,https://m.media-amazon.com/images/M/MV5BMzc3MDA0NjUtYzhhZi00YjU2LWI4ODctMzE2MmYwMzYxMjU4XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg
 81076898,3,2,0,tt11100856,"Love, Guaranteed",N,movie,2020,9210,5.5,https://m.media-amazon.com/images/M/MV5BNDE1MmE4MTktNzU0OS00YjdmLWEyNzYtY2JhNWE4ZWVlYmY5XkEyXkFqcGdeQXVyNjY1MTg4Mzc@._V1_SX300.jpg
-70136102,2,2,0,tt0285331,24,--,series,2001–2010,173402,8.3,https://m.media-amazon.com/images/M/MV5BMTg5OTkyNzA0NF5BMl5BanBnXkFtZTcwMDYyMDUwMg@@._V1_SX300.jpg
+70136102,2,2,0,,undefined,--,,,,,
 70180387,2,2,0,tt1796960,Homeland,O,serie,2011–2020,299926,8.3,https://m.media-amazon.com/images/M/MV5BYjY2ODA0NjYtMzlkMi00ZjY5LThiNjUtNzZjYzgxNjc0MzQzXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg
 70295172,2,2,0,tt2084970,The Imitation Game,O,movie,2014,653217,8.0,https://m.media-amazon.com/images/M/MV5BOTgwMzFiMWYtZDhlNS00ODNkLWJiODAtZDVhNzgyNzJhYjQ4L2ltYWdlXkEyXkFqcGdeQXVyNzEzOTYxNTQ@._V1_SX300.jpg
 70305903,2,2,0,tt0816692,Interstellar,O,movie,2014,1413039,8.6,https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg
@@ -445,7 +445,7 @@ netflix id,count,line,column,imdb id,title,production (N = Netflix / O = Other),
 80234304,2,2,0,tt10048342,The Queen's Gambit,N,serie,2020–,6077,8.9,https://m.media-amazon.com/images/M/MV5BM2EwMmRhMmUtMzBmMS00ZDQ3LTg4OGEtNjlkODk3ZTMxMmJlXkEyXkFqcGdeQXVyMjM5ODk1NDU@._V1_SX300.jpg
 81002196,2,2,0,tt2235695,Rebecca,N,movie,2020,N/A,N/A,https://m.media-amazon.com/images/M/MV5BYjUyY2Y0NDUtZjQ2MC00OWZjLThkMmYtMmNiMTk1ODdjMWFiXkEyXkFqcGdeQXVyMTE5NDkxMA@@._V1_SX300.jpg
 81002769,2,2,0,tt9184982,Tribes of Europa,N,serie,2021–,8531,6.8,https://m.media-amazon.com/images/M/MV5BMGJjOGJlMGYtZGFjZC00MDliLWFlMjgtZTYwNDI0ZWQ3MTAxXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_SX300.jpg
-81025701,2,2,0,tt13651632,Night Stalker: The Hunt for a Serial Killer,--,serie,2021,13056,7.5,https://m.media-amazon.com/images/M/MV5BNWM1ODNlZDAtY2U0Yi00YTAyLTgwZWYtNTc2OTFkNDYzZjAxXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg
+81025701,2,2,0,,undefined,--,,,,,
 81210670,2,2,0,tt6878306,News of the World,N,movie,2020,57935,6.8,https://m.media-amazon.com/images/M/MV5BMDNlNmVlNDItMjE3Yi00ZTA3LWIyOTktNDhhMGFlZjk5ZDQ0XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_SX300.jpg
 70097577,1,2,0,tt0448157,Hancock,O,movie,2008,430850,6.4,https://m.media-amazon.com/images/M/MV5BMTgyMzc4ODU3NV5BMl5BanBnXkFtZTcwNjk5Mzc1MQ@@._V1_SX300.jpg
 70108777,1,2,0,tt0361748,Inglourious Basterds,O,movie,2009,1210053,8.3,https://m.media-amazon.com/images/M/MV5BOTJiNDEzOWYtMTVjOC00ZjlmLWE0NGMtZmE1OWVmZDQ2OWJhXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_SX300.jpg
@@ -479,7 +479,7 @@ netflix id,count,line,column,imdb id,title,production (N = Netflix / O = Other),
 70118779,10,2,1,tt1057500,Invictus,O,movie,2009,145227,7.3,https://m.media-amazon.com/images/M/MV5BMjAyMzExMDM1N15BMl5BanBnXkFtZTcwNTcyMTQ5Mg@@._V1_SX300.jpg
 80026506,10,2,1,,undefined,--,,,,,
 60023642,8,2,1,tt0245429,Spirited Away,O,movie,2001,607891,8.6,https://m.media-amazon.com/images/M/MV5BMjlmZmI5MDctNDE2YS00YWE0LWE5ZWItZDBhYWQ0NTcxNWRhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg
-80200575,8,2,1,tt10795658,Alice in Borderland,--,serie,2020–,16892,7.7,https://m.media-amazon.com/images/M/MV5BODY0NTA5OTMtMDFmYy00NzlmLWE1MWUtYTVmY2E5YjZkNTZkXkEyXkFqcGdeQXVyNjEwNTM2Mzc@._V1_SX300.jpg
+80200575,8,2,1,,undefined,--,,,,,
 80209379,8,2,1,tt8115560,Tidying Up with Marie Kondo,N,serie,2019–,2567,6.6,https://m.media-amazon.com/images/M/MV5BYjQwODNjMGMtOWU3Yy00M2I0LThhOTMtZGQyNGMxNTM5YjExXkEyXkFqcGdeQXVyOTA1ODU0Mzc@._V1_SX300.jpg
 81047664,8,2,1,tt10971022,The Crew,N,serie,2021–,3562,6.6,https://m.media-amazon.com/images/M/MV5BN2JjZTdmMGQtOWU5NC00MTdjLTlkMjgtMzBjNDQ3MDFmZmE0XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg
 81277950,8,2,1,tt7846844,Enola Holmes,N,movie,2020,86709,6.6,https://m.media-amazon.com/images/M/MV5BZjNkNzk0ZjEtM2M1ZC00MmMxLTlmOWEtNWRlZTc1ZTUyNzY4XkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_SX300.jpg
@@ -533,9 +533,9 @@ netflix id,count,line,column,imdb id,title,production (N = Netflix / O = Other),
 80142090,1,2,1,tt3890160,Baby Driver,O,movie,2017,425690,7.6,https://m.media-amazon.com/images/M/MV5BMjM3MjQ1MzkxNl5BMl5BanBnXkFtZTgwODk1ODgyMjI@._V1_SX300.jpg
 80161371,1,2,1,tt5311514,Your Name.,O,movie,2016,182052,8.4,https://m.media-amazon.com/images/M/MV5BODRmZDVmNzUtZDA4ZC00NjhkLWI2M2UtN2M0ZDIzNDcxYThjL2ltYWdlXkEyXkFqcGdeQXVyNTk0MzMzODA@._V1_SX300.jpg
 80200571,1,2,1,tt1860242,The Highwaymen,N,movie,2019,64901,6.9,https://m.media-amazon.com/images/M/MV5BZmM5Y2QzOGQtNTdjZS00NDVhLThkYjItZjZiMjk4YjM0ZTUzXkEyXkFqcGdeQXVyNDg4NjY5OTQ@._V1_SX300.jpg
-80237990,1,2,1,tt10551256,Age of Samurai: Battle for Japan,--,series,2021–,2458,7.4,https://m.media-amazon.com/images/M/MV5BOThiNjMyMzMtYzI5YS00ZGUzLTgwMWQtYzM3NTZlOGVmOWI0XkEyXkFqcGdeQXVyNjEwNTM2Mzc@._V1_SX300.jpg
+80237990,1,2,1,,undefined,--,,,,,
 81002769,1,2,1,tt9184982,Tribes of Europa,N,serie,2021–,8531,6.8,https://m.media-amazon.com/images/M/MV5BMGJjOGJlMGYtZGFjZC00MDliLWFlMjgtZTYwNDI0ZWQ3MTAxXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_SX300.jpg
-81078137,1,2,1,tt13660958,Pretend It's a City,--,series,2021,4942,8.2,https://m.media-amazon.com/images/M/MV5BZDM4YTNkYTQtYTU3ZS00NjgxLTgwMGUtNzU1OWM3ZDNkMTg4XkEyXkFqcGdeQXVyNjEwNTM2Mzc@._V1_SX300.jpg
+81078137,1,2,1,,undefined,--,,,,,
 81167887,1,2,1,tt3661210,The Dig,N,movie,2021,43,6.7,https://m.media-amazon.com/images/M/MV5BY2RmZmI0NDMtMGQzOC00YWU3LTkwYWUtMDRkNDBjZDg3YTkyXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_SX300.jpg
 81205737,1,2,1,tt13853720,Animals on the Loose: A You vs. Wild Movie,N,movie,2021,650,5.8,https://m.media-amazon.com/images/M/MV5BOTE1ODBmMzMtNWU5ZS00NmIyLTkxMzItMjAyNjY4ZDY0NjEyXkEyXkFqcGdeQXVyMTE5NDQ1MzQ3._V1_SX300.jpg
 81210670,1,2,1,tt6878306,News of the World,N,movie,2020,57935,6.8,https://m.media-amazon.com/images/M/MV5BMDNlNmVlNDItMjE3Yi00ZTA3LWIyOTktNDhhMGFlZjk5ZDQ0XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_SX300.jpg
@@ -590,7 +590,7 @@ netflix id,count,line,column,imdb id,title,production (N = Netflix / O = Other),
 81277858,3,2,2,tt10483610,Capitani,N,serie,2019–2020,2747,6.6,https://m.media-amazon.com/images/M/MV5BNzQzMWZmZDctMjMxZS00NzlkLTlkNTYtMmEzOWM0YTFhY2RkXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg
 70019062,2,2,2,tt0087544,Nausicaä of the Valley of the Wind,O,movie,1984,140825,8.1,https://m.media-amazon.com/images/M/MV5BZWFkN2ZhODAtYTNkZS00Y2NjLWIzNDYtNzJjNDNlMzAyNTIyXkEyXkFqcGdeQXVyODEzNjM5OTQ@._V1_SX300.jpg
 70044686,2,2,2,tt0443706,Zodiac,O,movie,2007,429555,7.7,https://m.media-amazon.com/images/M/MV5BN2UwNDc5NmEtNjVjZS00OTI5LWE5YjctMWM3ZjBiZGYwMGI2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg
-70136102,2,2,2,tt0285331,24,--,series,2001–2010,173402,8.3,https://m.media-amazon.com/images/M/MV5BMTg5OTkyNzA0NF5BMl5BanBnXkFtZTcwMDYyMDUwMg@@._V1_SX300.jpg
+70136102,2,2,2,,undefined,--,,,,,
 70295172,2,2,2,tt2084970,The Imitation Game,O,movie,2014,653217,8.0,https://m.media-amazon.com/images/M/MV5BOTgwMzFiMWYtZDhlNS00ODNkLWJiODAtZDVhNzgyNzJhYjQ4L2ltYWdlXkEyXkFqcGdeQXVyNzEzOTYxNTQ@._V1_SX300.jpg
 80002479,2,2,2,tt2442560,Peaky Blinders,N,serie,2013–,285329,8.8,https://m.media-amazon.com/images/M/MV5BMTkzNjEzMDEzMF5BMl5BanBnXkFtZTgwMDI0MjE4MjE@._V1_SX300.jpg
 80026692,2,2,2,tt0283226,Totally Spies!,O,serie,2001–2014,7992,7.0,https://m.media-amazon.com/images/M/MV5BMTI3NTQxNDA1MV5BMl5BanBnXkFtZTcwMzI5ODYyMQ@@._V1_SX300.jpg
@@ -602,7 +602,7 @@ netflix id,count,line,column,imdb id,title,production (N = Netflix / O = Other),
 80202877,2,2,2,tt6571548,The White Tiger,N,movie,2021,141,6.6,https://m.media-amazon.com/images/M/MV5BMDVkMDRkMzItN2EyYS00ZTI5LTljYzgtNzRmZDQ0OTQ3M2VjXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_SX300.jpg
 80244630,2,2,2,tt9698442,Behind Her Eyes,N,serie,2021,38807,7.2,https://m.media-amazon.com/images/M/MV5BMDk2Njg0ZTUtNTFjZS00NzUwLWEwZDQtZTg5MDZiMmJhNGEzXkEyXkFqcGdeQXVyNjEwNTM2Mzc@._V1_SX300.jpg
 81037371,2,2,2,tt8962124,Emily in Paris,N,serie,2020–,11467,7.4,https://m.media-amazon.com/images/M/MV5BYTFjZjQzZDgtOWEyNy00YmY1LTgyYjQtMTBlODUxZTBiZWRkXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg
-81156880,2,2,2,tt11503082,Scissor Seven,--,series,2020–,823,8.1,https://m.media-amazon.com/images/M/MV5BOGM4MTZlZDQtZDdjNC00NGEwLTlhYjktNTY0NDlhYzg3ZmRhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg
+81156880,2,2,2,,undefined,--,,,,,
 70177034,1,2,2,tt0247902,Yu-Gi-Oh!,O,serie,2000–2004,2137,8.3,https://m.media-amazon.com/images/M/MV5BNzhjZDU5NWMtMGMyZS00ZTkyLThjN2MtZWJhNDkxODNlMjJhXkEyXkFqcGdeQXVyMjUyMTE3MTc@._V1_SX300.jpg
 70177057,1,2,2,tt1520211,The Walking Dead,O,serie,2010–,824969,8.2,https://m.media-amazon.com/images/M/MV5BYTUwOTM3ZGUtMDZiNy00M2I3LWI1ZWEtYzhhNGMyZjI3MjBmXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg
 70251519,1,2,2,tt1494191,The Untold History of the United States,O,serie,2012–2013,7584,8.6,https://m.media-amazon.com/images/M/MV5BN2YwNWFmOTItNDY0Mi00Yjg0LWJiZTYtYzdkMmU2YzJhOWMzXkEyXkFqcGdeQXVyNjUyMDk5Nzk@._V1_SX300.jpg
@@ -612,7 +612,7 @@ netflix id,count,line,column,imdb id,title,production (N = Netflix / O = Other),
 80113037,1,2,2,tt6150576,Midnight Diner: Tokyo Stories,N,serie,2016–,2318,8.4,https://m.media-amazon.com/images/M/MV5BZDU5NTNhZTctYTY2MS00NzJjLThlOGYtYzI1ZjFlNjgzMWIyXkEyXkFqcGdeQXVyNjYzMDA4MTI@._V1_SX300.jpg
 80161371,1,2,2,tt5311514,Your Name.,O,movie,2016,182052,8.4,https://m.media-amazon.com/images/M/MV5BODRmZDVmNzUtZDA4ZC00NjhkLWI2M2UtN2M0ZDIzNDcxYThjL2ltYWdlXkEyXkFqcGdeQXVyNTk0MzMzODA@._V1_SX300.jpg
 80189214,1,2,2,tt4555426,Darkest Hour,O,movie,2017,171369,7.4,https://m.media-amazon.com/images/M/MV5BNTU4MjMwOTgyMV5BMl5BanBnXkFtZTgwODQzNjY2NDM@._V1_SX300.jpg
-80237990,1,2,2,tt10551256,Age of Samurai: Battle for Japan,--,series,2021–,2458,7.4,https://m.media-amazon.com/images/M/MV5BOThiNjMyMzMtYzI5YS00ZGUzLTgwMWQtYzM3NTZlOGVmOWI0XkEyXkFqcGdeQXVyNjEwNTM2Mzc@._V1_SX300.jpg
+80237990,1,2,2,,undefined,--,,,,,
 81005492,1,2,2,tt8629748,Spenser Confidential,N,movie,2020,48609,6.2,https://m.media-amazon.com/images/M/MV5BMTdkOTEwYjMtNDA1YS00YzVlLTg0NWUtMmQzNDZhYWUxZmIyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg
 81061734,1,2,2,tt11612120,Sweet Home,N,serie,2020–,N/A,N/A,https://m.media-amazon.com/images/M/MV5BNzNhNTMyYmYtMGE0OS00NTlhLThkNmMtMjE1YTIyNTk1NTA1XkEyXkFqcGdeQXVyNjc3MjQzNTI@._V1_SX300.jpg
 81078393,1,2,2,tt6432466,Moxie,N,movie,2021,15973,6.7,https://m.media-amazon.com/images/M/MV5BNjkwYzY2OTgtYjNiZi00YmNiLTk5YTQtZTQyZjM1YzA1ZmMwXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_SX300.jpg
@@ -641,7 +641,7 @@ netflix id,count,line,column,imdb id,title,production (N = Netflix / O = Other),
 81002196,8,2,3,tt2235695,Rebecca,N,movie,2020,N/A,N/A,https://m.media-amazon.com/images/M/MV5BYjUyY2Y0NDUtZjQ2MC00OWZjLThkMmYtMmNiMTk1ODdjMWFiXkEyXkFqcGdeQXVyMTE5NDkxMA@@._V1_SX300.jpg
 70143811,7,2,3,tt0397442,Gossip Girl,O,serie,2007–2012,146008,7.4,https://m.media-amazon.com/images/M/MV5BNmQ4Zjg1YWYtMTA1Mi00ZGY1LTlmN2ItYTc5ODkzNTFmYWVhXkEyXkFqcGdeQXVyNjQ0OTk1ODg@._V1_SX300.jpg
 70143836,7,2,3,tt0903747,Breaking Bad,O,serie,2008–2013,1346693,9.5,https://m.media-amazon.com/images/M/MV5BMjhiMzgxZTctNDc1Ni00OTIxLTlhMTYtZTA3ZWFkODRkNmE2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg
-70136102,6,2,3,tt0285331,24,--,series,2001–2010,173402,8.3,https://m.media-amazon.com/images/M/MV5BMTg5OTkyNzA0NF5BMl5BanBnXkFtZTcwMDYyMDUwMg@@._V1_SX300.jpg
+70136102,6,2,3,,undefined,--,,,,,
 70143830,6,2,3,tt0898266,The Big Bang Theory,O,serie,2007–2019,687693,8.1,https://m.media-amazon.com/images/M/MV5BY2FmZTY5YTktOWRlYy00NmIyLWE0ZmQtZDg2YjlmMzczZDZiXkEyXkFqcGdeQXVyNjg4NzAyOTA@._V1_SX300.jpg
 80213020,6,2,3,tt9050352,The Bonfire of Destiny,O,serie,2019–,1744,7.6,https://m.media-amazon.com/images/M/MV5BNDQ5YzA1NjYtNmYxMy00MDU4LTk0OGMtZGE3MmJiNGZlY2Q3XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg
 80217669,6,2,3,tt1830379,Top Boy,N,serie,2011–,11022,8.4,https://m.media-amazon.com/images/M/MV5BMjI0MjUzNzc0M15BMl5BanBnXkFtZTgwMjk3NDAzNzE@._V1_SX300.jpg
@@ -661,7 +661,7 @@ netflix id,count,line,column,imdb id,title,production (N = Netflix / O = Other),
 80161371,4,2,3,tt5311514,Your Name.,O,movie,2016,182052,8.4,https://m.media-amazon.com/images/M/MV5BODRmZDVmNzUtZDA4ZC00NjhkLWI2M2UtN2M0ZDIzNDcxYThjL2ltYWdlXkEyXkFqcGdeQXVyNTk0MzMzODA@._V1_SX300.jpg
 81038588,4,2,3,tt9845564,Below Zero,N,movie,2021,N/A,N/A,https://m.media-amazon.com/images/M/MV5BM2Q1MmM4OGItNzc2Mi00Njc0LTllNmMtNTQxNTZmMGI0YWUxXkEyXkFqcGdeQXVyMTA0MjU0Ng@@._V1_SX300.jpg
 81080523,4,2,3,tt6342474,Boruto: Naruto Next Generations,O,serie,2017–,5788,7.1,https://m.media-amazon.com/images/M/MV5BOTAzNDM4ZTAtMmQ2Zi00ODM0LTk0OTMtY2M4MTY5N2ViMzIzXkEyXkFqcGdeQXVyMzExMzk5MTQ@._V1_SX300.jpg
-81113929,4,2,3,tt14037542,Marriage or Mortgage,--,series,2021–,289,5.0,https://m.media-amazon.com/images/M/MV5BNmE5ODVmMDAtMjUxNS00ZTQzLWI2ZTMtNmY5NGU5OTI2ZDUyXkEyXkFqcGdeQXVyNjEwNTM2Mzc@._V1_SX300.jpg
+81113929,4,2,3,,undefined,--,,,,,
 60023642,3,2,3,tt0245429,Spirited Away,O,movie,2001,607891,8.6,https://m.media-amazon.com/images/M/MV5BMjlmZmI5MDctNDE2YS00YWE0LWE5ZWItZDBhYWQ0NTcxNWRhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg
 70177034,3,2,3,tt0247902,Yu-Gi-Oh!,O,serie,2000–2004,2137,8.3,https://m.media-amazon.com/images/M/MV5BNzhjZDU5NWMtMGMyZS00ZTkyLThjN2MtZWJhNDkxODNlMjJhXkEyXkFqcGdeQXVyMjUyMTE3MTc@._V1_SX300.jpg
 80023687,3,2,3,tt3741634,Tokyo Ghoul,O,serie,2014,32892,7.9,https://m.media-amazon.com/images/M/MV5BN2E2OTgzODktMjBhYy00MjJjLWI0OTgtNGYxOGNhMWMxOWE4XkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_SX300.jpg
@@ -673,9 +673,9 @@ netflix id,count,line,column,imdb id,title,production (N = Netflix / O = Other),
 80179394,3,2,3,tt6128300,Dynasty,N,serie,2017–,12176,7.3,https://m.media-amazon.com/images/M/MV5BZWFjMDhkY2YtMTljYi00MWNjLTgyNjQtN2NjNjQ3ZjZhMzJlXkEyXkFqcGdeQXVyMjYwNDA2MDE@._V1_SX300.jpg
 80209379,3,2,3,tt8115560,Tidying Up with Marie Kondo,N,serie,2019–,2567,6.6,https://m.media-amazon.com/images/M/MV5BYjQwODNjMGMtOWU3Yy00M2I0LThhOTMtZGQyNGMxNTM5YjExXkEyXkFqcGdeQXVyOTA1ODU0Mzc@._V1_SX300.jpg
 80220496,3,2,3,tt6791096,I Feel Pretty,N,movie,2018,45536,5.5,https://m.media-amazon.com/images/M/MV5BMGI3ZDRjZTQtMTMyYy00NGI4LWI2MjktNzMyMjg0NjQ2NTY0XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg
-80237990,3,2,3,tt10551256,Age of Samurai: Battle for Japan,--,series,2021–,2458,7.4,https://m.media-amazon.com/images/M/MV5BOThiNjMyMzMtYzI5YS00ZGUzLTgwMWQtYzM3NTZlOGVmOWI0XkEyXkFqcGdeQXVyNjEwNTM2Mzc@._V1_SX300.jpg
+80237990,3,2,3,,undefined,--,,,,,
 80244996,3,2,3,tt10050778,Street Food,N,serie,2019–,1381,8.0,https://m.media-amazon.com/images/M/MV5BMjI5NmJjY2MtNDFlZi00ZjZjLTk0ZjAtMjEyYjFkMTUwMzY4XkEyXkFqcGdeQXVyNjI4ODE4Mjk@._V1_SX300.jpg
-81019775,3,2,3,tt9308682,The Liberator,--,serie,2020–,4251,7.6,https://m.media-amazon.com/images/M/MV5BN2MyMGQ2ZDctYTJiNi00NmZlLWE4NzAtNTA5NTE3YTIxMTlhXkEyXkFqcGdeQXVyMTAzMzc3MDIw._V1_SX300.jpg
+81019775,3,2,3,,undefined,--,,,,,
 20557937,2,2,3,tt0133093,The Matrix,O,movie,1999,1608954,8.7,https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg
 70019062,2,2,3,tt0087544,Nausicaä of the Valley of the Wind,O,movie,1984,140825,8.1,https://m.media-amazon.com/images/M/MV5BZWFkN2ZhODAtYTNkZS00Y2NjLWIzNDYtNzJjNDNlMzAyNTIyXkEyXkFqcGdeQXVyODEzNjM5OTQ@._V1_SX300.jpg
 70108777,2,2,3,tt0361748,Inglourious Basterds,O,movie,2009,1210053,8.3,https://m.media-amazon.com/images/M/MV5BOTJiNDEzOWYtMTVjOC00ZjlmLWE0NGMtZmE1OWVmZDQ2OWJhXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_SX300.jpg
@@ -694,7 +694,7 @@ netflix id,count,line,column,imdb id,title,production (N = Netflix / O = Other),
 70299043,1,2,3,tt2560140,Attack on Titan,O,serie,2013–,139298,8.8,https://m.media-amazon.com/images/M/MV5BMTY5ODk1NzUyMl5BMl5BanBnXkFtZTgwMjUyNzEyMTE@._V1_SX300.jpg
 80002479,1,2,3,tt2442560,Peaky Blinders,N,serie,2013–,285329,8.8,https://m.media-amazon.com/images/M/MV5BMTkzNjEzMDEzMF5BMl5BanBnXkFtZTgwMDI0MjE4MjE@._V1_SX300.jpg
 80014749,1,2,3,tt2861424,Rick and Morty,O,serie,2013–,337243,9.2,https://m.media-amazon.com/images/M/MV5BMjRiNDRhNGUtMzRkZi00MThlLTg0ZDMtNjc5YzFjYmFjMmM4XkEyXkFqcGdeQXVyNzQ1ODk3MTQ@._V1_SX300.jpg
-80015795,1,2,3,tt2822742,3 Hearts,--,movie,2014,2297,5.9,https://m.media-amazon.com/images/M/MV5BMjAxOTY1MDg2N15BMl5BanBnXkFtZTgwNDQ3OTI0NDE@._V1_SX300.jpg
+80015795,1,2,3,,undefined,--,,,,,
 80029196,1,2,3,tt0369610,Jurassic World,O,movie,2015,584563,7.0,https://m.media-amazon.com/images/M/MV5BNzQ3OTY4NjAtNzM5OS00N2ZhLWJlOWUtYzYwZjNmOWRiMzcyXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg
 80105699,1,2,3,tt5651844,Travelers,N,serie,2016–2018,41147,8.1,https://m.media-amazon.com/images/M/MV5BMjUzOTQwOTg1MF5BMl5BanBnXkFtZTgwNzE4NzQ3NjM@._V1_SX300.jpg
 80106138,1,2,3,tt4969044,Riphagen,O,movie,2016,5497,7.2,https://m.media-amazon.com/images/M/MV5BNDUxMGE1OGItZTk2OS00NGE4LTllZjItNDk1NGUwYzgwNDU0XkEyXkFqcGdeQXVyMjA5MDA0Mw@@._V1_SX300.jpg
@@ -714,7 +714,7 @@ netflix id,count,line,column,imdb id,title,production (N = Netflix / O = Other),
 547335,14,2,4,tt0097441,Glory,O,movie,1989,122553,7.8,https://m.media-amazon.com/images/M/MV5BODhlNjA5MDEtZDVhNS00ZmM3LTg1YzAtZGRjNjhjNTAzNzVkXkEyXkFqcGdeQXVyNjUwMzI2NzU@._V1_SX300.jpg
 80114855,14,2,4,tt5290382,Mindhunter,N,serie,2017–,185182,8.6,https://m.media-amazon.com/images/M/MV5BNWNmYzQ1ZWUtYTQ3ZS00Y2UwLTlkMDctZThlOTJkMGJiNzBiXkEyXkFqcGdeQXVyNjg2NjQwMDQ@._V1_SX300.jpg
 80234304,13,2,4,tt10048342,The Queen's Gambit,N,serie,2020–,6077,8.9,https://m.media-amazon.com/images/M/MV5BM2EwMmRhMmUtMzBmMS00ZDQ3LTg4OGEtNjlkODk3ZTMxMmJlXkEyXkFqcGdeQXVyMjM5ODk1NDU@._V1_SX300.jpg
-81131714,13,2,4,tt3339966,Unbreakable Kimmy Schmidt,--,serie,2015–2019,59643,7.6,https://m.media-amazon.com/images/M/MV5BMTgyNTQyNjUwN15BMl5BanBnXkFtZTgwNjMwNjUzNzM@._V1_SX300.jpg
+81131714,13,2,4,,undefined,--,,,,,
 70142821,12,2,4,tt0495596,Tales from Earthsea,O,movie,2006,32361,6.5,https://m.media-amazon.com/images/M/MV5BZGFlN2FhYTktZGYzNi00MzllLWFlOTAtY2ExNjRjZjhkZWM2XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg
 81277950,12,2,4,tt7846844,Enola Holmes,N,movie,2020,86709,6.6,https://m.media-amazon.com/images/M/MV5BZjNkNzk0ZjEtM2M1ZC00MmMxLTlmOWEtNWRlZTc1ZTUyNzY4XkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_SX300.jpg
 489248,11,2,4,tt0060390,Fahrenheit 451,O,movie,1966,39961,7.2,https://m.media-amazon.com/images/M/MV5BZDkwYWY3YWQtNWJiZC00Mzk1LTg0YTgtZWZmZDk2MzQzODRjXkEyXkFqcGdeQXVyNjMwMjk0MTQ@._V1_SX300.jpg
@@ -735,12 +735,12 @@ netflix id,count,line,column,imdb id,title,production (N = Netflix / O = Other),
 80130521,6,2,4,tt5721172,The Worst Witch,N,serie,2017–,1460,7.3,https://m.media-amazon.com/images/M/MV5BY2ZmMzIxMDktOGUwZS00ZTY0LTg1NjEtNzNkZjFlZjVkZGMwXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg
 80133335,6,2,4,tt4277922,Call My Agent,O,serie,2015–,4413,8.3,https://m.media-amazon.com/images/M/MV5BMzRmYTQ2YzctNTc3YS00ZmQ2LTk3ODEtMjg5NWE1ZDkwMTg1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg
 80213020,6,2,4,tt9050352,The Bonfire of Destiny,O,serie,2019–,1744,7.6,https://m.media-amazon.com/images/M/MV5BNDQ5YzA1NjYtNmYxMy00MDU4LTk0OGMtZGE3MmJiNGZlY2Q3XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg
-81019775,6,2,4,tt9308682,The Liberator,--,serie,2020–,4251,7.6,https://m.media-amazon.com/images/M/MV5BN2MyMGQ2ZDctYTJiNi00NmZlLWE4NzAtNTA5NTE3YTIxMTlhXkEyXkFqcGdeQXVyMTAzMzc3MDIw._V1_SX300.jpg
-81156880,6,2,4,tt11503082,Scissor Seven,--,series,2020–,823,8.1,https://m.media-amazon.com/images/M/MV5BOGM4MTZlZDQtZDdjNC00NGEwLTlhYjktNTY0NDlhYzg3ZmRhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg
+81019775,6,2,4,,undefined,--,,,,,
+81156880,6,2,4,,undefined,--,,,,,
 81210670,6,2,4,tt6878306,News of the World,N,movie,2020,57935,6.8,https://m.media-amazon.com/images/M/MV5BMDNlNmVlNDItMjE3Yi00ZTA3LWIyOTktNDhhMGFlZjk5ZDQ0XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_SX300.jpg
 81350429,6,2,4,tt9893250,I Care a Lot,N,movie,2020,81803,6.3,https://m.media-amazon.com/images/M/MV5BYWU2ZTRhNDMtMWYxMC00ZTVkLThjZmItZGY4MGU0YmZlMjJlXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg
 70108777,5,2,4,tt0361748,Inglourious Basterds,O,movie,2009,1210053,8.3,https://m.media-amazon.com/images/M/MV5BOTJiNDEzOWYtMTVjOC00ZjlmLWE0NGMtZmE1OWVmZDQ2OWJhXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_SX300.jpg
-70136102,5,2,4,tt0285331,24,--,series,2001–2010,173402,8.3,https://m.media-amazon.com/images/M/MV5BMTg5OTkyNzA0NF5BMl5BanBnXkFtZTcwMDYyMDUwMg@@._V1_SX300.jpg
+70136102,5,2,4,,undefined,--,,,,,
 70143830,5,2,4,tt0898266,The Big Bang Theory,O,serie,2007–2019,687693,8.1,https://m.media-amazon.com/images/M/MV5BY2FmZTY5YTktOWRlYy00NmIyLWE0ZmQtZDg2YjlmMzczZDZiXkEyXkFqcGdeQXVyNjg4NzAyOTA@._V1_SX300.jpg
 70205012,5,2,4,tt0409591,Naruto,O,serie,2002–2007,62401,8.3,https://m.media-amazon.com/images/M/MV5BZmQ5NGFiNWEtMmMyMC00MDdiLTg4YjktOGY5Yzc2MDUxMTE1XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg
 80025678,5,2,4,tt4786824,The Crown,N,serie,2016–,112769,8.7,https://m.media-amazon.com/images/M/MV5BNGI1ODkzZDQtZTYxYS00MTg1LWFlY2QtMTM5MGNhNWRhYmVmXkEyXkFqcGdeQXVyNjU2ODM5MjU@._V1_SX300.jpg
@@ -776,7 +776,7 @@ netflix id,count,line,column,imdb id,title,production (N = Netflix / O = Other),
 80240027,2,2,4,tt9077530,Virgin River,N,serie,2019–,8840,7.5,https://m.media-amazon.com/images/M/MV5BMzc3MDA0NjUtYzhhZi00YjU2LWI4ODctMzE2MmYwMzYxMjU4XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg
 81002370,2,2,4,tt7221388,Cobra Kai,N,serie,2018–,62443,8.7,https://m.media-amazon.com/images/M/MV5BYTI3NjcxNjctNzZhZS00NjQwLTg4NDEtMmQzOGJiYTUwNWFjXkEyXkFqcGdeQXVyOTA5NzQ0MDQ@._V1_SX300.jpg
 81344370,2,2,4,tt12676326,Malcolm & Marie,N,movie,2021,86,6.6,https://m.media-amazon.com/images/M/MV5BYjVkMmU1NGItZjM4MC00ODM1LWEyOTEtY2Y1NTg0YjRhYjEwXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_SX300.jpg
-18171022,1,2,4,tt0120794,The Prince of Egypt,--,movie,1998,119987,7.1,https://m.media-amazon.com/images/M/MV5BOWNjMjgyNmMtNWMzZC00YjI4LWI1NmUtMTY0ZTA0ZDQ4Y2EwXkEyXkFqcGdeQXVyNTUyMzE4Mzg@._V1_SX300.jpg
+18171022,1,2,4,,undefined,--,,,,,
 60024942,1,2,4,tt0264464,Catch Me If You Can,O,movie,2002,802819,8.1,https://m.media-amazon.com/images/M/MV5BMTY5MzYzNjc5NV5BMl5BanBnXkFtZTYwNTUyNTc2._V1_SX300.jpg
 70012338,1,2,4,tt0098596,Life and Nothing But,O,movie,1989,1606,7.4,https://m.media-amazon.com/images/M/MV5BZjRkNWIwNjAtYTBiZC00ZmVlLWFmY2EtYjYyZGVjOTY4YTBkXkEyXkFqcGdeQXVyMjQzMzQzODY@._V1_SX300.jpg
 70143858,1,2,4,tt1442437,Modern Family,O,serie,2009–2020,327313,8.4,https://m.media-amazon.com/images/M/MV5BNzRhNWIxYTEtYjc2NS00YWFlLWFhOGEtMDZiMWM1M2RkNDkyXkEyXkFqcGdeQXVyNjc0MjkzNjc@._V1_SX300.jpg
@@ -794,7 +794,7 @@ netflix id,count,line,column,imdb id,title,production (N = Netflix / O = Other),
 81350429,36,3,0,tt9893250,I Care a Lot,N,movie,2020,81803,6.3,https://m.media-amazon.com/images/M/MV5BYWU2ZTRhNDMtMWYxMC00ZTVkLThjZmItZGY4MGU0YmZlMjJlXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg
 60027106,32,3,0,tt0097814,Kiki's Delivery Service,O,movie,1989,112431,7.8,https://m.media-amazon.com/images/M/MV5BOTc0ODM1Njk1NF5BMl5BanBnXkFtZTcwMDI5OTEyNw@@._V1_SX300.jpg
 70281562,28,3,0,tt2467372,Brooklyn Nine-Nine,O,serie,2013–,189020,8.4,https://m.media-amazon.com/images/M/MV5BNzVkYWY4NzYtMWFlZi00YzkwLThhZDItZjcxYTU4ZTMzMDZmXkEyXkFqcGdeQXVyODUxOTU0OTg@._V1_SX300.jpg
-81078137,28,3,0,tt13660958,Pretend It's a City,--,series,2021,4942,8.2,https://m.media-amazon.com/images/M/MV5BZDM4YTNkYTQtYTU3ZS00NjgxLTgwMGUtNzU1OWM3ZDNkMTg4XkEyXkFqcGdeQXVyNjEwNTM2Mzc@._V1_SX300.jpg
+81078137,28,3,0,,undefined,--,,,,,
 80994082,23,3,0,tt2531336,Lupin,N,serie,2021–,57563,7.6,https://m.media-amazon.com/images/M/MV5BNzRlNGUzMmEtYTg0Ni00N2U2LTg4YWEtNDdlNmMwYjBlZDQ0XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg
 80219707,22,3,0,tt8064302,Dead to Me,N,serie,2019–,40497,8.1,https://m.media-amazon.com/images/M/MV5BNTcyOTA3ZWUtOWEwMy00YjI5LWIyNjctNTAyYjI5ZmE0NGI4XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg
 70020952,17,3,0,tt0385307,Miss Congeniality 2: Armed & Fabulous,O,movie,2005,70384,5.1,https://m.media-amazon.com/images/M/MV5BMjAxNzk2OTI2OV5BMl5BanBnXkFtZTcwODk0MDIzMw@@._V1_SX300.jpg
@@ -827,7 +827,7 @@ netflix id,count,line,column,imdb id,title,production (N = Netflix / O = Other),
 70177057,3,3,0,tt1520211,The Walking Dead,O,serie,2010–,824969,8.2,https://m.media-amazon.com/images/M/MV5BYTUwOTM3ZGUtMDZiNy00M2I3LWI1ZWEtYzhhNGMyZjI3MjBmXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg
 80133335,3,3,0,tt4277922,Call My Agent,O,serie,2015–,4413,8.3,https://m.media-amazon.com/images/M/MV5BMzRmYTQ2YzctNTc3YS00ZmQ2LTk3ODEtMjg5NWE1ZDkwMTg1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg
 81074673,3,3,0,tt13842562,Pelé,N,movie,2021,2514,7.0,https://m.media-amazon.com/images/M/MV5BODJmYTg4NTEtYTU0Mi00YjQ0LTkyYzEtMTU4MTM2ZWY3NjY4XkEyXkFqcGdeQXVyNjEwNTM2Mzc@._V1_SX300.jpg
-81088239,3,3,0,tt13161310,Dream Home Makeover,O,serie,2020–,708,5.5,https://m.media-amazon.com/images/M/MV5BY2YzNWVlZWMtMGVlZi00MzVkLTgyNTgtNWY0ZGRkMTA1ZDVlXkEyXkFqcGdeQXVyNjEwNTM2Mzc@._V1_SX300.jpg
+81088239,3,3,0,,undefined,O,,,,,
 81183727,3,3,0,tt13837672,Crime Scene: The Vanishing at the Cecil Hotel,N,serie,2021,12893,5.9,https://m.media-amazon.com/images/M/MV5BN2Y5MzMzYTgtZjVhNy00YTcwLWJhY2MtNzZhNTcyZTIxZTdjXkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_SX300.jpg
 28630857,2,3,0,tt0119698,Princess Mononoke,O,movie,1997,319539,8.4,https://m.media-amazon.com/images/M/MV5BNGIzY2IzODQtNThmMi00ZDE4LWI5YzAtNzNlZTM1ZjYyYjUyXkEyXkFqcGdeQXVyODEzNjM5OTQ@._V1_SX300.jpg
 70005379,2,3,0,tt0111161,The Shawshank Redemption,O,movie,1994,2238077,9.3,https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg
@@ -844,11 +844,11 @@ netflix id,count,line,column,imdb id,title,production (N = Netflix / O = Other),
 81344370,2,3,0,tt12676326,Malcolm & Marie,N,movie,2021,86,6.6,https://m.media-amazon.com/images/M/MV5BYjVkMmU1NGItZjM4MC00ODM1LWEyOTEtY2Y1NTg0YjRhYjEwXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_SX300.jpg
 986399,1,3,0,tt0117705,Space Jam,O,movie,1996,152969,6.4,https://m.media-amazon.com/images/M/MV5BMDgyZTI2YmYtZmI4ZC00MzE0LWIxZWYtMWRlZWYxNjliNTJjXkEyXkFqcGdeQXVyNjY5NDU4NzI@._V1_SX300.jpg
 60001464,1,3,0,tt0108065,Searching for Bobby Fischer,O,movie,1993,28364,7.4,https://m.media-amazon.com/images/M/MV5BNTNlYjBjMGEtOTFkZS00MjM5LTk2ZTktYWVmZTc4NzE3NzAxL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_SX300.jpg
-70136102,1,3,0,tt0285331,24,--,series,2001–2010,173402,8.3,https://m.media-amazon.com/images/M/MV5BMTg5OTkyNzA0NF5BMl5BanBnXkFtZTcwMDYyMDUwMg@@._V1_SX300.jpg
+70136102,1,3,0,,undefined,--,,,,,
 70136107,1,3,0,tt0121955,South Park,O,serie,1997–,318249,8.7,https://m.media-amazon.com/images/M/MV5BOGE2YWUzMDItNTg2Ny00NTUzLTlmZGYtNWMyNzVjMjQ3MThkXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg
 70205012,1,3,0,tt0409591,Naruto,O,serie,2002–2007,62401,8.3,https://m.media-amazon.com/images/M/MV5BZmQ5NGFiNWEtMmMyMC00MDdiLTg4YjktOGY5Yzc2MDUxMTE1XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg
 80021955,1,3,0,tt3032476,Better Call Saul,N,serie,2015–,285556,8.7,https://m.media-amazon.com/images/M/MV5BMGE4YzY4NGEtOWYyYS00ZDk2LWExMmMtZDIyODhiMmNlMGE0XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg
-80200575,1,3,0,tt10795658,Alice in Borderland,--,serie,2020–,16892,7.7,https://m.media-amazon.com/images/M/MV5BODY0NTA5OTMtMDFmYy00NzlmLWE1MWUtYTVmY2E5YjZkNTZkXkEyXkFqcGdeQXVyNjEwNTM2Mzc@._V1_SX300.jpg
+80200575,1,3,0,,undefined,--,,,,,
 80244630,1,3,0,tt9698442,Behind Her Eyes,N,serie,2021,38807,7.2,https://m.media-amazon.com/images/M/MV5BMDk2Njg0ZTUtNTFjZS00NzUwLWEwZDQtZTg5MDZiMmJhNGEzXkEyXkFqcGdeQXVyNjEwNTM2Mzc@._V1_SX300.jpg
 81004814,1,3,0,tt7718088,Bonding,N,serie,2019–,9174,7.2,https://m.media-amazon.com/images/M/MV5BMzhlYzc4NWUtYjIzMS00NWFlLTgzOTEtMGE1OTRkMDY5Y2MxXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg
 81167887,1,3,0,tt3661210,The Dig,N,movie,2021,43,6.7,https://m.media-amazon.com/images/M/MV5BY2RmZmI0NDMtMGQzOC00YWU3LTkwYWUtMDRkNDBjZDg3YTkyXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_SX300.jpg
@@ -877,7 +877,7 @@ netflix id,count,line,column,imdb id,title,production (N = Netflix / O = Other),
 80057281,7,3,1,tt4574334,Stranger Things,N,serie,2016–,730656,8.8,https://m.media-amazon.com/images/M/MV5BZGExYjQzNTQtNGNhMi00YmY1LTlhY2MtMTRjODg3MjU4YTAyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg
 70020952,6,3,1,tt0385307,Miss Congeniality 2: Armed & Fabulous,O,movie,2005,70384,5.1,https://m.media-amazon.com/images/M/MV5BMjAxNzk2OTI2OV5BMl5BanBnXkFtZTcwODk0MDIzMw@@._V1_SX300.jpg
 70136107,6,3,1,tt0121955,South Park,O,serie,1997–,318249,8.7,https://m.media-amazon.com/images/M/MV5BOGE2YWUzMDItNTg2Ny00NTUzLTlmZGYtNWMyNzVjMjQ3MThkXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg
-70136102,5,3,1,tt0285331,24,--,series,2001–2010,173402,8.3,https://m.media-amazon.com/images/M/MV5BMTg5OTkyNzA0NF5BMl5BanBnXkFtZTcwMDYyMDUwMg@@._V1_SX300.jpg
+70136102,5,3,1,,undefined,--,,,,,
 70143830,5,3,1,tt0898266,The Big Bang Theory,O,serie,2007–2019,687693,8.1,https://m.media-amazon.com/images/M/MV5BY2FmZTY5YTktOWRlYy00NmIyLWE0ZmQtZDg2YjlmMzczZDZiXkEyXkFqcGdeQXVyNjg4NzAyOTA@._V1_SX300.jpg
 80133335,5,3,1,tt4277922,Call My Agent,O,serie,2015–,4413,8.3,https://m.media-amazon.com/images/M/MV5BMzRmYTQ2YzctNTc3YS00ZmQ2LTk3ODEtMjg5NWE1ZDkwMTg1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg
 80164752,5,3,1,tt7518466,Conor McGregor: Notorious,N,movie,2017,3925,7.2,https://m.media-amazon.com/images/M/MV5BNzI2M2YwOGMtNzIxNS00NzEyLWEzMzAtOGI1YzljNjRhMmU4XkEyXkFqcGdeQXVyNTM3MDMyMDQ@._V1_SX300.jpg
@@ -903,7 +903,7 @@ netflix id,count,line,column,imdb id,title,production (N = Netflix / O = Other),
 80075560,2,3,1,tt1596363,The Big Short,N,movie,2015,337969,7.8,https://m.media-amazon.com/images/M/MV5BNDc4MThhN2EtZjMzNC00ZDJmLThiZTgtNThlY2UxZWMzNjdkXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_SX300.jpg
 80177458,2,3,1,tt6156584,Snowpiercer,N,serie,2020–,N/A,N/A,https://m.media-amazon.com/images/M/MV5BODAwYWEwMzctYzI3MS00ZTU5LThhYWMtMjQ2ZmY5NmU2NGE5XkEyXkFqcGdeQXVyMDA4NzMyOA@@._V1_SX300.jpg
 80997085,2,3,1,tt8714904,Narcos: Mexico,N,serie,2018–,51612,8.4,https://m.media-amazon.com/images/M/MV5BMGJiMTc0OTctZDU1Yy00YjdiLTk1NWYtZTgzMjc1ODg4YzhkXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_SX300.jpg
-81025701,2,3,1,tt13651632,Night Stalker: The Hunt for a Serial Killer,--,serie,2021,13056,7.5,https://m.media-amazon.com/images/M/MV5BNWM1ODNlZDAtY2U0Yi00YTAyLTgwZWYtNTc2OTFkNDYzZjAxXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg
+81025701,2,3,1,,undefined,--,,,,,
 81045007,2,3,1,tt12888462,My Octopus Teacher,N,movie,2020,5319,8.5,https://m.media-amazon.com/images/M/MV5BZWZlODNlYWUtZjY2Ni00YzdiLTkwNmEtZmY5MmY1MDI0YWQyXkEyXkFqcGdeQXVyNjEwNTM2Mzc@._V1_SX300.jpg
 81210670,2,3,1,tt6878306,News of the World,N,movie,2020,57935,6.8,https://m.media-amazon.com/images/M/MV5BMDNlNmVlNDItMjE3Yi00ZTA3LWIyOTktNDhhMGFlZjk5ZDQ0XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_SX300.jpg
 81323551,2,3,1,tt13273826,The Uncanny Counter,N,serie,2020–,1872,8.1,https://m.media-amazon.com/images/M/MV5BOTk5NmIxNTgtNWRjYS00OWQ4LTlhOTctOGU0NzlkODQ3Zjg2XkEyXkFqcGdeQXVyNDY5MjMyNTg@._V1_SX300.jpg
@@ -917,7 +917,7 @@ netflix id,count,line,column,imdb id,title,production (N = Netflix / O = Other),
 80217517,1,3,1,tt8878862,Invisible City,N,movie,2021,N/A,N/A,https://m.media-amazon.com/images/M/MV5BNDk2ODNiZTUtNTEyYS00YmMzLTk1NzktNzQ4N2RhMTQyMGE4XkEyXkFqcGdeQXVyMTk2NDE3Mzc@._V1_SX300.jpg
 80223793,1,3,1,tt7371896,Traitors,N,serie,2019–,1895,6.6,https://m.media-amazon.com/images/M/MV5BMzYzY2NiY2ItNTEzYS00OTVlLWIzYmYtODczOWQyN2E5YzgzXkEyXkFqcGdeQXVyMzU3MTc5OTE@._V1_SX300.jpg
 80234304,1,3,1,tt10048342,The Queen's Gambit,N,serie,2020–,6077,8.9,https://m.media-amazon.com/images/M/MV5BM2EwMmRhMmUtMzBmMS00ZDQ3LTg4OGEtNjlkODk3ZTMxMmJlXkEyXkFqcGdeQXVyMjM5ODk1NDU@._V1_SX300.jpg
-80237990,1,3,1,tt10551256,Age of Samurai: Battle for Japan,--,series,2021–,2458,7.4,https://m.media-amazon.com/images/M/MV5BOThiNjMyMzMtYzI5YS00ZGUzLTgwMWQtYzM3NTZlOGVmOWI0XkEyXkFqcGdeQXVyNjEwNTM2Mzc@._V1_SX300.jpg
+80237990,1,3,1,,undefined,--,,,,,
 80241387,1,3,1,tt8575476,Hache,N,serie,2019–,679,6.3,https://m.media-amazon.com/images/M/MV5BNDFlMjBlOWMtYzA5Zi00ODcxLWE0ZDMtNjBkNGUzZWY4OGVlXkEyXkFqcGdeQXVyMzkwMTMxNDQ@._V1_SX300.jpg
 81003592,1,3,1,tt6296094,Lastman,O,serie,2016–,473,8.9,https://m.media-amazon.com/images/M/MV5BYmFiNGEwOGItNTQ2My00NTc2LWJkMmYtZDNjYzI3ZTU3MDUwL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNTUzNjcwOTM@._V1_SX300.jpg
 81080523,1,3,1,tt6342474,Boruto: Naruto Next Generations,O,serie,2017–,5788,7.1,https://m.media-amazon.com/images/M/MV5BOTAzNDM4ZTAtMmQ2Zi00ODM0LTk0OTMtY2M4MTY5N2ViMzIzXkEyXkFqcGdeQXVyMzExMzk5MTQ@._V1_SX300.jpg
@@ -934,7 +934,7 @@ netflix id,count,line,column,imdb id,title,production (N = Netflix / O = Other),
 70281562,22,3,2,tt2467372,Brooklyn Nine-Nine,O,serie,2013–,189020,8.4,https://m.media-amazon.com/images/M/MV5BNzVkYWY4NzYtMWFlZi00YzkwLThhZDItZjcxYTU4ZTMzMDZmXkEyXkFqcGdeQXVyODUxOTU0OTg@._V1_SX300.jpg
 70019062,21,3,2,tt0087544,Nausicaä of the Valley of the Wind,O,movie,1984,140825,8.1,https://m.media-amazon.com/images/M/MV5BZWFkN2ZhODAtYTNkZS00Y2NjLWIzNDYtNzJjNDNlMzAyNTIyXkEyXkFqcGdeQXVyODEzNjM5OTQ@._V1_SX300.jpg
 80232398,15,3,2,tt8740790,Bridgerton,N,serie,2020–,N/A,N/A,https://m.media-amazon.com/images/M/MV5BYjIxMzZhMTMtNDQ1Mi00OTMwLTk2M2ItYzA0YmNjNDFlOTdhXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg
-81059918,15,3,2,tt11698630,Crazy About Her,--,movie,2021,3718,6.6,https://m.media-amazon.com/images/M/MV5BZGNiN2MxZTUtYmUyMi00NDBiLTgzM2YtODUzNzQyODJlOWMwXkEyXkFqcGdeQXVyNjEwNTM2Mzc@._V1_SX300.jpg
+81059918,15,3,2,,undefined,--,,,,,
 81350429,15,3,2,tt9893250,I Care a Lot,N,movie,2020,81803,6.3,https://m.media-amazon.com/images/M/MV5BYWU2ZTRhNDMtMWYxMC00ZTVkLThjZmItZGY4MGU0YmZlMjJlXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg
 70143830,14,3,2,tt0898266,The Big Bang Theory,O,serie,2007–2019,687693,8.1,https://m.media-amazon.com/images/M/MV5BY2FmZTY5YTktOWRlYy00NmIyLWE0ZmQtZDg2YjlmMzczZDZiXkEyXkFqcGdeQXVyNjg4NzAyOTA@._V1_SX300.jpg
 80133335,13,3,2,tt4277922,Call My Agent,O,serie,2015–,4413,8.3,https://m.media-amazon.com/images/M/MV5BMzRmYTQ2YzctNTc3YS00ZmQ2LTk3ODEtMjg5NWE1ZDkwMTg1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg
@@ -953,7 +953,7 @@ netflix id,count,line,column,imdb id,title,production (N = Netflix / O = Other),
 80200267,5,3,2,tt6412452,The Ballad of Buster Scruggs,N,movie,2018,105643,7.3,https://m.media-amazon.com/images/M/MV5BYjRkYTI3M2EtZWQ4Ny00OTA2LWFmMTMtY2E4MTEyZmNjOTMxXkEyXkFqcGdeQXVyNDg4NjY5OTQ@._V1_SX300.jpg
 80234304,5,3,2,tt10048342,The Queen's Gambit,N,serie,2020–,6077,8.9,https://m.media-amazon.com/images/M/MV5BM2EwMmRhMmUtMzBmMS00ZDQ3LTg4OGEtNjlkODk3ZTMxMmJlXkEyXkFqcGdeQXVyMjM5ODk1NDU@._V1_SX300.jpg
 80244630,5,3,2,tt9698442,Behind Her Eyes,N,serie,2021,38807,7.2,https://m.media-amazon.com/images/M/MV5BMDk2Njg0ZTUtNTFjZS00NzUwLWEwZDQtZTg5MDZiMmJhNGEzXkEyXkFqcGdeQXVyNjEwNTM2Mzc@._V1_SX300.jpg
-70142405,4,3,2,tt0417299,Avatar: The Last Airbender,--,serie,2005–2008,233630,9.2,https://m.media-amazon.com/images/M/MV5BODc5YTBhMTItMjhkNi00ZTIxLWI0YjAtNTZmOTY0YjRlZGQ0XkEyXkFqcGdeQXVyODUwNjEzMzg@._V1_SX300.jpg
+70142405,4,3,2,,undefined,--,,,,,
 70143811,4,3,2,tt0397442,Gossip Girl,O,serie,2007–2012,146008,7.4,https://m.media-amazon.com/images/M/MV5BNmQ4Zjg1YWYtMTA1Mi00ZGY1LTlmN2ItYTc5ODkzNTFmYWVhXkEyXkFqcGdeQXVyNjQ0OTk1ODg@._V1_SX300.jpg
 80025678,4,3,2,tt4786824,The Crown,N,serie,2016–,112769,8.7,https://m.media-amazon.com/images/M/MV5BNGI1ODkzZDQtZTYxYS00MTg1LWFlY2QtMTM5MGNhNWRhYmVmXkEyXkFqcGdeQXVyNjU2ODM5MjU@._V1_SX300.jpg
 80135674,4,3,2,tt5626028,My Hero Academia,O,serie,2016–,29183,8.5,https://m.media-amazon.com/images/M/MV5BNmQzYmE2MGEtZjk4YS00YmVjLWEwZWMtODRkMjc4MTM5N2I3XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg
@@ -1009,7 +1009,7 @@ netflix id,count,line,column,imdb id,title,production (N = Netflix / O = Other),
 80994082,14,3,3,tt2531336,Lupin,N,serie,2021–,57563,7.6,https://m.media-amazon.com/images/M/MV5BNzRlNGUzMmEtYTg0Ni00N2U2LTg4YWEtNDdlNmMwYjBlZDQ0XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg
 60023642,13,3,3,tt0245429,Spirited Away,O,movie,2001,607891,8.6,https://m.media-amazon.com/images/M/MV5BMjlmZmI5MDctNDE2YS00YWE0LWE5ZWItZDBhYWQ0NTcxNWRhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg
 70019062,11,3,3,tt0087544,Nausicaä of the Valley of the Wind,O,movie,1984,140825,8.1,https://m.media-amazon.com/images/M/MV5BZWFkN2ZhODAtYTNkZS00Y2NjLWIzNDYtNzJjNDNlMzAyNTIyXkEyXkFqcGdeQXVyODEzNjM5OTQ@._V1_SX300.jpg
-70136102,11,3,3,tt0285331,24,--,series,2001–2010,173402,8.3,https://m.media-amazon.com/images/M/MV5BMTg5OTkyNzA0NF5BMl5BanBnXkFtZTcwMDYyMDUwMg@@._V1_SX300.jpg
+70136102,11,3,3,,undefined,--,,,,,
 80070050,11,3,3,tt3636060,Poldark,O,serie,2015–,23654,8.3,https://m.media-amazon.com/images/M/MV5BMjgyZTc3MjQtOTNkMy00MDE0LTg2YzgtZjVlYjM4MjVjYTc1XkEyXkFqcGdeQXVyMjExMjk0ODk@._V1_SX300.jpg
 80135674,10,3,3,tt5626028,My Hero Academia,O,serie,2016–,29183,8.5,https://m.media-amazon.com/images/M/MV5BNmQzYmE2MGEtZjk4YS00YmVjLWEwZWMtODRkMjc4MTM5N2I3XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg
 60022056,9,3,3,tt0265086,Black Hawk Down,O,movie,2001,353711,7.7,https://m.media-amazon.com/images/M/MV5BYWMwMzQxZjQtODM1YS00YmFiLTk1YjQtNzNiYWY1MDE4NTdiXkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_SX300.jpg
@@ -1073,7 +1073,7 @@ netflix id,count,line,column,imdb id,title,production (N = Netflix / O = Other),
 80117038,1,3,3,tt6524350,Big Mouth,N,serie,2017–,48173,8.0,https://m.media-amazon.com/images/M/MV5BYzRlYzczMTQtNjdjZi00NzU3LTliZWEtMDRlNzhiZTVmYmNjXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg
 80213025,1,3,3,tt7804132,The World's Most Extraordinary Homes,N,serie,2017–2018,2324,7.6,https://m.media-amazon.com/images/M/MV5BOWQ0NzVhOTMtMGRhMy00NTliLTg5ZjUtMThhNTBkN2FlMDdkXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg
 80217627,1,3,3,tt8367694,Interior Design Masters,N,serie,2019–,517,6.7,https://m.media-amazon.com/images/M/MV5BOGNmYTRmYmItNWNlMy00ZGYyLTlmZTctODFjYzAxNjRjOTIwXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg
-80237430,1,3,3,tt9182404,Je parle toute seule,--,movie,2016,95,7.8,https://m.media-amazon.com/images/M/MV5BYjcwZjU5ZTctNTA1NC00NjkwLTk4NmEtOTBmMjMyODNlZTI2XkEyXkFqcGdeQXVyODEwMzY4MjQ@._V1_SX300.jpg
+80237430,1,3,3,,undefined,--,,,,,
 81025696,1,3,3,tt10813940,Ginny & Georgia,N,serie,2021–,25723,7.4,https://m.media-amazon.com/images/M/MV5BMTQ2ZWFlNmEtNWYyYy00Yjk1LWIxMTEtMWVkM2NlMTEzOGI2XkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_SX300.jpg
 81043755,1,3,3,tt1070874,The Trial of the Chicago 7,N,movie,2020,694,7.5,https://m.media-amazon.com/images/M/MV5BMzRlMTcwODMtZjhjZS00NWI1LThkMDUtOTAwNzM1ZmU3ZDExXkEyXkFqcGdeQXVyNjY1MTg4Mzc@._V1_SX300.jpg
 81074673,1,3,3,tt13842562,Pelé,N,movie,2021,2514,7.0,https://m.media-amazon.com/images/M/MV5BODJmYTg4NTEtYTU0Mi00YjQ0LTkyYzEtMTU4MTM2ZWY3NjY4XkEyXkFqcGdeQXVyNjEwNTM2Mzc@._V1_SX300.jpg
@@ -1083,7 +1083,7 @@ netflix id,count,line,column,imdb id,title,production (N = Netflix / O = Other),
 81323551,1,3,3,tt13273826,The Uncanny Counter,N,serie,2020–,1872,8.1,https://m.media-amazon.com/images/M/MV5BOTk5NmIxNTgtNWRjYS00OWQ4LTlhOTctOGU0NzlkODQ3Zjg2XkEyXkFqcGdeQXVyNDY5MjMyNTg@._V1_SX300.jpg
 81167887,43,3,4,tt3661210,The Dig,N,movie,2021,43,6.7,https://m.media-amazon.com/images/M/MV5BY2RmZmI0NDMtMGQzOC00YWU3LTkwYWUtMDRkNDBjZDg3YTkyXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_SX300.jpg
 80994082,36,3,4,tt2531336,Lupin,N,serie,2021–,57563,7.6,https://m.media-amazon.com/images/M/MV5BNzRlNGUzMmEtYTg0Ni00N2U2LTg4YWEtNDdlNmMwYjBlZDQ0XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg
-80998853,31,3,4,tt13649692,Surviving Death,--,serie,2021–,1071,6.0,https://m.media-amazon.com/images/M/MV5BNWU5MmY4MzAtMGM3NS00ZDdjLWI0OWYtZGFlZWEzZmRjMmQxXkEyXkFqcGdeQXVyNjEwNTM2Mzc@._V1_SX300.jpg
+80998853,31,3,4,,undefined,--,,,,,
 80070050,30,3,4,tt3636060,Poldark,O,serie,2015–,23654,8.3,https://m.media-amazon.com/images/M/MV5BMjgyZTc3MjQtOTNkMy00MDE0LTg2YzgtZjVlYjM4MjVjYTc1XkEyXkFqcGdeQXVyMjExMjk0ODk@._V1_SX300.jpg
 81019069,28,3,4,tt9815454,Unorthodox,N,serie,2020,32841,8.1,https://m.media-amazon.com/images/M/MV5BMGY4NzZlMDUtMzk2NC00OWEzLTkwMGUtYmFjN2E1YWZlNzRiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg
 80232398,26,3,4,tt8740790,Bridgerton,N,serie,2020–,N/A,N/A,https://m.media-amazon.com/images/M/MV5BYjIxMzZhMTMtNDQ1Mi00OTMwLTk2M2ItYzA0YmNjNDFlOTdhXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg
@@ -1113,8 +1113,8 @@ netflix id,count,line,column,imdb id,title,production (N = Netflix / O = Other),
 81064069,5,3,4,tt13150630,Secrets of the Saqqara Tomb,N,movie,2020,N/A,N/A,https://m.media-amazon.com/images/M/MV5BNDQyMDMxNzUtMTkwMC00ZTk1LWIxYzYtYTBlZGQ3Yjg2Mjc0XkEyXkFqcGdeQXVyNjEwNTM2Mzc@._V1_SX300.jpg
 60023642,4,3,4,tt0245429,Spirited Away,O,movie,2001,607891,8.6,https://m.media-amazon.com/images/M/MV5BMjlmZmI5MDctNDE2YS00YWE0LWE5ZWItZDBhYWQ0NTcxNWRhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg
 70020952,4,3,4,tt0385307,Miss Congeniality 2: Armed & Fabulous,O,movie,2005,70384,5.1,https://m.media-amazon.com/images/M/MV5BMjAxNzk2OTI2OV5BMl5BanBnXkFtZTcwODk0MDIzMw@@._V1_SX300.jpg
-70136102,4,3,4,tt0285331,24,--,series,2001–2010,173402,8.3,https://m.media-amazon.com/images/M/MV5BMTg5OTkyNzA0NF5BMl5BanBnXkFtZTcwMDYyMDUwMg@@._V1_SX300.jpg
-70142405,4,3,4,tt0417299,Avatar: The Last Airbender,--,serie,2005–2008,233630,9.2,https://m.media-amazon.com/images/M/MV5BODc5YTBhMTItMjhkNi00ZTIxLWI0YjAtNTZmOTY0YjRlZGQ0XkEyXkFqcGdeQXVyODUwNjEzMzg@._V1_SX300.jpg
+70136102,4,3,4,,undefined,--,,,,,
+70142405,4,3,4,,undefined,--,,,,,
 70202589,4,3,4,tt1475582,Sherlock,O,serie,2010–,759999,9.1,https://m.media-amazon.com/images/M/MV5BMWY3NTljMjEtYzRiMi00NWM2LTkzNjItZTVmZjE0MTdjMjJhL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNTQ4NTc5OTU@._V1_SX300.jpg
 80074249,4,3,4,tt4179452,The Last Kingdom,N,serie,2015–,63612,8.4,https://m.media-amazon.com/images/M/MV5BMjE1MzYzNjk3OF5BMl5BanBnXkFtZTgwMzk0MzYwNzE@._V1_SX300.jpg
 80135674,4,3,4,tt5626028,My Hero Academia,O,serie,2016–,29183,8.5,https://m.media-amazon.com/images/M/MV5BNmQzYmE2MGEtZjk4YS00YmVjLWEwZWMtODRkMjc4MTM5N2I3XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg
