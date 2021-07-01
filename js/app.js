@@ -129,6 +129,13 @@ function addDivToFilmArray(filmArray){
                     numberOfCounts.classList.add('counts');
                     numberOfCounts.innerText = c.count;
 
+                    //add the "x" after the number of count
+                    let xUnit = document.createElement('span');
+                    xUnit.classList.add('x-unit');
+                    xUnit.innerText = "x";
+
+                    numberOfCounts.appendChild(xUnit);
+
                     containerDiv.append(filmP);
                     containerDiv.appendChild(dataElement);
                     filmDiv.appendChild(containerDiv);

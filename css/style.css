@@ -64,9 +64,9 @@ a {
   color: white;
 }
 
-main {
-  /* padding: 0 1rem; */
-}
+/* main {
+  padding: 0 1rem;
+} */
 
 .navbar {
   position: fixed;
@@ -279,6 +279,10 @@ a:active {
   border-radius: 4px;
 }
 
+.x-unit {
+  margin-left: 4px;
+}
+
 @keyframes progress-bar {
   0% {
     width: 0;
@@ -317,11 +321,11 @@ a:active {
 }
 
 .counts {
-  color: lightgrey;
+  color: #4d4d4d;
   font-weight: bold;
   padding: 0 20px;
   animation: text-color 0.5s ease backwards;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
 }
 
 .film-title {
