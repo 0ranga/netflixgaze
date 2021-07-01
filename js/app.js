@@ -182,7 +182,8 @@ function download(content, fileName, contentType) {
 }
 //download(jsonData, 'json.txt', 'text/plain');
 
-import DATA from "../json.js";
+//import DATA from "../json.js";
+import DATA from "../json-no-undefined.js";
 
 
 /* -------------------------------------------------------------------------- */
