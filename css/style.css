@@ -27,6 +27,13 @@
   src: url("CircularXXWebTrial-BoldTrial.woff") format("woff");
 }
 
+@font-face {
+  font-family: nf-icon;
+  src: url(../font/nf-icon-v1-93.woff) format("woff"), url(../font/nf-icon-v1-93.eot) format("eot"), url(../font/nf-icon-v1-93.ttf) format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* -------------------------------------------------------------------------- */
 /*                                  VARIABLES                                 */
 /* -------------------------------------------------------------------------- */
@@ -522,4 +529,9 @@ input:checked + label {
 
 .nowrap {
   white-space: nowrap;
+}
+
+.icon-logo:before {
+  font-family: nf-icon;
+  content: '\e5d1';
 }

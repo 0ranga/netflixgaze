@@ -166,7 +166,12 @@ function getProperty(event, property){
     //replace innerText by property
     filmOfCurrentPage.forEach(f => {
         // f.filmTag.children[0].innerText = f[property];
-        f.filmTag.querySelector('.data-element').innerText = f[property];
+        if(property=="production"){
+            f.filmTag.querySelector('.data-element').innerHTML = f[property] == "Netflix" ? "<span class=icon-logo></span>" : "";
+        }
+        else {
+            f.filmTag.querySelector('.data-element').innerHTML = f[property];
+        }
     })
 }
 

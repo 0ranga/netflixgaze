@@ -5,7 +5,7 @@ var img;
 let parent;
 
 function preload() {
-  img = loadImage('img/logo-netflix.jpg');
+  img = loadImage('img/logo-netflix.svg');
   parent = document.getElementById('myContainer');
 }
 
