@@ -88,6 +88,7 @@
   --gray: #d0d0d0;
   --darkgray: #302628;
   --lightgray: #948d8e;
+  --background: #141414;
 }
 
 
@@ -106,7 +107,7 @@ body {
   line-height: 1.2;
   padding: 0;
   margin: 0;
-  background-color: black;
+  background-color: var(--background);
   color: white;
 }
 
@@ -125,7 +126,7 @@ a {
 } */
 
 .navbar {
-  background-color: black;
+  background-color: var(--background);
   /* position: fixed;
   left: 0;
   right: 0; */
@@ -193,10 +194,12 @@ a {
 .button2 {
   display: flex;
   text-decoration: none;
-  background-color: black;
-  border: 1px solid var(--netflix-red);
+  border: 2px solid var(--netflix-red);
   color: var(--netflix-red);
-  border-radius: 999px;
+  /* background-color: rgba(42,42,42,.6);
+  border: 2px solid rgba(255,255,255,.5);
+  color: white; */
+  border-radius: 4px;
   padding: 15px 32px;
   text-align: center;
   justify-content: center;
@@ -208,9 +211,14 @@ a {
 }
 
 .button2:hover {
+  /* border-color: white;
+  background-color: var(--netflix-red); */
   border-color: white;
-  background-color: var(--netflix-red);
+  background-color: #2a2a2a;
   color: white;
+  /* border-color: white;
+  background-color: white;
+  color: black; */
 }
 
 .button-grey {
@@ -271,6 +279,7 @@ a {
   filter: blur(10px);
   transition: 0.8s cubic-bezier(0.22, 1, 0.36, 1);
   will-change: filter;
+  border-radius: 4px;
 }
 
 /* .project img:hover {
@@ -444,7 +453,7 @@ a {
   text-overflow: ellipsis;
 }
 
-.data-element, .data-element .span-imdbrating {
+.data-element, .data-element span {
   float: right;
   color: var(--netflix-red);
   font-size: 3vw;
@@ -464,8 +473,12 @@ a {
   color: white;
 }
 
-.film:hover .data-element, .film:hover .film-title, .film:hover .data-element .span-imdbrating {
+.film:hover .data-element, .film:hover .film-title, .film:hover .data-element span {
   color: white !important;
+}
+
+.film .data-element span.netflix-darkgray {
+  color : var(--lightgray);
 }
 
 html,
@@ -588,8 +601,4 @@ input:checked + label {
 
 .netflix-red {
   color: var(--netflix-red);
-}
-
-.netflix-darkgray {
-  color : var(--lightgray);
 }

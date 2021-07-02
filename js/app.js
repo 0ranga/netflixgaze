@@ -196,7 +196,7 @@ function getProperty(event, property){
             // f.filmTag.querySelector('.data-element').innerHTML = "<span style=\"color:hsl(357," + (parseFloat(f[property])/10*100) +"%," + (parseFloat(f[property])/10*47) +"%);\">" + f[property] + "</span>";
         }
         else {
-            f.filmTag.querySelector('.data-element').innerHTML = f[property];
+            f.filmTag.querySelector('.data-element').innerHTML = (f[property].toLowerCase() === "serie" || f[property].toLowerCase() === "series") ? "series" : "movie";
         }
     })
 }
