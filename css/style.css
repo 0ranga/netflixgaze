@@ -478,7 +478,7 @@ a {
   /* width: 90% !important; */
 }
 
-.bar-chart:hover .data-element, .film:hover .film-title, .film:hover .data-element span {
+.bar-chart:hover .data-element, .bar-chart:hover .film-title, .bar-chart:hover .data-element span {
   color: white !important;
 }
 
