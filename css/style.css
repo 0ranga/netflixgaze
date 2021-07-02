@@ -113,9 +113,18 @@ a {
 }
 
 .title {
-  font-size: 64px;
+  font-size: 48px;
   color: white;
   font-weight: 400;
+  width: 50%;
+}
+
+.subtitle {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  font-size: 28px;
+  color: darkgrey;
+  font-weight: 300;
 }
 
 .small {
@@ -259,7 +268,10 @@ a {
 /* -------------------------------------------------------------------------- */
 
 #myContainer {
-  height: 30vw;
+  height: 32vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 #myContainer canvas {
@@ -487,4 +499,21 @@ input:checked + label {
 
 .viz-container {
   margin-bottom: 24px;
+}
+
+.whole-width {
+  max-width: none;
+  width: 95%;
+}
+
+.month-select {
+  color: var(--netflix-red);
+}
+
+.month-select i {
+  font-size: 38px;
+}
+
+.nowrap {
+  white-space: nowrap;
 }
