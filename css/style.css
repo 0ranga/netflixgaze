@@ -35,6 +35,52 @@
 }
 
 /* -------------------------------------------------------------------------- */
+/*                                FROM NETFLIX                                */
+/* -------------------------------------------------------------------------- */
+
+@font-face {
+  font-family: 'Netflix Sans';
+  font-weight: 100;
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')
+}
+
+@font-face {
+  font-family: 'Netflix Sans';
+  font-weight: 300;
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
+}
+
+@font-face {
+  font-family: 'Netflix Sans';
+  font-weight: 400;
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format('woff')
+}
+
+@font-face {
+  font-family: 'Netflix Sans';
+  font-weight: 700;
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format('woff')
+}
+
+@font-face {
+  font-family: 'Netflix Sans';
+  font-weight: 800;
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff')
+}
+
+@font-face {
+  font-family: 'Netflix Sans';
+  font-weight: 900;
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format('woff')
+}
+
+/* -------------------------------------------------------------------------- */
 /*                                  VARIABLES                                 */
 /* -------------------------------------------------------------------------- */
 :root {
@@ -52,7 +98,7 @@
 }
 
 body {
-  font-family: "CircularXXWebTrial-ThinTrial", sans-serif;
+  font-family: 'Netflix Sans', "CircularXXWebTrial-ThinTrial", sans-serif;
   font-size: 16px;
   line-height: 1.2;
   padding: 0;
@@ -62,9 +108,9 @@ body {
 }
 
 h1 {
-  font-family: "HeymlandLLWebTrial-RegularTrial", sans-serif;
+  font-family: 'Netflix Sans', "HeymlandLLWebTrial-RegularTrial", sans-serif;
   font-size: 24px;
-  font-weight: 1000px;
+  font-weight: 600;
 }
 
 a {
@@ -124,7 +170,7 @@ a {
 .title {
   font-size: 48px;
   color: white;
-  font-weight: 400;
+  font-weight: 900;
   width: 50%;
 }
 
@@ -133,7 +179,7 @@ a {
   margin-bottom: 24px;
   font-size: 28px;
   color: darkgrey;
-  font-weight: 300;
+  font-weight: 600;
 }
 
 .small {
@@ -379,7 +425,7 @@ a {
 
 .counts {
   color: var(--gray);
-  font-weight: bold;
+  font-weight: 800;
   padding: 0 20px;
   animation: text-color 0.5s ease backwards;
   font-size: 3.5rem;
@@ -399,7 +445,7 @@ a {
   float: right;
   color: var(--netflix-red);
   font-size: 3vw;
-  font-weight: bold;
+  font-weight: 800;
   text-transform: uppercase;
   transition: all 0.4s ease;
 }
@@ -503,11 +549,12 @@ input:checked + label {
   font-size: 36px;
   color: white;
   margin-bottom: 30px;
+  font-weight: 300;
 }
 
 .case-first-line {
   font-size: 3rem;
-  font-weight: bold;
+  font-weight: 900;
 }
 
 .viz-container {
@@ -534,4 +581,8 @@ input:checked + label {
 .icon-logo:before {
   font-family: nf-icon;
   content: '\e5d1';
+}
+
+.netflix-red {
+  color: var(--netflix-red);
 }
