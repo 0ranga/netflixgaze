@@ -389,9 +389,13 @@ a {
   transition: all 0.4s ease;
   align-items: center;
   padding: 0 20px;
-  animation: progress-bar 2s cubic-bezier(0.22, 1, 0.36, 1) backwards,
-    text-in 0.5s cubic-bezier(0.22, 1, 0.36, 1) backwards;
+  will-change: width, padding;
   border-radius: 4px;
+}
+
+.bar-chart:not(.targeted) {
+  animation: progress-bar 1.5s cubic-bezier(0.22, 1, 0.36, 1) backwards,
+    text-in 0.5s cubic-bezier(0.22, 1, 0.36, 1) backwards;
 }
 
 .x-unit {
@@ -454,7 +458,7 @@ a {
 }
 
 .data-element, .data-element span {
-  float: right;
+  /* float: right; */
   color: var(--netflix-red);
   font-size: 3vw;
   font-weight: 800;
@@ -471,6 +475,7 @@ a {
 .film:hover .bar-chart {
   background-color: var(--netflix-red);
   color: white;
+  /* width: 90% !important; */
 }
 
 .film:hover .data-element, .film:hover .film-title, .film:hover .data-element span {

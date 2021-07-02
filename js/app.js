@@ -14,6 +14,7 @@ const soustitre = document.getElementById('soustitre');
 let filmData;
 let filmOfCurrentPage;
 
+
 /* -------------------------------------------------------------------------- */
 /*                               EVENT LISTENERS                              */
 /* -------------------------------------------------------------------------- */
@@ -23,6 +24,7 @@ mediaButton.addEventListener('click', (e) => getProperty(e, "type"));
 productionButton.addEventListener('click', (e) => getProperty(e, "production"));
 dateButton.addEventListener('click', (e) => getProperty(e, "year"));
 ratingButton.addEventListener('click', (e) => getProperty(e, "imdbrating"));
+
 
 /* -------------------------------------------------------------------------- */
 /*                                  FUNCTIONS                                 */
@@ -127,7 +129,7 @@ function addDivToFilmArray(filmArray){
                     //create p element with number of count
                     let numberOfCounts = document.createElement('p');
                     numberOfCounts.classList.add('counts');
-                    numberOfCounts.innerText = c.count;
+                    numberOfCounts.innerHTML = "<span class=\"count-number\" data-target=\"" + c.count  +"\">0</span>";
 
                     //add the "x" after the number of count
                     let xUnit = document.createElement('span');
@@ -220,6 +222,28 @@ function download(content, fileName, contentType) {
 }
 //download(jsonData, 'json.txt', 'text/plain');
 
+//Counter
+function counter(element) {
+    const speed = 50
+    const target = +element.getAttribute("data-target");
+
+    const inc = 2; 
+
+    const updateCount = () => {
+        const count = +element.innerText;
+        // console.log(count);
+    
+        if (count<target){
+            element.innerText = count + inc;
+            setTimeout(updateCount, 20);
+        } else {
+            element.innerText = target;
+        }
+    }
+
+    updateCount();
+}
+
 //import DATA from "../json.js";
 import DATA from "../json-no-undefined.js";
 
@@ -284,7 +308,46 @@ for (let i = 0; i < (filmOfCurrentPage.length < 5 ? filmOfCurrentPage.length : 5
     //add to viz div
     viz.appendChild(filmOfCurrentPage[i].filmTag);
 
+    // counter(filmOfCurrentPage[i].filmTag.querySelector('.counts'), parseInt(filmOfCurrentPage[i].filmTag.querySelector('.counts').innerText.substring(0,2)));
+
+
     // filmOfCurrentPage[i].filmTag.style.width = filmOfCurrentPage[i].count/max * 100 +"%";
-    filmOfCurrentPage[i].filmTag.querySelector('.bar-chart').style.width = filmOfCurrentPage[i].count/max * 90 +"%";
+    filmOfCurrentPage[i].filmTag.querySelector('.bar-chart').style.width = filmOfCurrentPage[i].count/max * 85 +"%";
 
 }
+
+const barChart = document.querySelectorAll('.bar-chart');
+barChart.forEach(element => {
+    element.addEventListener('animationend', (e)=>{
+    //     e.target.addEventListener('mouseenter', (event) => {
+    //         event.target.setAttribute('data-width', event.target.getAttribute('style'));
+    
+    //         // e.target.style.width = e.target.offsetWidth;
+    //         // e.target.classList.add('targeted');
+    //         e.target.style.width = "90%";
+    //     });
+    //     e.target.addEventListener('mouseleave', (event) => { 
+    //         event.target.setAttribute('style', event.target.getAttribute('data-width'));
+    //     });
+        console.log('oui', e.animationName);
+        if(e.animationName=='progress-bar'){
+            e.target.addEventListener('mouseenter', f => {
+                console.log(f.target);
+                f.target.setAttribute('data-width', f.target.getAttribute('style'));
+                f.target.style.width = "90%";
+                
+                e.target.addEventListener('mouseleave', f => {
+                    f.target.setAttribute('style', f.target.getAttribute('data-width'));
+                })
+            });
+            
+        }
+
+    });
+});
+
+const numberToUpdate = document.querySelectorAll('.count-number');
+numberToUpdate.forEach( (element, i )=> {
+    setTimeout(() => {counter(element)}, i*150);
+    // counter(element);
+});
