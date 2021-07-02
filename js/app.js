@@ -175,7 +175,7 @@ function extractArrayFromFilmData(){
     let line = url.searchParams.get("line");
     let column = url.searchParams.get("column");
 
-    soustitre.innerHTML = `Top 5 of most recommended content in February 2021<br/>Position : Line ${parseInt(line)+0} - Column ${parseInt(column)+1}`
+    soustitre.innerHTML = `<span class="case-first-line">Top 5 of most recommended content in February 2021</span><br/>Position : Line ${parseInt(line)+0} - Column ${parseInt(column)+1}`
 
     return filmData[line][column];
 }

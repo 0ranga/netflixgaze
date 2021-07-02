@@ -90,7 +90,7 @@ a {
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -134,7 +134,7 @@ a {
   text-align: center;
   justify-content: center;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 24px;
   margin: 10px;
   cursor: pointer;
 
@@ -353,7 +353,7 @@ a {
 }
 
 .counts {
-  color: #4d4d4d;
+  color: var(--gray);
   font-weight: bold;
   padding: 0 20px;
   animation: text-color 0.5s ease backwards;
@@ -373,7 +373,7 @@ a {
 .data-element {
   float: right;
   color: var(--netflix-red);
-  font-size: 4vw;
+  font-size: 3vw;
   font-weight: bold;
   text-transform: uppercase;
   transition: all 0.4s ease;
@@ -418,6 +418,8 @@ input:checked + label {
 .arrow-container {
   margin-top: 30px;
   margin-bottom: 20px;
+  font-size: 24px;
+  color: var(--gray);
 }
 
 .arrow-tag {
@@ -437,7 +439,7 @@ input:checked + label {
 .line {
   margin-top: 0px;
   width: 100%;
-  background: white;
+  background: var(--gray);
   height: 3px;
   
 }
@@ -446,7 +448,7 @@ input:checked + label {
   height: 0px;
   border-top: 7px solid transparent;
   border-bottom: 7px solid transparent;
-  border-left: 15px solid white;
+  border-left: 15px solid var(--gray);
 }
 
 @keyframes arrow-tag-appear {
@@ -481,4 +483,9 @@ input:checked + label {
   font-size: 36px;
   color: white;
   margin-bottom: 10px;
+}
+
+.case-first-line {
+  font-size: 3rem;
+  font-weight: bold;
 }
