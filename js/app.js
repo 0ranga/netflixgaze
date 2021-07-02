@@ -235,7 +235,7 @@ function counter(element) {
     
         if (count<target){
             element.innerText = count + inc;
-            setTimeout(updateCount, 20);
+            setTimeout(updateCount, 30);
         } else {
             element.innerText = target;
         }
@@ -335,7 +335,7 @@ barChart.forEach(element => {
                 console.log(f.target);
                 f.target.setAttribute('data-width', f.target.getAttribute('style'));
                 f.target.style.width = "90%";
-                
+
                 e.target.addEventListener('mouseleave', f => {
                     f.target.setAttribute('style', f.target.getAttribute('data-width'));
                 })
@@ -348,6 +348,6 @@ barChart.forEach(element => {
 
 const numberToUpdate = document.querySelectorAll('.count-number');
 numberToUpdate.forEach( (element, i )=> {
-    setTimeout(() => {counter(element)}, i*150);
+    setTimeout(() => {counter(element)}, i*200);
     // counter(element);
 });
