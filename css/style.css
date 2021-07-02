@@ -472,13 +472,13 @@ a {
   }
 }
 
-.film:hover .bar-chart {
+.bar-chart:hover {
   background-color: var(--netflix-red);
   color: white;
   /* width: 90% !important; */
 }
 
-.film:hover .data-element, .film:hover .film-title, .film:hover .data-element span {
+.bar-chart:hover .data-element, .film:hover .film-title, .film:hover .data-element span {
   color: white !important;
 }
 
