@@ -167,7 +167,33 @@ function getProperty(event, property){
     filmOfCurrentPage.forEach(f => {
         // f.filmTag.children[0].innerText = f[property];
         if(property=="production"){
-            f.filmTag.querySelector('.data-element').innerHTML = f[property] == "Netflix" ? "<span class=icon-logo></span>" : "";
+            f.filmTag.querySelector('.data-element').innerHTML = f[property] == "Netflix" ? "<span class=\"icon-logo\"></span>" : "";
+        }
+        else if(property=="year") {
+            f.filmTag.querySelector('.data-element').innerHTML = (f[property].endsWith('Now') || f[property].endsWith('2021')) ? f[property] : "<span class=\"netflix-darkgray\">" + f[property] + "</span>";
+        }
+        else if (property=="imdbrating"){
+
+            // Hue saturation and shade
+            f.filmTag.querySelector('.data-element').innerHTML = "<span class =\"span-imdbrating\" style=\"color:hsl(" + (281+parseFloat(f[property])/10*76) +"," + (parseFloat(f[property])/10*100) +"%," + (parseFloat(f[property])/10*47) +"%);\">" + f[property] + "</span>";
+            
+            //Hue
+            // f.filmTag.querySelector('.data-element').innerHTML = "<span style=\"color:hsl(" + (281+parseFloat(f[property])/10*76) +",92%, 47%);\">" + f[property] + "</span>";
+
+            //Saturation
+            // f.filmTag.querySelector('.data-element').innerHTML = "<span style=\"color:hsl(357," + (parseFloat(f[property])/10*100) +"%, 47%);\">" + f[property] + "</span>";
+
+            //Shade
+            // f.filmTag.querySelector('.data-element').innerHTML = "<span style=\"color:hsl(357, 92%," + (parseFloat(f[property])/10*47) +"%);\">" + f[property] + "</span>";
+            
+            //Hue and saturation
+            // f.filmTag.querySelector('.data-element').innerHTML = "<span style=\"color:hsl(" + (281+parseFloat(f[property])/10*76) +"," + (parseFloat(f[property])/10*100) +"%, 47%);\">" + f[property] + "</span>";
+            
+            //Hue and shade
+            // f.filmTag.querySelector('.data-element').innerHTML = "<span style=\"color:hsl(" + (281+parseFloat(f[property])/10*76) +", 92%," + (parseFloat(f[property])/10*47) +"%);\">" + f[property] + "</span>";
+            
+            //Saturation and shade
+            // f.filmTag.querySelector('.data-element').innerHTML = "<span style=\"color:hsl(357," + (parseFloat(f[property])/10*100) +"%," + (parseFloat(f[property])/10*47) +"%);\">" + f[property] + "</span>";
         }
         else {
             f.filmTag.querySelector('.data-element').innerHTML = f[property];

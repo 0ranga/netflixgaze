@@ -86,6 +86,8 @@
 :root {
   --netflix-red: #e50914;
   --gray: #d0d0d0;
+  --darkgray: #302628;
+  --lightgray: #948d8e;
 }
 
 
@@ -100,6 +102,7 @@
 body {
   font-family: 'Netflix Sans', "CircularXXWebTrial-ThinTrial", sans-serif;
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.2;
   padding: 0;
   margin: 0;
@@ -432,7 +435,7 @@ a {
 }
 
 .film-title {
-  color: #302628;
+  color: var(--darkgray);
   transition: all 0.4s ease;
   font-size: 1.2em;
   flex-shrink: 2;
@@ -441,7 +444,7 @@ a {
   text-overflow: ellipsis;
 }
 
-.data-element {
+.data-element, .data-element .span-imdbrating {
   float: right;
   color: var(--netflix-red);
   font-size: 3vw;
@@ -461,8 +464,8 @@ a {
   color: white;
 }
 
-.film:hover .data-element, .film:hover .film-title {
-  color: white;
+.film:hover .data-element, .film:hover .film-title, .film:hover .data-element .span-imdbrating {
+  color: white !important;
 }
 
 html,
@@ -585,4 +588,8 @@ input:checked + label {
 
 .netflix-red {
   color: var(--netflix-red);
+}
+
+.netflix-darkgray {
+  color : var(--lightgray);
 }
