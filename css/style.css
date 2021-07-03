@@ -339,7 +339,7 @@ a {
 /* -------------------------------------------------------------------------- */
 
 #myContainer {
-  height: 32vw;
+  height: 30vw;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -384,7 +384,7 @@ a {
   height: 100%;
   overflow: hidden;
   white-space: nowrap;
-  justify-content: space-between;
+  justify-content: flex-end;
   background-color: var(--gray);
   transition: all 0.4s ease;
   align-items: center;
@@ -449,6 +449,7 @@ a {
 
 .film-title {
   color: var(--darkgray);
+  margin-right: auto;
   transition: all 0.4s ease;
   font-size: 1.2em;
   flex-shrink: 2;

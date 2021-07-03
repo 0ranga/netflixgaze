@@ -177,7 +177,7 @@ function getProperty(event, property){
         else if (property=="imdbrating"){
 
             // Hue saturation and shade
-            f.filmTag.querySelector('.data-element').innerHTML = "<span class =\"span-imdbrating\" style=\"color:hsl(" + (281+parseFloat(f[property])/10*76) +"," + (parseFloat(f[property])/10*100) +"%," + (parseFloat(f[property])/10*47) +"%);\">" + f[property] + "</span>";
+            // f.filmTag.querySelector('.data-element').innerHTML = "<span class =\"span-imdbrating\" style=\"color:hsl(" + (281+parseFloat(f[property])/10*76) +"," + (parseFloat(f[property])/10*100) +"%," + (parseFloat(f[property])/10*47) +"%);\">" + f[property] + "</span>";
             
             //Hue
             // f.filmTag.querySelector('.data-element').innerHTML = "<span style=\"color:hsl(" + (281+parseFloat(f[property])/10*76) +",92%, 47%);\">" + f[property] + "</span>";
@@ -195,7 +195,7 @@ function getProperty(event, property){
             // f.filmTag.querySelector('.data-element').innerHTML = "<span style=\"color:hsl(" + (281+parseFloat(f[property])/10*76) +", 92%," + (parseFloat(f[property])/10*47) +"%);\">" + f[property] + "</span>";
             
             //Saturation and shade
-            // f.filmTag.querySelector('.data-element').innerHTML = "<span style=\"color:hsl(357," + (parseFloat(f[property])/10*100) +"%," + (parseFloat(f[property])/10*47) +"%);\">" + f[property] + "</span>";
+            f.filmTag.querySelector('.data-element').innerHTML = "<span style=\"color:hsl(357," + (parseFloat(f[property])/10*100) +"%," + (parseFloat(f[property])/10*47) +"%);\">" + f[property] + "</span>";
         }
         else {
             f.filmTag.querySelector('.data-element').innerHTML = (f[property].toLowerCase() === "serie" || f[property].toLowerCase() === "series") ? "series" : "movie";
