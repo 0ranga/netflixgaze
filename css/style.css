@@ -135,7 +135,7 @@ a {
   display: flex;
   justify-content: space-between;
   padding: 0 1rem;
-  z-index: 1;
+  z-index: 100;
 }
 
 .navbar-logo {
@@ -391,6 +391,7 @@ a {
   padding: 0 20px;
   will-change: width, padding;
   border-radius: 4px;
+  z-index:1;
 }
 
 .bar-chart:not(.targeted) {
@@ -445,6 +446,7 @@ a {
   padding: 0 20px;
   animation: text-color 0.5s ease backwards;
   font-size: 3.5rem;
+  z-index:1;
 }
 
 .film-title {
@@ -481,10 +483,12 @@ a {
 
 .bar-chart:hover .data-element, .bar-chart:hover .film-title, .bar-chart:hover .data-element span {
   color: white !important;
+  opacity: 1 !important;
 }
 
-.film .data-element span.netflix-darkgray {
-  color : var(--lightgray);
+.film .data-element span.netflix-old {
+  color : var(--netflix-red);
+  opacity: 0.5;
 }
 
 html,
@@ -564,8 +568,6 @@ input:checked + label {
 /* ------------------------------ End of Hesham ----------------------------- */
 /* -------------------------------------------------------------------------- */
 
-/*             --------TREEMAP& DATA VIZ -------------            */
-
 .case-title {
   margin-top: 24px;
   font-size: 36px;
@@ -607,4 +609,75 @@ input:checked + label {
 
 .netflix-red {
   color: var(--netflix-red);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  MINI MAP                                  */
+/* -------------------------------------------------------------------------- */
+
+.mini-map-container {
+  position: fixed;
+  bottom: 48px;
+  right: 48px;
+  transition: opacity 1s cubic-bezier(0.22, 1, 0.36, 1);
+  z-index:0;
+}
+
+.reduce-opacity {
+  opacity: 0.2;
+}
+
+.mini-map {
+  display: inline-grid;
+  grid-template-columns: repeat(5, 64px);
+  grid-template-rows: repeat(3, 36px);
+  column-gap: 10px;
+  row-gap: 10px;
+  padding: 10px;
+  border: 1px solid var(--netflix-red);
+  border-radius: 2px;
+}
+
+.mini-map-container p {
+  display: none;
+  text-align: center;
+  margin-bottom: 8px;
+  font-weight: 100;
+}
+
+.mini-map a {
+  /* display: block; */
+  border: 1px solid var(--netflix-red);
+  border-radius: 2px;
+}
+
+.mini-map a:hover {
+  background-color: var(--netflix-red);
+}
+
+.current-box {
+  background-color: var(--netflix-red);
+}
+
+/* .position-line {
+  margin: 0 8px;
+} */
+
+.position-column-container, .position-line-container {
+  display: flex;
+  justify-content: space-between;
+  width: 7rem;
+}
+
+.position-column, .position-line {
+  margin-left: 12px;
+}
+
+.case-second-line {
+  display: flex;
+  /* flex-direction: column; */
+}
+
+.case-second-line *:not(:first-child) {
+  margin-left: 8px;
 }

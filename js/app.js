@@ -9,7 +9,11 @@ const productionButton = document.querySelector("#production");
 const dateButton = document.querySelector("#date");
 const ratingButton = document.querySelector("#rating");
 const films = () => document.querySelectorAll(".film");
+const barChartSelector = () => document.querySelectorAll('.bar-chart');
 const soustitre = document.getElementById('soustitre');
+const lineIdentifier = document.querySelector('.position-line');
+const columnIdentifier = document.querySelector('.position-column');
+
 
 let filmData;
 let filmOfCurrentPage;
@@ -172,7 +176,7 @@ function getProperty(event, property){
             f.filmTag.querySelector('.data-element').innerHTML = f[property] == "Netflix" ? "<span class=\"icon-logo\"></span>" : "";
         }
         else if(property=="year") {
-            f.filmTag.querySelector('.data-element').innerHTML = (f[property].endsWith('Now') || f[property].endsWith('2021')) ? f[property] : "<span class=\"netflix-darkgray\">" + f[property] + "</span>";
+            f.filmTag.querySelector('.data-element').innerHTML = (f[property].endsWith('Now') || f[property].endsWith('2021')) ? f[property] : "<span class=\"netflix-old\">" + f[property] + "</span>";
         }
         else if (property=="imdbrating"){
 
@@ -195,7 +199,13 @@ function getProperty(event, property){
             // f.filmTag.querySelector('.data-element').innerHTML = "<span style=\"color:hsl(" + (281+parseFloat(f[property])/10*76) +", 92%," + (parseFloat(f[property])/10*47) +"%);\">" + f[property] + "</span>";
             
             //Saturation and shade
-            f.filmTag.querySelector('.data-element').innerHTML = "<span style=\"color:hsl(357," + (parseFloat(f[property])/10*100) +"%," + (parseFloat(f[property])/10*47) +"%);\">" + f[property] + "</span>";
+            // f.filmTag.querySelector('.data-element').innerHTML = "<span style=\"color:hsl(357," + (parseFloat(f[property])/10*100) +"%," + (parseFloat(f[property])/10*47) +"%);\">" + f[property] + "</span>";
+            
+            //Saturation shade and Opacity
+            // f.filmTag.querySelector('.data-element').innerHTML = "<span style=\"color:hsla(357," + (parseFloat(f[property])/10*100) +"%," + (parseFloat(f[property])/10*47) +"%," + (parseFloat(f[property])/10*100) +"%);\">" + f[property] + "</span>";
+            
+            //Opacity
+            f.filmTag.querySelector('.data-element').innerHTML = "<span style=\"color:hsla(357, 92%, 47%," + ((parseFloat(f[property])-3.5)/6*100) +"%);\">" + f[property] + "</span>";
         }
         else {
             f.filmTag.querySelector('.data-element').innerHTML = (f[property].toLowerCase() === "serie" || f[property].toLowerCase() === "series") ? "series" : "movie";
@@ -208,7 +218,9 @@ function extractArrayFromFilmData(){
     let line = url.searchParams.get("line");
     let column = url.searchParams.get("column");
 
-    soustitre.innerHTML = `<span class="case-first-line">Top 5 of most recommended content in February 2021</span><br/>Position : Line <span class="netflix-red">${parseInt(line)+0}</span> - Column <span class="netflix-red">${parseInt(column)+1}</span>`
+    // soustitre.innerHTML = `<span class="case-first-line">Top 5 of most recommended content in February 2021</span><br/>at position : Line <span class="netflix-red">${parseInt(line)+0}</span> - Column <span class="netflix-red">${parseInt(column)+1}</span>`
+    lineIdentifier.innerText = parseInt(line)+0;
+    columnIdentifier.innerText = parseInt(column)+1;
 
     return filmData[line][column];
 }
@@ -316,7 +328,7 @@ for (let i = 0; i < (filmOfCurrentPage.length < 5 ? filmOfCurrentPage.length : 5
 
 }
 
-const barChart = document.querySelectorAll('.bar-chart');
+const barChart = barChartSelector();
 barChart.forEach(element => {
     element.addEventListener('animationend', (e)=>{
     //     e.target.addEventListener('mouseenter', (event) => {
@@ -329,15 +341,18 @@ barChart.forEach(element => {
     //     e.target.addEventListener('mouseleave', (event) => { 
     //         event.target.setAttribute('style', event.target.getAttribute('data-width'));
     //     });
-        console.log('oui', e.animationName);
+ 
         if(e.animationName=='progress-bar'){
             e.target.addEventListener('mouseenter', f => {
-                console.log(f.target);
+
                 f.target.setAttribute('data-width', f.target.getAttribute('style'));
                 f.target.style.width = "90%";
 
+                document.querySelector('.mini-map-container').classList.add('reduce-opacity');
+
                 e.target.addEventListener('mouseleave', f => {
                     f.target.setAttribute('style', f.target.getAttribute('data-width'));
+                    document.querySelector('.mini-map-container').classList.remove('reduce-opacity');
                 })
             });
             
@@ -351,3 +366,16 @@ numberToUpdate.forEach( (element, i )=> {
     setTimeout(() => {counter(element)}, i*200);
     // counter(element);
 });
+
+let currentURL = new URL(window.location.href);
+
+document.querySelectorAll('.box').forEach(
+    (element) => {
+        // console.log(window.location.origin);
+        // console.log(element.getAttribute('href'));
+        let boxURL = new URL(element.getAttribute('href'), window.location.origin);
+        if (boxURL.searchParams.get('line') == currentURL.searchParams.get('line') && boxURL.searchParams.get('column') == currentURL.searchParams.get('column')){
+            element.classList.add('current-box');
+        }
+    }
+)
