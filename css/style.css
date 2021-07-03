@@ -649,10 +649,12 @@ input:checked + label {
   /* display: block; */
   border: 1px solid var(--netflix-red);
   border-radius: 2px;
+  transition: scale 0.9s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .mini-map a:hover {
   background-color: var(--netflix-red);
+  scale: 1.1;
 }
 
 .current-box {
@@ -680,4 +682,17 @@ input:checked + label {
 
 .case-second-line *:not(:first-child) {
   margin-left: 8px;
+}
+
+.firing {
+  animation: fire 0.9s cubic-bezier(0.22, 1, 0.36, 1) infinite alternate;
+}
+
+@keyframes fire {
+  0% {
+    scale: 0.9;
+  }
+  100% {
+    scale: 1.1;
+  }
 }

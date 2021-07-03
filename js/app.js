@@ -375,7 +375,7 @@ document.querySelectorAll('.box').forEach(
         // console.log(element.getAttribute('href'));
         let boxURL = new URL(element.getAttribute('href'), window.location.origin);
         if (boxURL.searchParams.get('line') == currentURL.searchParams.get('line') && boxURL.searchParams.get('column') == currentURL.searchParams.get('column')){
-            element.classList.add('current-box');
+            element.classList.add('current-box', 'firing');
         }
     }
 )
