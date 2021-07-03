@@ -607,6 +607,15 @@ input:checked + label {
   content: '\e5d1';
 }
 
+.icon-empty:before {
+  font-family: nf-icon;
+  content: '\e797'
+}
+
+.icon-arrow:before {
+  content: '\2193';
+}
+
 .netflix-red {
   color: var(--netflix-red);
 }
@@ -639,7 +648,7 @@ input:checked + label {
 }
 
 .mini-map-container p {
-  display: none;
+  /* display: none; */
   text-align: center;
   margin-bottom: 8px;
   font-weight: 100;
@@ -659,6 +668,11 @@ input:checked + label {
 
 .current-box {
   background-color: var(--netflix-red);
+}
+
+.mini-map-container .icon-arrow {
+  display: inline-block;
+  /* animation: updown 0.5s cubic-bezier(0.33, 1, 0.68, 1) infinite alternate; */
 }
 
 /* .position-line {
@@ -686,6 +700,15 @@ input:checked + label {
 
 .firing {
   animation: fire 0.9s cubic-bezier(0.22, 1, 0.36, 1) infinite alternate;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-20%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }
 
 @keyframes fire {

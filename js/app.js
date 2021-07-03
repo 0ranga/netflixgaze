@@ -172,7 +172,10 @@ function getProperty(event, property){
     //replace innerText by property
     filmOfCurrentPage.forEach(f => {
         // f.filmTag.children[0].innerText = f[property];
-        if(property=="production"){
+        if (f[property]===null){
+            f.filmTag.querySelector('.data-element').innerHTML = "<span class=\"icon-empty\"></span>";
+        }
+        else if(property=="production"){
             f.filmTag.querySelector('.data-element').innerHTML = f[property] == "Netflix" ? "<span class=\"icon-logo\"></span>" : "";
         }
         else if(property=="year") {
