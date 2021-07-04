@@ -492,7 +492,7 @@ a {
   /* width: 90% !important; */
 }
 
-.bar-chart:hover .data-element, .bar-chart:hover .film-title, .bar-chart:hover .data-element span {
+.bar-chart:hover .data-element, .bar-chart:hover .film-title, .bar-chart:hover .data-element span, .bar-chart:hover .data-element span.icon-empty:before {
   color: white !important;
   opacity: 1 !important;
 }
@@ -622,6 +622,8 @@ input:checked + label {
 .icon-empty:before {
   font-family: nf-icon;
   content: '\e797';
+  color: var(--lightgray);
+  transition: all 0.4s ease;
 }
 
 .icon-cross:before {
