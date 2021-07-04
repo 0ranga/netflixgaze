@@ -373,6 +373,7 @@ a {
   height: 100%;
   font-size: 30px;
   align-self: stretch;
+  line-height: 3rem;
 }
 
 .film + .film {
