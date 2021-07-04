@@ -609,7 +609,39 @@ input:checked + label {
 
 .icon-empty:before {
   font-family: nf-icon;
-  content: '\e797'
+  content: '\e797';
+}
+
+.icon-cross:before {
+  font-family: nf-icon;
+  content: '\f061'
+}
+
+.icon-cross {
+  line-height: 60px;
+  /* font-weight: 900; */
+}
+
+.cross-button {
+  position: fixed;
+  top: 64px;
+  left: 7vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  width:40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 2px solid;
+  text-decoration: none;
+  background-color: rgba(42,42,42,.6);
+  border-color: rgba(255,255,255,.5);
+}
+
+.cross-button:hover {
+  border-color: white;
+  background-color: #2a2a2a;
 }
 
 .icon-arrow:before {
@@ -658,12 +690,12 @@ input:checked + label {
   /* display: block; */
   border: 1px solid var(--netflix-red);
   border-radius: 2px;
-  transition: scale 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+  transition: transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .mini-map a:hover {
   background-color: var(--netflix-red);
-  scale: 1.1;
+  transform: scale(1.1);
 }
 
 .current-box {
@@ -713,9 +745,9 @@ input:checked + label {
 
 @keyframes fire {
   0% {
-    scale: 0.9;
+    transform: scale(0.9);
   }
   100% {
-    scale: 1.1;
+    transform: scale(1.1);
   }
 }
