@@ -580,7 +580,7 @@ input:checked + label {
 /* -------------------------------------------------------------------------- */
 
 .case-title {
-  margin-top: 24px;
+  margin-top: 4px;
   font-size: 36px;
   color: white;
   margin-bottom: 30px;
@@ -685,8 +685,8 @@ input:checked + label {
 
 .mini-map {
   display: inline-grid;
-  grid-template-columns: repeat(5, 64px);
-  grid-template-rows: repeat(3, 36px);
+  grid-template-columns: repeat(5, 50px);
+  grid-template-rows: repeat(3, 28px);
   column-gap: 10px;
   row-gap: 10px;
   padding: 10px;
