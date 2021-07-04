@@ -585,6 +585,7 @@ input:checked + label {
   color: white;
   margin-bottom: 30px;
   font-weight: 300;
+  position: relative;
 }
 
 .case-first-line {
@@ -634,9 +635,9 @@ input:checked + label {
 }
 
 .cross-button {
-  position: fixed;
-  top: 64px;
-  left: 7vw;
+  position: absolute;
+  top: 0px;
+  left: -72px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -648,6 +649,7 @@ input:checked + label {
   text-decoration: none;
   background-color: rgba(42,42,42,.6);
   border-color: rgba(255,255,255,.5);
+  font-size: 16px;
 }
 
 .cross-button:hover {
