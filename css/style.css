@@ -782,5 +782,3 @@ input:checked + label {
     transform: scale(1.1);
   }
 }
-
-@mixin
