@@ -293,9 +293,9 @@ a {
 
 .project img {
   position: inherit;
-  width: 100%;
+  width: 341px;
   opacity: 100%;
-  height: auto;
+  height: 192px;
   filter: blur(10px);
   transition: 0.8s cubic-bezier(0.22, 1, 0.36, 1);
   will-change: filter;
@@ -310,6 +310,7 @@ a {
   opacity: 1;
   transform: scale(1.4);
 } */
+
 
 .project:hover img {
   filter: blur(0px);
@@ -563,7 +564,7 @@ input:checked + label {
   width: 100%;
   background: var(--gray);
   height: 3px;
-  
+
 }
 .point {
   width: 0px;
