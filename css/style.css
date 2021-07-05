@@ -146,6 +146,7 @@ a {
   padding: 0 1rem;
   z-index: 100;
   height: 68px;
+  font-size: 14px;
 }
 
 
@@ -182,13 +183,15 @@ a {
 .navbar-item {
   display: flex;
   align-items: center;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   text-decoration: none;
   padding: 10px;
+  font-size: 14px;
+  transition: color .2s ease-out;
 }
+
 .navbar-item:hover {
-  background-color: white;
-  color: black;
+  color: #b3b3b3;
 }
 
 .title {
@@ -285,17 +288,22 @@ a {
   flex-grow: 1;
 }
 
+.index .grow {
+  width: 20%;
+}
+
 .project {
   padding: 0.5rem;
   color: white;
   font-size: 14px;
+  display: flex;
+  flex-direction: column;
 }
 
 .project img {
   position: inherit;
-  width: 306px;
+  width: 100%;
   opacity: 100%;
-  height: 172px;
   filter: blur(10px);
   transition: 0.8s cubic-bezier(0.22, 1, 0.36, 1);
   will-change: filter;
