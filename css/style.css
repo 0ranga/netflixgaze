@@ -132,6 +132,14 @@ a {
   color: white;
 }
 
+.about a {
+  color: gray;
+}
+
+.about a:hover {
+  color: white;
+}
+
 /* main {
   padding: 0 1rem;
 } */
