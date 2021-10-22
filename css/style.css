@@ -132,13 +132,19 @@ a {
   color: white;
 }
 
-.about a {
+.about .context a {
   color: gray;
 }
 
-.about a:hover {
+.about .context a:hover {
   color: white;
 }
+
+.about a:hover {
+  color:gray;
+}
+
+
 
 /* main {
   padding: 0 1rem;
@@ -360,6 +366,7 @@ a {
   padding: 0 4% 40px;
   color: grey;
   font-size: 13px;
+  text-align: center;
 }
 
 .footer a {
