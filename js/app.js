@@ -1,3 +1,8 @@
+import {scaleLinear} from "https://cdn.skypack.dev/d3-scale@4";
+
+//color scale for year of release
+const releaseColor = scaleLinear().domain([1980, 2021]).range(["#1b04ed","#e50914"]);
+
 /* -------------------------------------------------------------------------- */
 /*                                  SELECTORS                                 */
 /* -------------------------------------------------------------------------- */
@@ -34,74 +39,6 @@ ratingButton.addEventListener('click', (e) => getProperty(e, "imdbrating"));
 /*                                  FUNCTIONS                                 */
 /* -------------------------------------------------------------------------- */
 
-// function fromCSVtoObjectArray(fileLink){
-//     const allData = [];
-//     return fetch(fileLink)
-//     .then(response => response.text())
-//     .then(data => {
-//         let csv2json = data;
-//         let test = csv2json.split("\r\n");
-
-//         for (let i = 1; i < test.length; i++) {
-//             let uneligne = test[i].split(",");
-//             let element = {};
-//             element.netflixId = parseInt(uneligne[0]) ;
-//             element.count = parseInt(uneligne[1]);
-//             element.line = parseInt(uneligne[2]);
-//             element.column = parseInt(uneligne[3]);
-//             element.imdbId = uneligne[4];
-//             element.title = uneligne[5];
-//             element.production = uneligne[6] == "N" ? "Netflix" : "Other";
-//             element.type = uneligne[7];
-//             element.year = uneligne[8];
-//             element.imdbvotes = parseInt(uneligne[9]);
-//             element.imdbrating = parseFloat(uneligne[10]);
-//             element.coverlink = uneligne[11];
-
-//             if(!allData[element.line]){
-//                 allData[element.line] = [];
-//             }
-//             if (!allData[element.line][element.column]){
-//                 allData[element.line][element.column]= [];
-//             }
-
-//             allData[element.line][element.column].push(element);
-
-
-//             // allData.push(element);
-//         }
-
-//         return allData
-
-//     });
-// }
-
-// function addDivToFilmArray(filmArray){
-
-//     filmArray.forEach(a => {
-//         a.forEach(b => {
-//             if (b!= null){
-//                 b.forEach(c => {
-//                     //create film div
-//                     const filmDiv = document.createElement('div');
-//                     filmDiv.classList.add('film');
-
-//                     //assign netflix id as ID to div
-//                     filmDiv.id = c.netflixId;
-
-//                     //create text element inside div
-//                     const filmP = document.createElement('p');
-//                     filmP.innerHTML = c.title;
-//                     filmDiv.appendChild(filmP);
-
-//                     //add it to filmArray
-//                     c.filmTag = filmDiv;
-//                 })
-//             }
-//         })
-//     })
-// }
-
 function addDivToFilmArray(filmArray){
 
     filmArray.forEach(a => {
@@ -118,6 +55,9 @@ function addDivToFilmArray(filmArray){
                     let containerDiv = document.createElement('div');
                     containerDiv.classList.add('bar-chart');
                     containerDiv.style.width = "100%";
+                    containerDiv.setAttribute("data-imdbRating", c.imdbrating);
+                    containerDiv.setAttribute("data-imgsrc", c.coverlink);
+
 
 
                     //create text element inside div
@@ -169,49 +109,41 @@ function getMostCount(filmArray) {
 function getProperty(event, property){
     // event.preventDefault();
 
+    if (property=="imdbrating"){
+        document.querySelector(".arrow-tag").innerText = "Imdb rating out of 10";
+    } else {
+        document.querySelector(".arrow-tag").innerText = "Number of recommendations";
+    }
+
     //replace innerText by property
     filmOfCurrentPage.forEach(f => {
         // f.filmTag.children[0].innerText = f[property];
+        f.filmTag.querySelector('.bar-chart').setAttribute('style', f.filmTag.querySelector('.bar-chart').getAttribute('data-width'));
+        f.filmTag.querySelector('.counts').style.opacity = 1;
+
+        
         if (f[property]===null){
             f.filmTag.querySelector('.data-element').innerHTML = "<span class=\"icon-empty\"></span>";
+            if (property=="imdbrating"){
+                f.filmTag.querySelector('.bar-chart').style.width = "5%";
+            }
         }
         else if(property=="production"){
             f.filmTag.querySelector('.data-element').innerHTML = f[property] == "Netflix" ? "<span class=\"icon-logo\"></span>" : "";
         }
         else if(property=="year") {
-            f.filmTag.querySelector('.data-element').innerHTML = (f[property].endsWith('Now') || f[property].endsWith('2021')) ? f[property] : "<span class=\"netflix-old\">" + f[property] + "</span>";
+            let releaseDate = parseInt(f[property]);
+            f.filmTag.querySelector('.data-element').innerHTML = `<span style="color:${releaseColor(releaseDate)}">` + f[property] + "</span>";
+
         }
         else if (property=="imdbrating"){
+            f.filmTag.querySelector('.data-element').innerHTML = "<span>" + f[property] + "</span>";
+            f.filmTag.querySelector('.bar-chart').style.width = f.imdbrating/10 * 70 + "%";
+            f.filmTag.querySelector('.counts').style.opacity = 0;
 
-            // Hue saturation and shade
-            // f.filmTag.querySelector('.data-element').innerHTML = "<span class =\"span-imdbrating\" style=\"color:hsl(" + (281+parseFloat(f[property])/10*76) +"," + (parseFloat(f[property])/10*100) +"%," + (parseFloat(f[property])/10*47) +"%);\">" + f[property] + "</span>";
-            
-            //Hue
-            // f.filmTag.querySelector('.data-element').innerHTML = "<span style=\"color:hsl(" + (281+parseFloat(f[property])/10*76) +",92%, 47%);\">" + f[property] + "</span>";
-
-            //Saturation
-            // f.filmTag.querySelector('.data-element').innerHTML = "<span style=\"color:hsl(357," + (parseFloat(f[property])/10*100) +"%, 47%);\">" + f[property] + "</span>";
-
-            //Shade
-            // f.filmTag.querySelector('.data-element').innerHTML = "<span style=\"color:hsl(357, 92%," + (parseFloat(f[property])/10*47) +"%);\">" + f[property] + "</span>";
-            
-            //Hue and saturation
-            // f.filmTag.querySelector('.data-element').innerHTML = "<span style=\"color:hsl(" + (281+parseFloat(f[property])/10*76) +"," + (parseFloat(f[property])/10*100) +"%, 47%);\">" + f[property] + "</span>";
-            
-            //Hue and shade
-            // f.filmTag.querySelector('.data-element').innerHTML = "<span style=\"color:hsl(" + (281+parseFloat(f[property])/10*76) +", 92%," + (parseFloat(f[property])/10*47) +"%);\">" + f[property] + "</span>";
-            
-            //Saturation and shade
-            // f.filmTag.querySelector('.data-element').innerHTML = "<span style=\"color:hsl(357," + (parseFloat(f[property])/10*100) +"%," + (parseFloat(f[property])/10*47) +"%);\">" + f[property] + "</span>";
-            
-            //Saturation shade and Opacity
-            // f.filmTag.querySelector('.data-element').innerHTML = "<span style=\"color:hsla(357," + (parseFloat(f[property])/10*100) +"%," + (parseFloat(f[property])/10*47) +"%," + (parseFloat(f[property])/10*100) +"%);\">" + f[property] + "</span>";
-            
-            //Opacity
-            f.filmTag.querySelector('.data-element').innerHTML = "<span style=\"color:hsla(357, 92%, 47%," + ((parseFloat(f[property])-3.5)/6*100) +"%);\">" + f[property] + "</span>";
         }
         else {
-            f.filmTag.querySelector('.data-element').innerHTML = (f[property].toLowerCase() === "serie" || f[property].toLowerCase() === "series") ? "series" : "movie";
+            f.filmTag.querySelector('.data-element').innerHTML = (f[property].toLowerCase() === "serie" || f[property].toLowerCase() === "series") ?  "series" : `<span style="color:#1b04ed">movie</span>`;
         }
     })
 }
@@ -221,7 +153,6 @@ function extractArrayFromFilmData(){
     let line = url.searchParams.get("line");
     let column = url.searchParams.get("column");
 
-    // soustitre.innerHTML = `<span class="case-first-line">Top 5 of most recommended content in February 2021</span><br/>at position : Line <span class="netflix-red">${parseInt(line)+0}</span> - Column <span class="netflix-red">${parseInt(column)+1}</span>`
     lineIdentifier.innerText = parseInt(line)+0;
     columnIdentifier.innerText = parseInt(column)+1;
 
@@ -259,49 +190,12 @@ function counter(element) {
     updateCount();
 }
 
-//import DATA from "../json.js";
-import DATA from "../json-no-undefined.js";
+import DATA from "../json.js";
 
 
 /* -------------------------------------------------------------------------- */
 /*                                    MAIN                                    */
 /* -------------------------------------------------------------------------- */
-
-// let dataArray = fromCSVtoObjectArray('../data.csv');
-// dataArray.then(arrayOfFilms => {
-
-//     // let arrayOfFilms = unTest;
-//     console.log(arrayOfFilms);
-
-//     //save data to JSON file
-//     // download(JSON.stringify(arrayOfFilms), 'json.json', 'application/json');
-
-//     //create div and add it to the array
-//     addDivToFilmArray(arrayOfFilms);
-
-//     //set global variable filmData so that it can be used in other functions
-//     filmData = arrayOfFilms;
-
-//     //get only the film of the current page
-//     filmOfCurrentPage = extractArrayFromFilmData();
-
-//     //get the most counts
-//     let max = getMostCount(filmOfCurrentPage);
-
-//     // add the divs to the body with a maximum of 6
-//     for (let i = 0; i < (filmOfCurrentPage.length < 5 ? filmOfCurrentPage.length : 5) ; i++) {
-//         //add to viz div
-//         viz.appendChild(filmOfCurrentPage[i].filmTag);
-
-//         filmOfCurrentPage[i].filmTag.style.width = filmOfCurrentPage[i].count/max * 100 +"%";
-
-//     }
-
-//     // arrayOfFilms.forEach((f, i) => {
-//     //     viz.appendChild(f.filmTag);
-//     // })
-
-// });
 
 
 let arrayOfFilms = DATA;
@@ -328,46 +222,77 @@ for (let i = 0; i < (filmOfCurrentPage.length < 5 ? filmOfCurrentPage.length : 5
 
     // filmOfCurrentPage[i].filmTag.style.width = filmOfCurrentPage[i].count/max * 100 +"%";
     filmOfCurrentPage[i].filmTag.querySelector('.bar-chart').style.width = filmOfCurrentPage[i].count/max * 85 +"%";
-
+    filmOfCurrentPage[i].filmTag.querySelector('.bar-chart').setAttribute('data-width', filmOfCurrentPage[i].filmTag.querySelector('.bar-chart').getAttribute('style'));
 }
 
 const barChart = barChartSelector();
 barChart.forEach(element => {
+    let imgContainer = document.createElement('div');
+    imgContainer.classList.add("cover")
+    imgContainer.style.position = "absolute";
+    imgContainer.style.zIndex = 100;
+    let imgJ = document.createElement('img');
+    imgJ.setAttribute("src", element.dataset.imgsrc);
+    imgJ.style.borderRadius = "10px";
+    imgContainer.appendChild(imgJ);
+
     element.addEventListener('animationend', (e)=>{
-    //     e.target.addEventListener('mouseenter', (event) => {
-    //         event.target.setAttribute('data-width', event.target.getAttribute('style'));
-    
-    //         // e.target.style.width = e.target.offsetWidth;
-    //         // e.target.classList.add('targeted');
-    //         e.target.style.width = "90%";
-    //     });
-    //     e.target.addEventListener('mouseleave', (event) => { 
-    //         event.target.setAttribute('style', event.target.getAttribute('data-width'));
-    //     });
- 
         if(e.animationName=='progress-bar'){
             e.target.addEventListener('mouseenter', f => {
 
-                f.target.setAttribute('data-width', f.target.getAttribute('style'));
+                imgContainer.style.top = f.clientY + 10 + "px";
+                imgContainer.style.left = f.clientX + 10 + "px";
+                document.querySelector("body").appendChild(imgContainer);
+                
+
+
+                // f.target.setAttribute('data-width', f.target.getAttribute('style'));
                 f.target.style.width = "90%";
 
                 document.querySelector('.mini-map-container').classList.add('reduce-opacity');
 
-                e.target.addEventListener('mouseleave', f => {
-                    f.target.setAttribute('style', f.target.getAttribute('data-width'));
-                    document.querySelector('.mini-map-container').classList.remove('reduce-opacity');
-                })
+
             });
-            
+            e.target.addEventListener('mouseleave', f => {
+                if(!ratingButton.checked){
+                    f.target.setAttribute('style', f.target.getAttribute('data-width'));
+                } else {
+                    f.target.style.width = f.target.dataset.imdbrating!="null" ? f.target.dataset.imdbrating/10 * 70 + "%" : "5%";
+                }
+                document.querySelector('.mini-map-container').classList.remove('reduce-opacity');
+                document.querySelector(".cover") ? document.querySelector("body").removeChild(imgContainer) : null;
+            });
         }
 
     });
+    element.addEventListener('mousemove', e => {
+        let imgHeight = imgContainer.clientHeight;
+        let imgBottom = imgHeight + 16 + e.clientY;
+        let bodyBottom = document.querySelector('body').getBoundingClientRect().bottom;
+
+        let diff = bodyBottom - imgBottom;
+        let delta = 0;
+
+
+        if (diff<0){
+            delta = imgHeight/2;
+            if ((bodyBottom-(e.clientY + 16 + delta))<0){
+                delta = imgHeight;
+                imgContainer.style.top = e.clientY - 16 - delta + "px";
+            } else {
+                imgContainer.style.top = e.clientY + 16 - delta + "px";
+            }
+        } else {
+            imgContainer.style.top = e.clientY + 16 + "px";
+        }
+        imgContainer.style.left = e.clientX + 16 + "px";
+        
+    })
 });
 
 const numberToUpdate = document.querySelectorAll('.count-number');
 numberToUpdate.forEach( (element, i )=> {
     setTimeout(() => {counter(element)}, i*200);
-    // counter(element);
 });
 
 let currentURL = new URL(window.location.href);
