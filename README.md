@@ -1,6 +1,6 @@
 # Neftlix Gaze
 
-*A data visualization aiming at identifying the different mechanisms used by Netflix to promote content visibility.(
+*A data visualization aiming at identifying the different mechanisms used by Netflix to promote content visibility.*
 
 ## About this project
 
@@ -11,3 +11,4 @@ I had the task with 3 other students to exploit the data collected and find a cr
 ## Recognition
 
 This project was selected as one of the best project of the year and was featured in an article by the Chaire PcEN research lab here: https://pcen.fr/activites/netflix-gaze. They also hosted a version on their server: https://netflixgaze.pcen.fr.
+Keep in mind that the version at this link is more recent: https://jordanlouis.org/netflixgaze/.
